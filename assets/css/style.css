@@ -1,0 +1,1055 @@
+:root {
+    --f5light: #f5f5f5;
+    --elight: #eee;
+    --darkblue: #2E3D50;
+    --lightgreen: #35BA6B;
+    --green: #35BA47;
+    --darkyellow: #9BCC43;
+    --aqua: #0ABDE3;
+    --orange: #F99F28;
+    --yellow: #FFD045;
+    --darkpruple: #65122F;
+    --purple: #B82055;
+}
+
+@font-face {
+    font-family: IRANSans;
+    src: url(../fonts/iranSans/IRANSans.eot) format('eot'),
+    url(../fonts/iranSans/IRANSans.ttf) format('ttf'),
+    url(../fonts/iranSans/IRANSans.woff) format('woff'),
+    url(../fonts/iranSans/IRANSans.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url(../fonts/Shabnam.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: IRANSans;
+    line-height: 30px;
+    background: var(--f5light);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*Header styles*/
+.dv_navbar {
+    background: transparent !important;
+}
+
+.dv_navbar_nav .nav-item {
+    padding: 0 25.5px;
+    font-size: 20px;
+    color: #657384;
+}
+
+.dv_dropdown_title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #657384;
+    direction: ltr;
+}
+
+.dv_dropdown_title::after {
+    color: var(--orange);
+}
+
+.dv_dropdown_items {
+    text-align: right;
+    font-size: 18px;
+}
+
+.dv_header_logo {
+    width: 205px;
+    height: 100px;
+}
+
+.dv_image_content {
+    object-fit: fill;
+    width: 100%;
+}
+
+.dv_orange_btn {
+    width: 175px;
+    height: 44px;
+    background: var(--yellow);
+    color: var(--darkblue) !important;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    transition: all 0.3s linear;
+}
+
+.dv_orange_btn:hover {
+    background: var(--orange);
+}
+
+.dv_search_btn {
+    background: transparent;
+    border: none !important;
+    font-size: 20px;
+}
+
+.dv_form_hidden {
+    background: #fff;
+    min-width: 300px;
+    color: var(--darkblue);
+    font-size: 20px;
+    display: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 300px;
+}
+
+.dv_logo_title {
+    color: var(--darkblue);
+    font-size: 20px;
+    font-family: shabnam;
+    text-align: center;
+}
+
+.dv_logo_description {
+
+}
+
+/*concert-section*/
+#concert-section .nav-tabs {
+    border-bottom: none !important;
+    justify-content: space-around;
+}
+
+#concert-section .nav-tabs .nav-link {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: #fff;
+    color: var(--purple);
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.16));
+    border: none !important;
+}
+
+#concert-section .nav-tabs .nav-link.active {
+    background: var(--purple);
+    color: #fff;
+    filter: drop-shadow(0 3px 3px rgba(184, 32, 85, 0.16));
+}
+
+.dv-tab-content-title {
+    font-size: 30px;
+    line-height: 47px;
+    color: var(--purple);
+}
+
+.dv-tabs-card {
+    background: #fff;
+    width: 275px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    /*margin-left: 4rem;*/
+    margin-bottom: 3rem;
+}
+
+.dv-tab-card-image {
+    width: inherit;
+    clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.dv-tab-card-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.dv-tab-card-body {
+    background: #fff;
+    padding: 5px;
+}
+
+.dv-tab-card-title {
+    font-size: 20px;
+    color: var(--purple);
+    margin-bottom: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.dv-tabs-card-icon {
+    padding-left: 15px;
+}
+
+.dv-tabs-card-icon:before {
+    color: var(--darkblue);
+}
+
+.dv-tabs-card-icon-text {
+    font-size: 14px;
+    color: var(--darkpruple);
+}
+
+.dv-tab-card-footer {
+    height: 48px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 39px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.dv-tab-card-footer-gray {
+    font-size: 14px;
+    line-height: 22px;
+    background: var(--elight);
+    color: var(--darkblue);
+}
+
+.dv-tab-card-footer-green {
+    background: var(--green);
+}
+
+.dv-tab-card-footer-orange {
+    background: var(--orange);
+}
+
+.dv-tab-card-footer-purple {
+    background: var(--purple);
+}
+
+.dv-tab-card-show-more {
+    background: rgb(255, 208, 69);
+    background: linear-gradient(173deg, rgba(255, 208, 69, 1) 9%, rgba(249, 159, 40, 1) 100%);
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 19px;
+    bottom: 25px;
+    transition: all 0.3s linear;
+}
+
+.dv-tab-card-show-more i:before {
+    color: var(--darkblue);
+}
+
+.dv-tabs-card:hover .dv-tab-card-show-more {
+    display: flex;
+}
+
+.dv-show-more-card {
+    font-size: 26px;
+    line-height: 47px;
+    color: var(--darkblue) !important;
+    background: #fff;
+    padding: 4px 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    margin: 10px 0;
+}
+
+.dv-main-card-price {
+    font-size: 20px;
+    padding-left: 10px;
+    color: var(--green);
+}
+
+.dv-download-app-bg {
+    background: url(../images/bg-mobile.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 10rem;
+}
+
+/************************* footer *****************/
+#footer {
+    position: relative;
+    background: var(--darkpruple);
+    /*clip-path: polygon(100% 1%, 100% 100%, 0% 100%, 0% 0%, 5% 1%, 5% 1%, 8% 2%, 11% 3%, 11% 3%, 16% 5%, 16% 5%, 19% 6%, 25% 8%, 28% 9%, 33% 10%, 42% 11%, 39% 15%, 42% 11%, 50% 11%, 50% 11%, 66% 9%, 50% 27%, 59% 11%, 59% 10%, 65% 9%, 65% 9%, 70% 8%, 74% 7%, 78% 6%, 78% 6%, 85% 4%, 85% 4%, 91% 2%, 95% 1%, 100% 0%);*/
+}
+
+.dv-footer {
+    padding: 5rem 0;
+}
+
+.dv-footer-top-ellipse {
+    clip-path: ellipse(57% 100% at 50% 0%);
+    background: var(--f5light);
+    height: 80px;
+    margin-top: -10px;
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.mr-3 {
+    margin-right: 1rem;
+}
+
+.dv_footer_list_icons:before {
+    color: var(--yellow) !important;
+}
+
+.dv_footer_social_icons {
+    transition: all 0.2s linear;
+}
+
+.dv_footer_social_icons:before {
+    color: #fff !important;
+}
+
+.dv_footer_social_icons:hover:before {
+    color: var(--yellow) !important;
+}
+
+.dv_download_links_button {
+    width: 219px;
+    height: 64px;
+}
+
+.dv_enamad_size {
+    width: 90px;
+    height: 90px;
+}
+
+.dv_copy_right_bg {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    width: 100%;
+    right: 0;
+    padding: 1rem;
+    min-height: 150px;
+    background: #4B0C22;
+    clip-path: ellipse(75% 100% at 49.25% 0%);
+    transform: rotate(180deg);
+}
+
+.dv_copy_right_bg p {
+    transform: rotate(180deg);
+}
+
+.dv-star-parent {
+    padding-right: 15px;
+}
+
+.dv-card-gold-start:before {
+    color: var(--yellow);
+}
+
+.dv-swimming-percent {
+    background: var(--yellow);
+    color: var(--darkblue);
+    padding: 1px 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    min-width: 145px;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.dv-download-app-empty-mobile {
+    width: 360px;
+}
+
+.dv-download-app-empty-mobile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/***********/
+/*Swiper*/
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dv-banners-description h4 {
+    color: var(--darkblue);
+    font-size: 40px;
+}
+
+.dv-banners-description ul {
+    padding-right: 1.5rem;
+}
+
+.dv-banner-icon {
+    padding-left: 20px;
+}
+
+.dv-banner-text {
+    color: var(--darkblue);
+    font-size: 20px;
+}
+
+.dv-buy-ticket {
+    background: var(--green);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none !important;
+    color: #fff !important;
+    transition: all 0.3s linear;
+    width: 223px;
+    height: 60px;
+    margin: 4rem auto;
+    filter: drop-shadow(0 15px 30px rgba(53, 186, 71, 0.35));
+}
+
+.dv-buy-ticket:hover {
+    background: var(--lightgreen);
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-family: icomoon;
+    content: "\e903";
+    color: var(--purple);
+    font-size: 24px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-family: icomoon;
+    content: "\e902";
+    color: var(--purple);
+    font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(184, 32, 85, 0.46);
+}
+
+.swiper-pagination-bullet-active {
+    width: 17px;
+    height: 10px;
+    border-radius: 5px;
+    background: var(--purple);
+}
+
+.dv-app-logo {
+    width: 295px;
+    height: 145px;
+    margin: 2rem auto 3rem;
+}
+
+.dv-app-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dv-download-app-title {
+    color: var(--purple);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dv-download-app-text {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--darkblue);
+}
+
+.dv-download-app-icon {
+    font-size: 24px;
+    position: absolute;
+    right: 2rem;
+    top: 0.3rem;
+}
+
+.dv-download-app-input {
+    outline: none !important;
+    border: none !important;
+    border-bottom: 1px solid var(--darkblue) !important;
+    padding: 5px 5rem;
+    text-align: left;
+}
+
+.dv-download-app-submit {
+    background: var(--purple);
+    color: #fff;
+    border: none;
+    padding: 2px 20px;
+    position: absolute;
+    left: 6rem;
+    top: 0.1rem;
+}
+
+.dv_download_links_button-dark {
+    width: 219px;
+    height: 64px;
+}
+
+.dv_download_links_button-dark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dv-award-offer-title {
+    font-size: 40px;
+    color: var(--purple);
+}
+
+.dv-award-offer-question {
+    font-size: 30px;
+    color: var(--darkblue);
+}
+
+.dv-award-offer-right-title {
+    font-size: 60px;
+    color: var(--darkblue);
+}
+
+.dv-award-offer-p {
+    font-size: 25px;
+    color: var(--darkblue);
+}
+
+.dv-award-offer-button {
+    background: rgb(255, 208, 69);
+    background: linear-gradient(98deg, rgba(255, 208, 69, 1) 5%, rgba(249, 159, 40, 1) 61%);
+    width: 223px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dv-award-offer-button-text {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dv-award-offer-icon {
+    padding-right: 3rem;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.dv-award-offer-button {
+    margin: 0 auto;
+}
+
+.romeo-aparat .main-frame .inner .play {
+    background: #fff;
+}
+
+.dv-advantages-card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.dv-advantages-card-img {
+    width: 30%;
+    height: 182px;
+}
+
+.dv-advantages-card-text {
+    width: 70%;
+    height: 182px;
+}
+
+.dv-advantages-card-text h5 {
+    font-size: 25px;
+    color: var(--darkblue);
+    margin-bottom: 1rem;
+}
+
+.dv-advantages-card-text p {
+    font-size: 20px;
+    color: var(--darkblue);
+    margin-bottom: 0;
+}
+
+.dv-instagram-banner {
+    background: rgb(252, 175, 69);
+    background: linear-gradient(98deg, rgba(252, 175, 69, 1) 0%, rgba(245, 96, 64, 1) 30%, rgba(225, 48, 108, 1) 62%, rgba(131, 58, 180, 1) 100%);
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+}
+
+.dv-instagram-banner-icon {
+    padding-right: 5rem;
+}
+
+.dv-comment-shape {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 10px 10px 0;
+}
+
+.dv-comment-shape p {
+    text-align: right;
+}
+
+/*.dv-comment-comma{*/
+/*    font-size: 80px;*/
+/*}*/
+.dv-comment-shape:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 82%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-top-color: #fff;
+    border-bottom: 0;
+    margin-left: -13px;
+    margin-bottom: -13px;
+}
+
+.dv-comment-user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--darkblue);
+    padding: 0 !important;
+}
+
+.dv-comment-user-name {
+    font-size: 20px;
+    color: var(--purple);
+}
+
+.dv-comment-user-description {
+    font-size: 15px;
+    color: var(--darkblue);
+    font-weight: 400;
+    text-align: right;
+}
+
+.pr-3 {
+    padding-right: 1rem;
+}
+
+.commentSwiper .swiper-button-next:after, .commentSwiper.swiper-rtl .swiper-button-prev:after,
+.colleaguesSwiper .swiper-button-next:after, .colleaguesSwiper.swiper-rtl .swiper-button-prev:after {
+    color: var(--darkblue);
+}
+
+.dv-comment-comma {
+    position: absolute;
+    left: -10px;
+    overflow: hidden;
+    bottom: 0;
+    font-size: 266px;
+}
+
+.dv-news-card {
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.dv-news-card-title {
+    color: var(--purple);
+    font-size: 20px;
+}
+
+.dv-news-card-description {
+    display: inline-block;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: var(--darkblue);
+}
+
+.dv-news-card-link {
+    position: absolute;
+    background: #fff;
+    color: #CA5880 !important;
+    left: 15px;
+    bottom: 15px;
+}
+
+.dv-news-card-link .icon-arrow-back:before {
+    color: #CA5880;
+    font-size: 12px;
+}
+
+.dv-news-card-date, .dv-news-card-view {
+    color: var(--darkblue);
+    font-size: 14px;
+}
+
+.pl-2 {
+    padding-left: 0.7rem;
+}
+
+.colleaguesSwiper {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.colleaguesSwiper .swiper-slide {
+    width: 150px;
+    height: 49px;
+}
+
+.colleaguesSwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dv-go-to-top-icon{
+    background: rgb(255,208,69);
+    background: radial-gradient(circle, rgba(255,208,69,1) 0%, rgba(249,159,40,1) 100%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(255, 208, 69, 0.5);
+    color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 112px;
+    font-size: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+/*responsive*/
+@media screen and (min-width: 992px) {
+    .d-lg-none {
+        display: none !important;
+    }
+
+    .d-lg-flex {
+        display: flex !important;
+    }
+
+    .dv-banner-image {
+        width: 519px;
+        height: 519px;
+    }
+
+    .dv-banner-image img {
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .dv_orange_btn, .dv_form_hidden {
+        width: 100%;
+    }
+
+    .dv_header_logo {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-nav, .dv_bg_menu_buttons {
+        background: #fff !important;
+    }
+
+    .dv_dropdown_items {
+        border: none !important;
+    }
+
+    .dv_logo_background {
+        background: var(--f5light);
+        padding-bottom: 1.25rem;
+    }
+
+    .dv_custom_divider {
+        position: absolute;
+        top: 3rem;
+        width: 100%;
+        right: 0;
+    }
+
+    .dv_navbar_nav .nav-item {
+        padding: 5px 25.5px;
+    }
+
+    #navbarSupportedContentMobile {
+        background: rgba(0, 0, 0, 0.6);
+        width: 0;
+        z-index: 9;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .dv-menu-bg {
+        background: #fff;
+        height: 100vh;
+        transition: all 0.3s linear !important;
+        position: fixed;
+        width: 85%;
+        overflow-y: auto;
+    }
+
+    .dv_form_hidden {
+        background: var(--f5light) !important;
+        top: 5rem;
+        width: 90%;
+        right: 3%;
+    }
+
+    .dv_close_menu {
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        font-size: 24px;
+        display: none;
+        z-index: 10;
+    }
+
+    .dv_bg_menu_overlay {
+        transition: all 0.3s linear;
+        background: transparent;
+        position: unset;
+        z-index: 2;
+        width: 100%;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dv_copy_right_bg {
+        padding: 0 30px;
+        height: 60%;
+    }
+
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .dv-banners-description h4 {
+        font-size: 30px;
+    }
+
+    .dv-download-app-bg {
+        padding: 2rem;
+    }
+
+    .dv-app-logo, .dv-download-app-form {
+        display: none;
+    }
+
+    .dv_download_links_button-dark {
+        width: auto;
+    }
+
+    .dv-download-app-text, .dv-tab-card-title, .dv-show-more-card {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .dv-tab-card-title {
+        text-align: right;
+    }
+
+    .dv-download-app-title {
+        font-size: 20px;
+    }
+
+    .dv-tab-card-footer {
+        width: 100%;
+        height: 30px;
+    }
+
+    .dv-tabs-card-icon-text, .dv-tab-card-footer {
+        font-size: 11px !important;
+    }
+
+    .dv-download-app-empty-mobile {
+        width: 112px;
+        margin: auto;
+        height: 217px;
+    }
+
+    .dv-tabs-card {
+        display: flex;
+        width: 100%;
+    }
+
+    .dv-tab-card-image {
+        clip-path: none;
+        border-radius: 0 10px 10px 0;
+        width: 126px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .dv-tabs-card {
+        border-radius: 10px;
+    }
+
+    .dv-tab-card-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .dv-tab-card-show-more {
+        width: 36px;
+        height: 36px;
+        bottom: 0.85rem;
+    }
+
+    #concert-section .nav-tabs .nav-link {
+        width: 90px;
+        height: 30px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dv-swimming-percent {
+        font-size: 9px;
+        height: 14px;
+        min-width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 5px;
+        left: auto;
+        right: 0;
+        top: 10px;
+    }
+
+    .dv-tab-card-image img {
+        height: 100%;
+    }
+
+    .dv-award-offer-title, .dv-award-offer-right-title {
+        font-size: 20px;
+    }
+
+    .dv-award-offer-right-title, .dv-award-offer-p {
+        text-align: center;
+    }
+
+    .dv-award-offer-question, .dv-award-offer-p, .dv-award-offer-button-text {
+        font-size: 16px;
+    }
+
+    .dv-award-offer-button {
+        height: 40px;
+        width: 196px;
+    }
+
+    .dv-award-offer-image {
+        margin-bottom: 1rem;
+    }
+
+    .dv-award-row {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    }
+
+    body, .dv-footer-top-ellipse {
+        background: #fff;
+    }
+
+    .commentSwiper .swiper-slide {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    }
+
+    .dv-star-parent {
+        justify-content: end;
+    }
+
+    .dv-comment-user-avatar {
+        position: absolute;
+        top: -37px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 3px solid var(--purple);
+        outline: 3px solid rgba(184, 32, 85, 0.5);
+    }
+
+    .dv-comment-comma {
+        position: absolute;
+        left: 10px;
+        overflow: hidden;
+        bottom: 0;
+        font-size: 266px;
+    }
+
+    .dv-go-to-top-icon {
+        width: 70px;
+        height: 70px;
+        bottom: 168px;
+    }
+}
