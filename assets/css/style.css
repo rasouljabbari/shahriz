@@ -127,6 +127,7 @@ input[type=number] {
     top: 4rem;
     left: 0;
     width: 300px;
+    z-index: 999;
 }
 
 .dv_logo_title {
@@ -787,6 +788,34 @@ input[type=number] {
     cursor: pointer;
 }
 
+/****************        Schedule Concert      ********************/
+.dv-top-video {
+    background-size: 100% 100%;
+    height: 429px;
+    filter: blur(10px) opacity(60%);
+    z-index: 0;
+}
+
+.dv-video-player {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.dv-video-player div {
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--f5light);
+    font-size: 35px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
 /*responsive*/
 @media screen and (min-width: 992px) {
     .d-lg-none {
@@ -892,59 +921,72 @@ input[type=number] {
         height: auto;
         min-height: 90px;
     }
-    .dv_copy_right_bg p , .dv-footer-text{
+
+    .dv_copy_right_bg p, .dv-footer-text {
         color: var(--darkblue) !important;
     }
-    #footer{
+
+    #footer {
         background: var(--f5light);
     }
 
-    .dv-footer-title{
+    .dv-footer-title {
         color: var(--purple);
         font-size: 20px;
         text-align: center;
         line-height: 31px;
     }
-    .dv-footer{
+
+    .dv-footer {
         padding: 1rem 2rem 0 2rem !important;
     }
-    .dv-footer-text{
+
+    .dv-footer-text {
         font-size: 12px;
         line-height: 15px;
     }
-    .dv_footer_list_icons{
+
+    .dv_footer_list_icons {
         font-size: 12px;
     }
-    .dv_footer_list_icons-shahriz{
+
+    .dv_footer_list_icons-shahriz {
         margin-top: -18px;
     }
-    .dv_footer_list_icons:before{
+
+    .dv_footer_list_icons:before {
         color: var(--purple) !important;
     }
-    .dv-footer-links-title{
+
+    .dv-footer-links-title {
         color: var(--purple) !important;
         font-size: 15px;
     }
-    .d-footer-links-center{
+
+    .d-footer-links-center {
         text-align: center;
     }
-    .dv-hr-25{
+
+    .dv-hr-25 {
         margin-right: 25px;
         border-color: var(--darkblue);
     }
-    .dv-footer-social-group-icons{
+
+    .dv-footer-social-group-icons {
         width: 100%;
         border-bottom: 1px solid var(--darkblue);
         position: relative;
         padding-top: 1rem;
     }
-    .dv-footer-social-group-icons div{
+
+    .dv-footer-social-group-icons div {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 2px;
     }
-    .dv_footer_social_icons{
+
+    .dv_footer_social_icons {
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -953,16 +995,20 @@ input[type=number] {
         align-items: center;
         color: #fff;
     }
-    .dv_footer_social_icons:before{
+
+    .dv_footer_social_icons:before {
         font-size: 17px;
     }
-    .dv-footer-aparat-icon{
+
+    .dv-footer-aparat-icon {
         background: #E91E63;
     }
-    .dv-footer-instagram-icon{
+
+    .dv-footer-instagram-icon {
         background: #E14E30;
     }
-    .dv-footer-telegram-icon{
+
+    .dv-footer-telegram-icon {
         background: #0088CC;
     }
 
@@ -1096,10 +1142,11 @@ input[type=number] {
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
     }
 
-    body{
+    body {
         background: #fff;
     }
-    .dv-footer-top-ellipse{
+
+    .dv-footer-top-ellipse {
         display: none;
     }
 
@@ -1138,7 +1185,22 @@ input[type=number] {
     .dv_navbar {
         background: transparent !important;
     }
-    button.navbar-toggler{
+
+    button.navbar-toggler {
         margin-right: 10px;
+    }
+
+    .dv-logo-show-mobile{
+        width: 79px;
+        height: 39px;
+    }
+    .dv-logo-title-show-mobile{
+        color: var(--darkblue);
+    }
+    .dv-mt-72{
+        margin-top: 72px;
+    }
+    .dv-show-menu-in-mobile-view{
+        display: flex;
     }
 }
