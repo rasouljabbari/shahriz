@@ -1178,12 +1178,14 @@ input[type=number] {
 
     .dv-comment-comma {
         position: absolute;
-        left: 10px;
+        left: -16px;
         overflow: hidden;
         bottom: 0;
-        font-size: 266px;
+        font-size: 145px;
     }
-
+    .dv-news-card-title{
+        font-size: 14px;
+    }
     .dv-go-to-top-icon {
         display: none;
         /*width: 70px;*/
