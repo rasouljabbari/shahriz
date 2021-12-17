@@ -40,16 +40,44 @@ function openMenu() {
 }
 
 // seprate digits
-$( document ).ready(function() {
-  $.fn.digits = function(){
-    return this.each(function(){
-      $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") );
+$(document).ready(function () {
+  $.fn.digits = function () {
+    return this.each(function () {
+      $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
     })
   }
   $('.dv-card-price').digits()
 });
-// Banners Swiper
 
+let show_about = false;
+$('.icon-arrow-down').on('click', () => {
+  if (show_about) {
+    $('.dv-bg-gray-about-text').css({height: '280px'})
+    $('.dv-show-more-about').css({height: '118px'})
+    $('.icon-arrow-down').css({transform: 'rotate(0)', top: '85%'})
+  } else {
+    $('.dv-bg-gray-about-text').css({height: 'auto'})
+    $('.dv-show-more-about').css({height: '35px'})
+    $('.icon-arrow-down').css({transform: 'rotate(180deg)', top: '55%'})
+  }
+  show_about = !show_about;
+})
+
+// leaflet map
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoicmpkZXZlbG9wZXIiLCJhIjoiY2t4OWhiZXVzMXJzcTJ3bzViZjJ6Z2Y1cCJ9.nEmZAc_kjXBwRMy5ade0UA', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  maxZoom: 18,
+  id: 'mapbox/streets-v11',
+  tileSize: 512,
+  zoomOffset: -1,
+  accessToken: 'your.mapbox.access.token'
+}).addTo(map);
+
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
+//Swiper
 let banners = new Swiper(".bannerSwiper", {
   centeredSlides: true,
   autoplay: {
@@ -80,7 +108,7 @@ let commentSwiper = new Swiper(".commentSwiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween:70,
+      spaceBetween: 70,
     },
     768: {
       slidesPerView: 2,
@@ -107,7 +135,7 @@ let colleaguesSwiper = new Swiper(".colleaguesSwiper", {
   breakpoints: {
     0: {
       slidesPerView: 2,
-      spaceBetween:50,
+      spaceBetween: 50,
     },
     768: {
       slidesPerView: 3,

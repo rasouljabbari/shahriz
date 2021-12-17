@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?59nkvz');
-  src:  url('../fonts/icomoon/icomoon.eot?59nkvz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?59nkvz') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?59nkvz') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?59nkvz#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?femzgi');
+  src:  url('../fonts/icomoon/icomoon.eot?femzgi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?femzgi') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?femzgi') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?femzgi#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-girl:before {
+  content: "\e916";
+}
+.icon-man:before {
+  content: "\e917";
+}
+.icon-arrow-down:before {
+  content: "\e913";
+  color: #b82055;
+}
+.icon-comment:before {
+  content: "\e914";
+  color: #b82055;
+}
+.icon-coin-stack:before {
+  content: "\e915";
+  color: #b82055;
+}
 .icon-close:before {
   content: "\e912";
   color: #fff;
