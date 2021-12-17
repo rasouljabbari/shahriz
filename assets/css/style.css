@@ -1041,7 +1041,7 @@ input[type=number] {
 }
 
 .dv-list-button {
-    color: #fff;
+    color: #fff !important;
     border-radius: 5px;
     width: 150px;
     height: 43px;
@@ -1049,7 +1049,6 @@ input[type=number] {
     justify-content: center;
     align-items: center;
     border: none;
-    cursor: not-allowed;
     transition: all 0.3s linear;
 }
 
