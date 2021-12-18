@@ -31,7 +31,8 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: IRANSans;
-    line-height: 30px;
+    line-height: 12px;
+    font-size: 16px;
     background: var(--f5light);
     color: var(--darkblue);
 }
@@ -343,6 +344,10 @@ input[type=number] {
 
 .f-18 {
     font-size: 18px;
+}
+
+.l-28 {
+    line-height: 28px;
 }
 
 .mr-3 {
@@ -891,7 +896,7 @@ input[type=number] {
     border: 1px solid var(--darkblue);
     outline: none;
     font-size: 18px;
-    padding: 0 50px;
+    padding: 8px 50px;
     transition: all 0.3s linear;
     margin-bottom: 0.75rem;
 }
@@ -902,7 +907,7 @@ input[type=number] {
     border: 1px solid var(--darkblue);
     outline: none;
     font-size: 18px;
-    padding: 0 50px;
+    padding: 8px 50px;
     transition: all 0.3s linear;
 }
 
@@ -951,7 +956,7 @@ input[type=number] {
     top: 15%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    /*box-shadow: inset  0 0 5px 3px rgba(0, 0, 0, 0.45);;*/
+    /*box-shadow: inset  0 0 5px 3px rgba(0, 0, 0, 0.45);*/
 }
 
 .dv-rules-modal {
@@ -995,7 +1000,7 @@ input[type=number] {
 
 .dv-concert-content-box-shadow {
 
-    /*box-shadow:  1px 6px 20px rgba(0, 0, 0, 0.45);;*/
+    /*box-shadow:  1px 6px 20px rgba(0, 0, 0, 0.45);*/
 }
 
 .dv-section-title {
@@ -1395,9 +1400,10 @@ input[type=number] {
     top: 10px;
 }
 
-.dv-w-181{
+.dv-w-181 {
     width: 181.25px !important;
 }
+
 .dv-select-sons-position {
     right: -68px;
 }
@@ -1440,7 +1446,7 @@ input[type=number] {
     justify-content: center;
 }
 
-.dv-current-step .dv-icon-step-icon  {
+.dv-current-step .dv-icon-step-icon {
     outline: 5px solid rgba(184, 32, 85, 0.2);
 }
 
@@ -1456,8 +1462,8 @@ input[type=number] {
 .dv-concert-title {
     background: #fff;
     border-right: 4px solid var(--purple);
-    border-radius: 3px;
-    padding: 12px 0 12px 20px;
+    border-radius: 5px;
+    padding: 12px 0 12px 20px !important;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 
@@ -1466,9 +1472,10 @@ input[type=number] {
     line-height: 30px;
     padding-right: 1rem;
 }
-.dv-concert-user-info{
+
+.dv-concert-user-info {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 12px 0 12px 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 }
@@ -1797,9 +1804,242 @@ input[type=number] {
     cursor: pointer;
 }
 
+.dv-concert-user-info-icon {
+    font-size: 20px;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+}
+
+.dv-concert-user-info-main-title {
+    font-size: 25px;
+    line-height: 12px;
+}
+
+.dv-concert-user-info-pl {
+    padding-left: 4%;
+}
+
+.dv-concert-user-info-title {
+    padding-left: 0.5rem;
+}
+
+.dv-concert-user-info-title, .dv-concert-user-info-value {
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.dv-text-purple {
+    color: var(--purple);
+}
+
+.dv-pay-info {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    padding: 1rem;
+}
+
+.dv-invoice-table-title {
+    font-size: 25px;
+    line-height: 12px;
+}
+
+.dv-invoice-table-edit-link {
+    background: var(--darkblue);
+    color: #fff !important;
+    padding: 4px 16px;
+}
+
+.dv-invoice-table {
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
+.dv-invoice-table thead tr th:first-child {
+    border-top-right-radius: 5px;
+}
+
+.dv-invoice-table thead tr th:last-child {
+    border-top-left-radius: 5px;
+}
+
+.dv-invoice-table thead tr th, .dv-invoice-result-header {
+    background: rgba(46, 61, 80, 0.2);
+    font-size: 20px;
+    line-height: 12px;
+    padding: 20px 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.dv-invoice-table tbody tr:first-child td {
+    padding-top: 3rem;
+}
+
+.dv-invoice-table tbody tr td {
+    background: #F4F5F6;
+    font-size: 20px;
+    line-height: 12px;
+    padding: 20px 10px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid rgba(46, 61, 80, 0.2);
+}
+
+.dv-invoice-table tbody tr:last-child td:first-child {
+    border-bottom-right-radius: 5px;
+}
+
+.dv-invoice-table tbody tr:last-child td:last-child {
+    border-bottom-left-radius: 5px
+}
+
+.dv-invoice-result {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+
+.dv-invoice-result-header {
+    height: 53px;
+    border-radius: 5px 5px 0 0;
+}
+
+.dv-invoice-result-body {
+    border-radius: 0 0 5px 5px;
+    background: var(--f5light);
+    padding: 36px;
+}
+
+.dv-discount-code-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.dv-discount-code-input {
+    border: 1px solid var(--purple) !important;
+    outline: 1px solid var(--purple) !important;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    background: transparent !important;
+    padding-left: 98px;
+}
+
+.dv-discount-code-input::placeholder {
+    color: var(--purple) !important;
+    opacity: 0.6;
+}
+
+.dv-discount-code-button {
+    background: var(--purple);
+    color: #fff;
+    width: 93px;
+    height: 36px;
+    font-size: 20px;
+    line-height: 12px;
+    text-align: center;
+    border: none;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.dv-discount-code-price-title {
+    font-size: 20px;
+}
+
+.dv-rules-checkbox {
+    position: relative;
+}
+
+.dv-rules-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.dv-rules-checkbox-text {
+    padding-right: 25px;
+}
+
+/* On mouse-over, add a grey background color */
+.dv-rules-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.dv-rules-checkbox input:checked ~ .checkmark {
+    background-color: var(--purple);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.dv-rules-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.dv-rules-checkbox .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dv-rules-button {
+    background: transparent;
+    border: none !important;
+    color: var(--purple);
+    padding-left: 0;
+}
+
+.dv-invoice-pay-button {
+    background: var(--green);
+    font-size: 25px;
+    line-height: 12px;
+    color: #fff !important;
+    border: none;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.dv-px-pay-info {
+    padding: 0 12px;
+}
+
+.dv-footer-text{
+    line-height: 25px;
+}
 /************************* responsive ********************/
-
-
 /*max*/
 @media screen and (max-width: 1200px) {
     .dv-empty-button {
@@ -1818,9 +2058,59 @@ input[type=number] {
 }
 
 @media screen and (max-width: 992px) {
-    .dv-ticket-count-sum-price-title{
+    .dv-footer-pay-icon-left{
+        font-size: 20px;
+    }
+    .dv-invoice-table-title{
+        font-size: 16px;
+    }
+    .dv-invoice-table thead tr th:first-child{
+        border-top-right-radius: 10px;
+    }
+    .dv-invoice-table thead tr th:last-child {
+        border-top-left-radius: 10px;
+    }
+    .dv-invoice-table{
+        border-radius: 10px;
+    }
+    .dv-px-pay-info{
+        padding: 0;
+    }
+    .dv-invoice-table tbody tr:last-child td:first-child {
+        border-bottom-right-radius: 10px;
+    }
+    .dv-invoice-table tbody tr:last-child td:last-child {
+        border-bottom-left-radius: 10px;
+    }
+    .dv-invoice-table tbody tr td{
+        background: #fff;
+    }
+    .dv-invoice-table-edit-link{
+        font-size: 12px;
+    }
+    .dv-invoice-table tbody tr:first-child td{
+        padding-top: 20px;
+    }
+    .dv-invoice-table thead tr th, .dv-invoice-result-header , .dv-invoice-table tbody tr td{
+        font-size: 13px;
+    }
+    .dv-invoice-result-body{
+        background: #fff;
+        margin-bottom: 3rem;
+    }
+    .dv-invoice-pay-button{
+        width: 100%;
+    }
+    .dv-pay-info {
+        box-shadow: none;
+    }
+    .dv-invoice-result-header{
+        display: none;
+    }
+    .dv-ticket-count-sum-price-title {
         font-weight: normal;
     }
+
     .dv-footer-pay .dv-chair-counter {
         left: 75%;
     }
@@ -1889,7 +2179,7 @@ input[type=number] {
 
     .dv-footer-pay {
         background: var(--f5light);
-        box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
         padding: 10px 15px;
     }
 
@@ -2589,6 +2879,16 @@ input[type=number] {
 
 
 /*min*/
+@media only screen and (max-width: 1200px) {
+    .dv-concert-user-info-main-title {
+        font-size: 20px !important;
+    }
+
+    .dv-concert-user-info-pl {
+        padding-left: 2% !important;
+    }
+}
+
 @media screen and (min-width: 768.01px) {
     .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
         top: 18%;
