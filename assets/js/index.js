@@ -63,6 +63,15 @@ $('.icon-arrow-down').on('click', () => {
   show_about = !show_about;
 })
 
+let show_password = false;
+$('.dv-show-password-icon').on('click' , function (){
+  if(show_password){
+    $('#password').attr('type' , 'password')
+  }else{
+    $('#password').attr('type' , 'text')
+  }
+  show_password = !show_password
+})
 //Swiper
 let banners = new Swiper(".bannerSwiper", {
   centeredSlides: true,

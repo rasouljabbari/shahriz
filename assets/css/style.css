@@ -1601,26 +1601,152 @@ input[type=number] {
     border: none;
     padding: 20px 60px;
 }
-.dv-content-on-result-image{
+
+.dv-content-on-result-image {
     position: absolute;
     top: 105px;
     right: 18.5%;
 }
-/************************* responsive ********************/
-@media screen and (max-width: 1200px) {
-    .dv-empty-button {
-        font-size: 17px;
-        padding: 12px 32px;
-    }
-    .dv-content-on-result-image {
-        top: 80px;
-        right: 28%;
-    }
-    .dv-chair-selected-title ,.dv-concert-chairs-image-title{
-        font-size: 24px;
-    }
+
+.dv-concert-chair {
+    border-radius: 15px 15px 0 0;
+    width: 30px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.35rem;
 }
 
+.dv-concert-chair .icon-checkmark {
+    font-size: 13px;
+}
+
+.dv-concert-chair-purple {
+    background: #FF0059;
+    border: 1px solid #FF0059;
+}
+
+.dv-concert-chair-dark-blue {
+    background: var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+
+.dv-concert-chair-purple-inset {
+    background: #fff;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+.dv-concert-chair-green {
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+.dv-concert-chair-title {
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.dv-concert-chair-aqua {
+    background: var(--aqua);
+    border: 1px solid var(--aqua);
+}
+
+.dv-concert-chair-orange {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.dv-concert-chair-gray {
+    background: #BFBFBF;
+    border: 1px solid #BFBFBF;
+}
+
+.dv-continue-shopping {
+    background: var(--green);
+    color: #fff !important;
+    transition: all 0.3s linear;
+    border: none;
+}
+
+.f-25 {
+    font-size: 25px;
+    line-height: 12px;
+}
+
+.dv-continue-shopping-shadow {
+    box-shadow: 0 8px 10px rgba(53, 186, 71, 0.35);
+}
+
+.dv-continue-shopping-shadow:hover, .dv-continue-shopping:hover {
+    background: var(--lightgreen) !important;
+}
+
+.dv-login-content {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.dv-form-description {
+    font-size: 20px;
+    line-height: 31px;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.dv-login-input {
+    border: none;
+    border-bottom: 1px solid var(--darkblue);
+    outline: none;
+    padding-right: 30px;
+}
+
+.dv-form-icon {
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.dv-form-icon:before {
+    color: var(--purple);
+}
+
+.dv-mobile-input-padding-bottom {
+    padding-bottom: 4rem;
+}
+
+.dv-error-text {
+    font-size: 18px;
+    line-height: 12px;
+    color: var(--purple);
+    background: transparent;
+    border: none;
+}
+
+.dv-change-phone-number, .dv-show-password-icon {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.dv-change-resent-code {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.dv-count-chair-row {
+    font-size: 18px;
+    line-height: 12px;
+    padding: 6px 0 8px 0;
+}
+
+/************************* responsive ********************/
+
+/*min*/
 @media screen and (min-width: 768.01px) {
     .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
         top: 18%;
@@ -1659,32 +1785,76 @@ input[type=number] {
     }
 }
 
+/*max*/
+@media screen and (max-width: 1200px) {
+    .dv-empty-button {
+        font-size: 17px;
+        padding: 12px 32px;
+    }
+
+    .dv-content-on-result-image {
+        top: 80px;
+        right: 28%;
+    }
+
+    .dv-chair-selected-title, .dv-concert-chairs-image-title {
+        font-size: 24px;
+    }
+}
+
 @media screen and (max-width: 992px) {
-    .dv-footer-pay{
+    .dv-chair-colors-type-width{
+        width: calc(100% - 116px);
+        padding-left: 10px;
+    }
+    .dv-mini-concerts-image{
+        width: 116px;
+        height: 124px;
+    }
+    .dv-concert-chair{
+        width: 20px;
+        height: 17px;
+    }
+    .dv-concert-chair-title{
+        font-size: 11px;
+        line-height: 7px;
+    }
+    .dv-concert-charis-bg{
+        background: var(--f5light);
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .dv-footer-pay {
         background: var(--f5light);
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
         padding: 10px 15px;
     }
-    .dv-concert-title{
+
+    .dv-concert-title {
         border: none;
         box-shadow: none;
         padding-top: 2rem;
     }
-    .dv-sons-title , .dv-mini-linear{
+
+    .dv-sons-title, .dv-mini-linear {
         display: none;
     }
-    .dv-concert-title h2 , .dv-sons-time , .dv-sons-date{
+
+    .dv-concert-title h2, .dv-sons-time, .dv-sons-date {
         font-size: 16px;
     }
-    .dv-link-to-concert{
+
+    .dv-link-to-concert {
         width: 80%;
         margin: 0 auto;
         background: #D5D8DC;
         border-radius: 26px;
     }
-    .dv-concert-chairs{
+
+    .dv-concert-chairs {
         padding-bottom: 20px;
     }
+
     .dv-concert-info-section {
         margin-top: 90px;
         background: transparent;
@@ -2214,12 +2384,15 @@ input[type=number] {
         align-items: center;
         justify-content: center;
     }
-    .dv-empty-button .icon-dark-left-arrow{
+
+    .dv-empty-button .icon-dark-left-arrow {
         font-size: 14px;
     }
-    .dv-sons-arrow-link{
+
+    .dv-sons-arrow-link {
         font-size: 6px;
     }
+
     .dv-empty-button {
         font-size: 14px;
         padding: 0;
@@ -2229,7 +2402,8 @@ input[type=number] {
         align-items: center;
         justify-content: center;
     }
-    .dv-empty-button .icon-dark-left-arrow{
+
+    .dv-empty-button .icon-dark-left-arrow {
         padding-right: 2px;
     }
 
@@ -2275,12 +2449,34 @@ input[type=number] {
     .dv-rules-content {
         padding-top: 2rem;
     }
-    .dv-concert-chairs-image-title{
+
+    .dv-concert-chairs-image-title {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .dv-concert-chair {
+        width: 12px;
+        height: 10px;
+        margin-left: 4px;
+        font-size: 6px;
+        margin-right: 0;
+        padding: 4px 0 0 0;
+    }
+    .dv-concert-chair .icon-checkmark {
+        font-size: 4px;
+        padding-bottom: 5px;
+    }
+    .dv-count-chair-row{
+        font-size: 10px;
+        padding: 0 0 0 5px;
+    }
+    .dv-form-description {
+        padding: 0;
+        font-size: 18px;
+    }
+
     .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
         top: 18%;
     }
