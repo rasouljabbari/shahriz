@@ -1587,7 +1587,7 @@ input[type=number] {
     line-height: 12px;
 }
 
-.dv-ticket-count-sum-price-title, .dv-ticket-count-sum-price-title {
+.dv-ticket-count-sum-price-title {
     font-size: 20px;
     line-height: 12px;
     font-weight: bold;
@@ -1744,46 +1744,50 @@ input[type=number] {
     padding: 6px 0 8px 0;
 }
 
+
+/*range slider*/
+.dv-zoom {
+    width: 140px;
+    height: 20px;
+    background: var(--f5light);
+    margin: 0 auto;
+}
+
+.dv-minus-zoom-icon, .dv-plus-zoom-icon {
+    width: 12px;
+    cursor: pointer;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 4px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: var(--purple);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--purple);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 /************************* responsive ********************/
 
-/*min*/
-@media screen and (min-width: 768.01px) {
-    .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
-        top: 18%;
-    }
-
-    .w-md-100-275 {
-        width: calc(100% - 275px);
-    }
-
-    .dv-mobile-enomad, .dv-hr-25, .dv-footer-social-group-icons, .dv-footer-social-group-icons div {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .dv-video-size {
-        width: 738px;
-        height: 415px;
-    }
-
-    .d-lg-none {
-        display: none !important;
-    }
-
-    .d-lg-flex {
-        display: flex !important;
-    }
-
-    .dv-banner-image {
-        width: 519px;
-        height: 519px;
-    }
-
-    .dv-banner-image img {
-        object-fit: contain;
-    }
-}
 
 /*max*/
 @media screen and (max-width: 1200px) {
@@ -1803,27 +1807,75 @@ input[type=number] {
 }
 
 @media screen and (max-width: 992px) {
-    .dv-chair-colors-type-width{
+    .dv-ticket-count-sum-price-title{
+        font-weight: normal;
+    }
+    .dv-footer-pay .dv-chair-counter {
+        left: 75%;
+    }
+
+    .dv-selected-sons-result {
+        height: 25px;
+        width: 100%;
+        background: var(--purple);
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+    }
+
+    .dv-selected-sons-result-body {
+        height: 0;
+        max-height: 300px;
+        display: none;
+        transition: all 0.3s linear;
+        width: 100%;
+        background: var(--purple);
+        color: var(--purple);
+        overflow-y: auto;
+        padding: 10px 0;
+    }
+
+    .dv-selected-sons-result-header {
+        height: 26px;
+    }
+
+    .dv-arrow-top-icon {
+        font-size: 6px;
+    }
+
+    .dv-selected-sons-result-header-title {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .dv-chair-colors-type-width {
         width: calc(100% - 116px);
         padding-left: 10px;
     }
-    .dv-mini-concerts-image{
+
+    .dv-mini-concerts-image {
         width: 116px;
         height: 124px;
     }
-    .dv-concert-chair{
+
+    .dv-concert-chair {
         width: 20px;
         height: 17px;
     }
-    .dv-concert-chair-title{
+
+    .dv-concert-chair-title {
         font-size: 11px;
         line-height: 7px;
     }
-    .dv-concert-charis-bg{
+
+    .dv-concert-charis-bg {
         background: var(--f5light);
         width: 100%;
         margin: 1rem 0;
     }
+
     .dv-footer-pay {
         background: var(--f5light);
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
@@ -2453,9 +2505,21 @@ input[type=number] {
     .dv-concert-chairs-image-title {
         font-size: 16px;
     }
+
+    .dv-chair-list-parent {
+        width: 100%;
+        height: 380px;
+        overflow: auto;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .dv-chair-list-parent {
+        width: 100%;
+        height: 255px;
+    }
+
     .dv-concert-chair {
         width: 12px;
         height: 10px;
@@ -2464,14 +2528,17 @@ input[type=number] {
         margin-right: 0;
         padding: 4px 0 0 0;
     }
+
     .dv-concert-chair .icon-checkmark {
         font-size: 4px;
         padding-bottom: 5px;
     }
-    .dv-count-chair-row{
+
+    .dv-count-chair-row {
         font-size: 10px;
         padding: 0 0 0 5px;
     }
+
     .dv-form-description {
         padding: 0;
         font-size: 18px;
@@ -2499,5 +2566,60 @@ input[type=number] {
         left: 50%;
         transform: translateX(-50%);
         top: 2px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dv-chair-list-parent {
+        width: 334px;
+        height: 255px;
+    }
+}
+
+
+/*min*/
+@media screen and (min-width: 768.01px) {
+    .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
+        top: 18%;
+    }
+
+    .w-md-100-275 {
+        width: calc(100% - 275px);
+    }
+
+    .dv-mobile-enomad, .dv-hr-25, .dv-footer-social-group-icons, .dv-footer-social-group-icons div {
+        display: none;
+    }
+
+    .dv-selected-sons-result {
+        bottom: -43px;
+    }
+}
+
+@media screen and (min-width: 992.01px) {
+    .dv-selected-sons-result-header, .dv-selected-sons-result-body {
+        display: none;
+    }
+
+    .dv-video-size {
+        width: 738px;
+        height: 415px;
+    }
+
+    .d-lg-none {
+        display: none !important;
+    }
+
+    .d-lg-flex {
+        display: flex !important;
+    }
+
+    .dv-banner-image {
+        width: 519px;
+        height: 519px;
+    }
+
+    .dv-banner-image img {
+        object-fit: contain;
     }
 }

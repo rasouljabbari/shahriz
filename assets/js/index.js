@@ -1,3 +1,18 @@
+// seprate digits
+$(document).ready(function () {
+  $.fn.digits = function () {
+    return this.each(function () {
+      $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+    })
+  }
+  $('.dv-card-price').digits()
+});
+
+let show_password = false;
+let isHidden = false;
+let open = false;
+let show_about = false;
+let show_orders = false;
 // goto top:
 $(".dv-go-to-top-icon").each(function () {
   $(this).click(function () {
@@ -5,7 +20,6 @@ $(".dv-go-to-top-icon").each(function () {
   })
 });
 // handle search bar in header menu
-let isHidden = false;
 
 function showSearchBar() {
   if (!isHidden) {
@@ -15,8 +29,6 @@ function showSearchBar() {
   }
   isHidden = !isHidden;
 }
-
-let open = false;
 
 function openMenu() {
   if (open) {
@@ -39,17 +51,6 @@ function openMenu() {
   open = !open;
 }
 
-// seprate digits
-$(document).ready(function () {
-  $.fn.digits = function () {
-    return this.each(function () {
-      $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-    })
-  }
-  $('.dv-card-price').digits()
-});
-
-let show_about = false;
 $('.icon-arrow-down').on('click', () => {
   if (show_about) {
     $('.dv-bg-gray-about-text').css({height: '280px'})
@@ -63,12 +64,25 @@ $('.icon-arrow-down').on('click', () => {
   show_about = !show_about;
 })
 
-let show_password = false;
-$('.dv-show-password-icon').on('click' , function (){
-  if(show_password){
-    $('#password').attr('type' , 'password')
-  }else{
-    $('#password').attr('type' , 'text')
+$('.dv-selected-sons-result').on('click', () => {
+  if (show_orders) {
+    $('.dv-selected-sons-result').css({height: '30px' })
+    $('.dv-selected-sons-result-body').css({height: '0' , display : 'none'})
+    $('.dv-arrow-top-icon').css({transform: 'rotate(0)'})
+  } else {
+    $('.dv-selected-sons-result').css({height: 'auto' })
+    $('.dv-selected-sons-result-body').css({height: 'auto' , display: 'block'})
+    $('.dv-arrow-top-icon').css({transform: 'rotate(180deg)'})
+  }
+  show_orders = !show_orders;
+})
+
+
+$('.dv-show-password-icon').on('click', function () {
+  if (show_password) {
+    $('#password').attr('type', 'password')
+  } else {
+    $('#password').attr('type', 'text')
   }
   show_password = !show_password
 })
