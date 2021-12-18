@@ -1380,6 +1380,8 @@ input[type=number] {
 }
 
 .dv-stepper {
+    display: flex;
+    align-items: center;
     width: 725px;
     margin: 0 auto;
     border: 1px solid #fff;
@@ -1389,12 +1391,15 @@ input[type=number] {
 }
 
 .dv-select-sons-position, .dv-select-chair-position, .dv-select-ticket-position, .dv-select-pay-position {
-    position: absolute;
-    top: -23px;
+    position: relative;
+    top: 10px;
 }
 
+.dv-w-181{
+    width: 181.25px !important;
+}
 .dv-select-sons-position {
-    right: -7%;
+    right: -68px;
 }
 
 .dv-stepper-title {
@@ -1404,20 +1409,19 @@ input[type=number] {
 }
 
 .dv-select-chair-position {
-    right: 28.5%;
+    right: -22px;
 }
 
-.dv-active-step .dv-stepper-title {
+.dv-complete-step .dv-stepper-title {
     color: var(--purple);
 }
 
 .dv-select-pay-position {
-    right: 62%;
+    right: 25px;
 }
 
 .dv-select-ticket-position {
-    right: 95%;
-    width: 100px;
+    right: 72px;
 }
 
 .dv-icon-step-icon:before {
@@ -1436,16 +1440,16 @@ input[type=number] {
     justify-content: center;
 }
 
-.dv-active-step .dv-icon-step-icon {
+.dv-current-step .dv-icon-step-icon  {
     outline: 5px solid rgba(184, 32, 85, 0.2);
 }
 
-.dv-active-step::before {
-    width: 204.5px;
+.dv-complete-step::before {
+    width: 178px;
     content: '';
     border-bottom: 5px solid var(--purple);
     position: absolute;
-    right: -171%;
+    right: -62%;
     top: 32.5%;
 }
 
@@ -1462,6 +1466,13 @@ input[type=number] {
     line-height: 30px;
     padding-right: 1rem;
 }
+.dv-concert-user-info{
+    background: #fff;
+    border-radius: 3px;
+    padding: 12px 0 12px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+}
+
 
 .dv-link-to-concert {
     background: var(--f5light);

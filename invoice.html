@@ -1,0 +1,914 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>شهریز</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body dir="rtl">
+<!--Header-->
+<header>
+    <div class="dv_bg_menu_overlay">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light dv_navbar">
+
+            <!--            show when device size > 992-->
+            <div class="container d-none d-lg-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                    <!--                    nav links-->
+                    <ul class="dv_navbar_nav navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dv_dropdown_title" href="#" id="navbarDropdown"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                خدمات ما
+                            </a>
+                            <ul class="dropdown-menu dv_dropdown_items" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="swimming.html">استخر</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="concert.html">کنسرت</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="theater.html">تفریح</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="recreation.html">تئاتر</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0" href="purchase-guide.html">راهنمای خرید</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider d-lg-none">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0" href="contact-us.html">تماس با ما</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider d-lg-none">
+                        </li>
+                    </ul>
+
+                    <!--                    logo-->
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <div class="dv_header_logo">
+                            <img src="./assets/images/logo.png" class="dv_image_content" alt="شهریز">
+                        </div>
+                    </a>
+
+                    <!--                    left buttons-->
+                    <div class="d-flex position-relative">
+                        <a href="login" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</a>
+                        <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+
+                        <button class="dv_search_btn" onclick="showSearchBar()" type="button">
+                            <span class="icon-search"></span>
+                        </button>
+
+                        <form action="">
+                            <input class="form-control dv_form_hidden rounded-pill me-2"
+                                   type="search" placeholder="جستجو کنید" name="search">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--            show when device size < 992-->
+            <div class="d-lg-none w-100 position-relative">
+                <div class="dv-show-menu-in-mobile-view justify-content-between align-items-center p-3">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html">
+                            <div class="dv-logo-show-mobile">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="شهریز">
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <h1 class="dv-logo-title-show-mobile mb-0 mr-3">شــهریز</h1>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="dv_search_btn" onclick="showSearchBar()" type="button">
+                            <span class="icon-search"></span>
+                        </button>
+                        <form action="">
+                            <input class="form-control dv_form_hidden rounded-pill me-2"
+                                   type="search" placeholder="جستجو کنید" name="search">
+                        </form>
+
+                        <button onclick="openMenu()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContentMobile"
+                                aria-controls="navbarSupportedContentMobile"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <span class="icon-close dv_close_menu" onclick="openMenu()"></span>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContentMobile">
+                    <div class="dv-menu-bg">
+                        <!--                    logo-->
+                        <div class="dv_logo_background pt-5">
+                            <a class="navbar-brand mx-auto" href="index.html">
+                                <div class="dv_header_logo">
+                                    <img src="./assets/images/logo.png" class="dv_image_content" alt="شهریز">
+                                </div>
+                            </a>
+                            <h5 class="dv_logo_title mb-2 text-center">شهریز</h5>
+                            <p class="dv_logo_description text-center">اپلیکیشن رزرو بلیت و خدمات آنلاین</p>
+                        </div>
+
+                        <!--                    nav links-->
+                        <ul class="dv_navbar_nav navbar-nav ms-auto position-relative">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle dv_dropdown_title" href="#" id="navbarDropdownMobile"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    خدمات ما
+                                </a>
+                                <hr class="dropdown-divider dv_custom_divider">
+                                <ul class="dropdown-menu dv_dropdown_items" aria-labelledby="navbarDropdownMobile">
+                                    <li><a class="dropdown-item" href="swimming.html">استخر</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="concert.html">کنسرت</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="theater.html">تفریح</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="recreation.html">تئاتر</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="purchase-guide.html">راهنمای خرید</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider d-lg-none">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="contact-us.html">تماس با ما</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider d-lg-none">
+                            </li>
+                        </ul>
+
+                        <!--                    left buttons-->
+                        <div class="d-flex position-relative dv_bg_menu_buttons py-4 px-2">
+                            <a href="login" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</a>
+                            <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!----- Body Section ------>
+<main>
+
+    <div class="container pt-5 pb-0 pb-lg-5 mb-lg-5 pt-lg-0">
+
+        <!--        stepper-->
+        <div class="w-100 py-5 d-none d-lg-block">
+            <div class="dv-stepper position-relative">
+
+                <div class="dv-w-181 dv-select-sons-position">
+                    <a href="schedule-concert.html" class="d-flex flex-column align-items-center">
+                        <span class="icon-Group-9461 dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <i class="icon-checkmark-circle-2 ps-2"></i>
+                            <span class="dv-stepper-title">انتخاب سانس</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-chair-position dv-complete-step">
+                    <a href="booking-concert1.html" class="d-flex flex-column align-items-center">
+                        <span class="icon-armchair-silhouette dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <i class="icon-checkmark-circle-2 ps-2"></i>
+                            <span class="dv-stepper-title pt-1">انتخاب صندلی</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-pay-position dv-complete-step dv-current-step">
+                    <a href="#" class="d-flex flex-column align-items-center">
+                        <span class="icon-coin-stack dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <span class="dv-stepper-title pt-1">پرداخت هزینه</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-ticket-position">
+                    <a href="#" class="d-flex flex-column align-items-center">
+                        <span class="icon-invoice-1 dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <span class="dv-stepper-title pt-1">صدور بلیت</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row pb-lg-5">
+
+            <!--            top full with content-->
+            <div class="col-12 mt-4 mb-2">
+                <div class="dv-concert-title d-flex flex-column flex-xl-row align-items-center justify-content-between">
+                    <h2 class="mb-3 mb-xl-0">کنسرت گروه دف نوازان حیران و شنگولستان جیران با بستنی</h2>
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="dv-singer-dark-button rounded-pill mb-0 ms-2" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">قوانین رویداد
+                        </button>
+                        <button class="dv-singer-light-button rounded-pill">راهنمای خرید</button>
+                    </div>
+                </div>
+                <div class="dv-concert-user-info  mt-2">
+                    <div class="d-flex align-items-center">
+                        <span class="icon-person dv-concert-user-info-icon"></span>
+                        <span>مشخصات شما : </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--            <div class="col-12 col-lg-8 mb-lg-3">-->
+<!--                &lt;!&ndash;                link for back to prev page(select sons)&ndash;&gt;-->
+<!--                <a href="schedule-concert.html"-->
+<!--                   class="dv-link-to-concert d-flex align-items-center justify-content-center mb-3">-->
+<!--                    <span class="dv-sons-title ps-3">تعویض سانس انتخابی</span> <span class="dv-mini-linear">-</span>-->
+<!--                    <span class="px-3 dv-sons-date">پنج شنبه 25 شهریور</span> <span class="dv-sons-time">23:30</span>-->
+<!--                    <div class="icon-arrow-down dv-sons-arrow-link"></div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash;                end link for back to prev page(select sons)&ndash;&gt;-->
+
+<!--                <div class="mb-lg-2 dv-concert-chairs d-flex flex-column align-items-center justify-content-start px-0">-->
+<!--                    <div class="d-flex w-100 px-4">-->
+<!--                        <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between pt-lg-4 dv-chair-colors-type-width">-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span class="dv-concert-chair dv-concert-chair-purple  ms-2"></span>-->
+<!--                                <span class="dv-concert-chair-title">فروخته شده</span>-->
+<!--                            </div>-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span class="dv-concert-chair dv-concert-chair-green  ms-2"></span>-->
+<!--                                <span class="dv-concert-chair-title">قابل خرید</span>-->
+<!--                            </div>-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span class="dv-concert-chair dv-concert-chair-aqua  ms-2"></span>-->
+<!--                                <span class="dv-concert-chair-title">انتخاب شما</span>-->
+<!--                            </div>-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span class="dv-concert-chair dv-concert-chair-orange ms-2"></span>-->
+<!--                                <span class="dv-concert-chair-title">رزرو شده</span>-->
+<!--                            </div>-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span class="dv-concert-chair dv-concert-chair-gray ms-2"></span>-->
+<!--                                <span class="dv-concert-chair-title">غیر قابل خرید</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <a href="booking-concert1.html" class="d-block d-lg-none dv-mini-concerts-image">-->
+<!--                            <img src="assets/images/concert-chairs.png" alt="شهریز"-->
+<!--                                 class="img-fluid dv-concert-chairs-image">-->
+<!--                        </a>-->
+<!--                    </div>-->
+
+<!--                    <div class="dv-concert-charis-bg">-->
+<!--                        <img src="assets/images/sen.png" class="img-fluid pt-5" alt="شهریز">-->
+
+<!--                        <div class="dv-chair-list-parent">-->
+<!--                            <div class="dv-chairs-list d-flex flex-column align-items-center justify-content-center mb-lg-5"-->
+<!--                                 dir="ltr">-->
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">1</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple-inset ">1</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple-inset ">1</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple ">1</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple ">1</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray">55</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray">78</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray">7</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple ">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple ">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-dark-blue ">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-dark-blue ">23</span>-->
+<!--                                    <span class="dv-count-chair-row">1</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">2</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange ">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua ">-->
+<!--                                <span class="icon-checkmark"></span>-->
+<!--                            </span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua ">-->
+<!--                                <span class="icon-checkmark"></span>-->
+<!--                            </span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green ">23</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua "><span-->
+<!--                                            class="icon-checkmark"></span></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua "><span-->
+<!--                                            class="icon-checkmark"></span></span>-->
+<!--                                    <span class="dv-count-chair-row">2</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">3</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-count-chair-row">3</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">4</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua ">-->
+<!--                                <span class="icon-checkmark"></span>-->
+<!--                            </span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-aqua ">-->
+<!--                                <span class="icon-checkmark"></span>-->
+<!--                            </span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray "></span>-->
+<!--                                    <span class="dv-count-chair-row">4</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">5</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-orange "></span>-->
+<!--                                    <span class="dv-count-chair-row">5</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">6</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-count-chair-row">6</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="d-flex align-items-center justify-content-center mb-4">-->
+<!--                                    <span class="dv-count-chair-row">7</span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-purple "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-green "></span>-->
+<!--                                    <span class="dv-concert-chair dv-concert-chair-gray "></span>-->
+<!--                                    <span class="dv-count-chair-row">7</span>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="px-4 w-100 position-relative ">-->
+
+<!--                        &lt;!&ndash;                        show in mobile&ndash;&gt;-->
+<!--                        <div class="dv-zoom d-flex  d-lg-none align-items-center justify-content-center rounded-pill"-->
+<!--                             dir="ltr">-->
+<!--                            <img src="assets/images/minus-zoom.svg" class="dv-minus-zoom-icon" alt="">-->
+<!--                            <input type="range" min="1" max="100" value="50" class="slider" id="zoomSlider">-->
+<!--                            <img src="assets/images/plus-zoom.svg" class="dv-plus-zoom-icon" alt="">-->
+<!--                        </div>-->
+
+<!--                        <div class="dv-selected-sons-result">-->
+<!--                            <div class="dv-selected-sons-result-header d-flex align-items-center justify-content-center">-->
+<!--                                <span class="dv-selected-sons-result-header-title">صندلی های انتخاب شده</span>-->
+<!--                                <span class="icon-arrow-ios-back dv-arrow-top-icon pe-2"></span>-->
+<!--                            </div>-->
+<!--                            <div class="dv-selected-sons-result-body">-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                                <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                                    <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                                    <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                                    <span class="icon-close-circle1"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash;                        remove in mobile&ndash;&gt;-->
+<!--                        <button type="button"-->
+<!--                                data-bs-toggle="modal" data-bs-target="#loginModal" class="d-none d-lg-flex align-items-center justify-content-center-->
+<!--                                w-100 f-25  dv-continue-shopping rounded-pill py-4 dv-continue-shopping-shadow">ادامه-->
+<!--                            خرید-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            remove in mobile&ndash;&gt;-->
+<!--            <div class="col-12 col-lg-4 d-none d-lg-block mb-3">-->
+<!--                <div class="mb-lg-2 dv-concert-chairs d-flex flex-column align-items-center justify-content-start">-->
+<!--                    <a href="booking-concert1.html">-->
+<!--                        <img src="assets/images/concert-chairs.png" alt="شهریز"-->
+<!--                             class="img-fluid dv-concert-chairs-image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="dv-show-price-result-tickets position-relative">-->
+<!--                    <div class="dv-chair-count d-flex align-items-center justify-content-center">-->
+<!--                        <div class="position-relative">-->
+<!--                            <span class="icon-armchair-silhouette dv-chair-svg"></span>-->
+<!--                            <span class="dv-chair-counter">10</span>-->
+<!--                        </div>-->
+<!--                        <span class="dv-chair-selected-title">صندلی انتخاب شده</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="dv-concert-chairs-scroll position-relative">-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-selected-chair-info d-flex align-items-center justify-content-between">-->
+<!--                            <span class="dv-selected-chair-info-title">ردیف 31</span>-->
+<!--                            <span class="dv-selected-chair-info-title">صندلی 24</span>-->
+<!--                            <span class="icon-close-circle1"></span>-->
+<!--                        </div>-->
+<!--                        <div class="dv-show-more-list"></div>-->
+<!--                    </div>-->
+
+<!--                    <form class="position-relative">-->
+<!--                        <div class="dv-chair-count-image">-->
+<!--                            <img src="assets/images/receiot.png" class="img-fluid" alt="شهریز">-->
+<!--                        </div>-->
+
+<!--                        <div class="dv-content-on-result-image">-->
+<!--                            <div class="d-flex align-items-center justify-content-between mb-3">-->
+<!--                                <span class="dv-ticket-count-title">تعداد بلیت : </span>-->
+<!--                                <span class="dv-ticket-count-value">5 عدد</span>-->
+<!--                            </div>-->
+<!--                            <div class="d-flex align-items-center justify-content-between mb-4">-->
+<!--                                <span class="dv-ticket-count-sum-price-title">جمع کل : </span>-->
+<!--                                <span class="dv-ticket-count-title-sum-price-value"><span-->
+<!--                                        class="dv-card-price">2000000</span> تومان</span>-->
+<!--                            </div>-->
+<!--                            <button-->
+<!--                                    type="button"-->
+<!--                                    data-bs-toggle="modal" data-bs-target="#loginModal"-->
+<!--                                    class="dv-empty-button rounded-pill dv-continue-shopping">ادامه خرید-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <!--    footer button show in mobile-->
+    <div class="dv-footer-pay d-flex align-items-center justify-content-center d-lg-none mt-3 mt-md-4">
+        <div class="position-relative ps-3">
+            <span class="icon-armchair-silhouette dv-chair-svg"></span>
+            <span class="dv-chair-counter">10</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+            <span class="dv-ticket-count-sum-price-title">جمع کل : </span>
+            <span class="dv-ticket-count-title-sum-price-value"><span class="dv-card-price">2000000</span> </span>
+        </div>
+        <button class="dv-empty-button rounded-pill me-4 dv-continue-shopping"
+                type="button"
+                data-bs-toggle="modal" data-bs-target="#loginModal"
+        >
+            <span>ادامه خرید</span>
+            <span class="icon-dark-left-arrow pe-3"></span>
+        </button>
+    </div>
+
+</main>
+
+<!--Footer-->
+<footer id="footer" class="d-none d-lg-block">
+    <div class="container pb-5 dv-footer">
+        <div class="row gx-5">
+
+            <div class="col-12 mb-3 d-md-none">
+                <h4 class="dv-footer-title">شهریز</h4>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-xl-0">
+                <h4 class="text-light dv-footer-text pb-5 d-none d-md-block">تماس با ما</h4>
+                <ul>
+                    <li class="d-flex align-items-start pb-2 pb-md-3">
+                        <i class="icon-map dv_footer_list_icons f-18 pt-1"></i>
+                        <span class="text-light dv-footer-text mr-3"> تبریز - بلوار آزادی - نرسیده به سه راهی گلگشت
+                            8 جنب مجتمع شیخ الرئیس - کوی پارسا - پلاک</span>
+                    </li>
+
+                    <li class="d-flex align-items-center pb-2 pb-md-3">
+                        <i class="icon-phone dv_footer_list_icons f-18 "></i>
+                        <p class="text-light dv-footer-text mr-3 mb-0">
+                            ۰۴۱۳۳۳۸۰۹۵۲
+                        </p>
+                    </li>
+
+                    <li class="d-flex align-items-center pb-2 pb-md-3">
+                        <i class="icon-email dv_footer_list_icons f-18 "></i>
+                        <p class="text-light dv-footer-text mr-3 mb-0">
+                            info@shahriz.com
+                        </p>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <i class="icon-telegram dv_footer_list_icons dv_footer_list_icons-shahriz f-18 "></i>
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mr-3 w-100">
+                            <span class="text-light dv-footer-text">@Shahriz_sp</span>
+                            <div class="dv-footer-social-group-icons">
+                                <div class="d-flex align-items-center">
+                                    <a href="#"><i class="icon-Aparat dv_footer_social_icons dv-footer-aparat-icon"></i></a>
+                                    <a href="#" class="px-4"><i
+                                            class="icon-instagram dv_footer_social_icons dv-footer-instagram-icon"></i></a>
+                                    <a href="#"><i
+                                            class="icon-telegram dv_footer_social_icons dv-footer-telegram-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-xl-0">
+                <div class="d-flex justify-content-around justify-content-md-between">
+                    <div class="d-flex flex-column">
+                        <h4 class="text-light dv-footer-links-title pb-2 pb-md-5">لینک ها</h4>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h4 class="text-light dv-footer-links-title pb-2 pb-md-5">لینک ها</h4>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                    </div>
+                </div>
+                <hr class="dv-hr-25">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
+                <h4 class="text-light dv-footer-text pb-5 d-none d-md-block">دریافت اپلیکیشن</h4>
+                <div class="justify-content-between flex-wrap d-none d-lg-flex">
+                    <a href="">
+                        <img src="./assets/images/bazar.png" class="mb-3 dv_download_links_button" alt="شهریز">
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/enamadd.png" class="mb-3 dv_enamad_size" alt="شهریز">
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/anar.png" class="mb-3 dv_download_links_button" alt="شهریز">
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/enamad.png" class="mb-3 dv_enamad_size" alt="شهریز">
+                    </a>
+                </div>
+                <div class="dv-mobile-enomad">
+                    <div class="d-flex align-items-center justify-content-around">
+                        <a href="">
+                            <img src="./assets/images/enamadd.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/enamad.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                    </div>
+                    <hr class="dv-hr-25">
+                    <div class="d-flex">
+                        <a href="" class="pl-2">
+                            <img src="./assets/images/bazar-dark.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                        <a href="" class="pr-2">
+                            <img src="./assets/images/anar-dark.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="goToTop">
+            <span class="icon-arrow-top dv-go-to-top-icon"></span>
+        </div>
+    </div>
+    <div class="dv_copy_right_bg d-flex justify-content-center align-items-center position-relative">
+        <p class="text-center text-light mb-0">
+            © لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+        </p>
+    </div>
+</footer>
+
+<!--Rules Modal-->
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body position-relative">
+                <!--                            dotted and title-->
+                <div class="dv-border-dotted-modal position-relative pt-3 mb-lg-5">
+                    <div class="dv-section-title">قوانین و مقررات</div>
+                </div>
+            </div>
+            <div class="dv-rules-content">
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">1</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">2</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">3</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">4</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="full_name" class="position-relative mb-4 w-100">
+                    <input type="text" name="full_name" id="full_name" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                </label>
+
+                <label for="phone" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="number" name="phone" id="phone" class="dv-login-input w-100" placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#passwordModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="phone" class="position-relative mb-4 w-100">
+                    <input type="number" name="phone" id="mobile" class="dv-login-input w-100"
+                           placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text dv-change-phone-number">تغییر شماره موبایل
+                    </button>
+                </label>
+
+                <label for="full_name" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="password" name="full_name" id="password" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                    <span class="icon-eye dv-show-password-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text me-auto mt-2 ms-0 d-block">ارسال مجدد کلمه عبور
+                    </button>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#loginModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!------ END -------->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/zoom-slider.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
