@@ -3149,6 +3149,10 @@ input[type=number] {
         overflow: auto;
         margin: auto;
     }
+    .dv-selected-chair-info .icon-close-circle1:before {
+        font-size: 31px;
+        color: #FF0059;
+    }
 }
 
 @media screen and (max-width: 768px) {
