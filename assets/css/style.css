@@ -1455,7 +1455,7 @@ input[type=number] {
     border-bottom: 5px solid var(--purple);
     position: absolute;
     right: -62%;
-    top: 32.5%;
+    top: 33.5%;
 }
 
 .dv-concert-title {
@@ -2103,6 +2103,7 @@ input[type=number] {
 
 .dv-plus-counter {
     font-size: 50px;
+    cursor: pointer;
 }
 
 .dv-counter-ticket-value {
