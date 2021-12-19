@@ -31,7 +31,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: IRANSans;
-    line-height: 12px;
     font-size: 16px;
     background: var(--f5light);
     color: var(--darkblue);
@@ -2036,8 +2035,137 @@ input[type=number] {
     padding: 0 12px;
 }
 
-.dv-footer-text{
+.dv-footer-text {
     line-height: 25px;
+}
+
+.dv-invoice-questions {
+    font-size: 21px;
+    line-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dv-mini-purple-circle {
+    background: var(--purple);
+    opacity: 0.7;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.dv-mini-purple-circle-active {
+    opacity: 1;
+}
+
+.dv-question-text {
+    font-size: 16px;
+    line-height: 40px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    padding: 0 4rem 0 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+.dv-icon-question {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    font-size: 50px;
+    margin-left: -10px;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -6px;
+    background: #fff;
+}
+
+.dv-discount-price {
+    font-size: 37px;
+    line-height: 23px;
+}
+
+.dv-main-price {
+    font-size: 32px;
+    line-height: 19px;
+}
+
+.dv-main-price .dv-card-price {
+    font-size: 49px;
+    line-height: 20px;
+    color: var(--green);
+}
+
+.dv-counter-pool-ticket {
+    position: absolute;
+    top: 250px;
+}
+
+.dv-plus-counter {
+    font-size: 50px;
+}
+
+.dv-counter-ticket-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 122px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    margin: 0 15px;
+    font-size: 60px;
+}
+
+.dv-invoice-ticket-count {
+    height: 312px;
+}
+
+.dv-selected-tickets-result {
+    height: 25px;
+    width: 100%;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.dv-discount-value {
+    background: var(--purple);
+    color: #fff;
+    padding: 2px 10px;
+}
+
+.dv-ticket-stepper .dv-select-sons-position {
+    right: -100px;
+}
+
+.dv-w-245 {
+    width: 245.25px;
+}
+
+.dv-ticket-stepper .dv-select-ticket-position {
+    right: 100px;
+}
+.dv-ticket-stepper .dv-complete-step::before {
+    width: 315px;
+    content: '';
+    border-bottom: 5px solid var(--purple);
+    position: absolute;
+    right: -91.5%;
+    top: 32.5%;
+}
+
+.dv-ticket-stepper .dv-select-ticket-position.dv-complete-step::before {
+    width: 264px;
+    content: '';
+    border-bottom: 5px solid var(--purple);
+    position: absolute;
+    right: -70%;
+    top: 32.5%;
+}
+.dv-stepper-title{
+    line-height: 20px;
 }
 /************************* responsive ********************/
 /*max*/
@@ -2058,55 +2186,101 @@ input[type=number] {
 }
 
 @media screen and (max-width: 992px) {
-    .dv-footer-pay-icon-left{
+    .dv-pay-info {
+        padding-bottom: 0 !important;
+    }
+
+    /*.dv-selected-tickets-result {*/
+    /*    top: -25px;*/
+    /*}*/
+    .dv-ticket-counter-title {
+        font-size: 14px;
+        line-height: 44px;
+    }
+
+    .dv-counter-pool-ticket {
+        position: unset;
+    }
+
+    .dv-counter-ticket-value {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .dv-concert-title {
+        padding-bottom: 0 !important;
+    }
+
+    .dv-invoice-questions {
+        font-size: 14px;
+        line-height: 44px;
+    }
+
+    .dv-footer-pay-icon-left {
         font-size: 20px;
     }
-    .dv-invoice-table-title{
+
+    .dv-invoice-table-title {
         font-size: 16px;
     }
-    .dv-invoice-table thead tr th:first-child{
+
+    .dv-invoice-table thead tr th:first-child {
         border-top-right-radius: 10px;
     }
+
     .dv-invoice-table thead tr th:last-child {
         border-top-left-radius: 10px;
     }
-    .dv-invoice-table{
+
+    .dv-invoice-table {
         border-radius: 10px;
     }
-    .dv-px-pay-info{
+
+    .dv-px-pay-info {
         padding: 0;
     }
+
     .dv-invoice-table tbody tr:last-child td:first-child {
         border-bottom-right-radius: 10px;
     }
+
     .dv-invoice-table tbody tr:last-child td:last-child {
         border-bottom-left-radius: 10px;
     }
-    .dv-invoice-table tbody tr td{
+
+    .dv-invoice-table tbody tr td {
         background: #fff;
     }
-    .dv-invoice-table-edit-link{
+
+    .dv-invoice-table-edit-link {
         font-size: 12px;
     }
-    .dv-invoice-table tbody tr:first-child td{
+
+    .dv-invoice-table tbody tr:first-child td {
         padding-top: 20px;
     }
-    .dv-invoice-table thead tr th, .dv-invoice-result-header , .dv-invoice-table tbody tr td{
+
+    .dv-invoice-table thead tr th, .dv-invoice-result-header, .dv-invoice-table tbody tr td {
         font-size: 13px;
     }
-    .dv-invoice-result-body{
+
+    .dv-invoice-result-body {
         background: #fff;
         margin-bottom: 3rem;
     }
-    .dv-invoice-pay-button{
+
+    .dv-invoice-pay-button {
         width: 100%;
     }
+
     .dv-pay-info {
         box-shadow: none;
     }
-    .dv-invoice-result-header{
+
+    .dv-invoice-result-header {
         display: none;
     }
+
     .dv-ticket-count-sum-price-title {
         font-weight: normal;
     }
@@ -2193,7 +2367,11 @@ input[type=number] {
         display: none;
     }
 
-    .dv-concert-title h2, .dv-sons-time, .dv-sons-date {
+    .dv-concert-title h2 {
+        font-size: 20px;
+    }
+
+    .dv-sons-time, .dv-sons-date {
         font-size: 16px;
     }
 
@@ -2781,8 +2959,23 @@ input[type=number] {
         box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
     }
 
-    .dv-video-player-after-image span {
+    .dv-video-player-after-image span, .dv-main-price .dv-card-price,
+    .dv-main-price, .dv-discount-price {
         font-size: 20px;
+        line-height: 12px;
+    }
+
+    .dv-invoice-ticket-count {
+        height: 200px;
+    }
+
+    .dv-plus-counter {
+        font-size: 40px;
+    }
+
+    .dv-counter-ticket-value {
+        font-size: 50px;
+        color: var(--purple);
     }
 
     .dv-video-player-after-image p {
@@ -2908,7 +3101,7 @@ input[type=number] {
 }
 
 @media screen and (min-width: 992.01px) {
-    .dv-selected-sons-result-header, .dv-selected-sons-result-body {
+    .dv-selected-sons-result-header, .dv-selected-sons-result-body, .dv-selected-tickets-result, .dv-selected-sons-result {
         display: none;
     }
 

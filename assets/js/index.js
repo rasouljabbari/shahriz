@@ -64,13 +64,15 @@ $('.icon-arrow-down').on('click', () => {
   show_about = !show_about;
 })
 
-$('.dv-selected-sons-result').on('click', () => {
+$('.dv-selected-sons-result , .dv-selected-tickets-result').on('click', () => {
   if (show_orders) {
     $('.dv-selected-sons-result').css({height: '30px' })
+    $('.dv-selected-tickets-result').css({height: '25px' })
     $('.dv-selected-sons-result-body').css({height: '0' , display : 'none'})
     $('.dv-arrow-top-icon').css({transform: 'rotate(0)'})
   } else {
     $('.dv-selected-sons-result').css({height: 'auto' })
+    $('.dv-selected-tickets-result').css({height: 'auto' })
     $('.dv-selected-sons-result-body').css({height: 'auto' , display: 'block'})
     $('.dv-arrow-top-icon').css({transform: 'rotate(180deg)'})
   }
