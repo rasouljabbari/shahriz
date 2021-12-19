@@ -2147,6 +2147,7 @@ input[type=number] {
 .dv-ticket-stepper .dv-select-ticket-position {
     right: 100px;
 }
+
 .dv-ticket-stepper .dv-complete-step::before {
     width: 315px;
     content: '';
@@ -2164,8 +2165,95 @@ input[type=number] {
     right: -70%;
     top: 32.5%;
 }
-.dv-stepper-title{
+
+.dv-stepper-title {
     line-height: 20px;
+}
+
+.dv-pay-result-content {
+    max-width: 985px;
+    border-radius: 10px;
+    margin: 2rem auto 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
+.dv-pay-success .dv-pay-header {
+    background: #41DB56;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dv-pay-failed .dv-pay-header {
+    background: #FF0059;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dv-pay-body {
+    background: #fff;
+}
+
+.dv-pay-result-description {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.dv-pay-result-btn {
+    font-size: 23px;
+    line-height: 11px;
+    width: 330px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff !important;
+    transition: all 0.3s linear;
+}
+
+.dv-pay-success .dv-pay-result-btn {
+    background: var(--green);
+    box-shadow: 0 0 15px rgba(53, 186, 71, 0.35);
+}
+
+.dv-pay-failed .dv-pay-result-btn {
+    background: #FF0059;
+    box-shadow: 0 0 15px rgba(255, 0, 89, 0.35);
+}
+
+.dv-pay-success .dv-pay-result-btn:hover {
+    background: #41DB56;
+}
+
+.dv-pay-failed .dv-pay-result-btn:hover {
+    background: var(--purple);
+}
+
+.dv-pay-icon:before {
+    color: #fff;
+    font-size: 250px;
+}
+
+.dv-pay-result-title {
+    font-size: 35px;
+    line-height: 12px;
+}
+
+.dv-pay-body {
+    padding: 40px 80px;
+    border-radius: 0 0 10px 10px;
+}
+
+.dv-pay-result-description {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 3rem;
+}
+
+.f-21{
+    font-size: 21px;
 }
 /************************* responsive ********************/
 /*max*/
@@ -2186,13 +2274,67 @@ input[type=number] {
 }
 
 @media screen and (max-width: 992px) {
+
+    .dv-main-footer-link .icon-arrow-back{
+        font-size: 15px;
+    }
+
+    .dv-main-footer-link {
+        background: var(--f5light);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .dv-main-footer-link .dv-pay-result-btn {
+        background: var(--green);
+    }
+
+    .icon-close-circle1:before {
+        font-size: 125px;
+        color: #FF0059;
+    }
+
+    .dv-pay-failed .dv-pay-result-title {
+        color: #FF0059;
+        font-size: 25px;
+        line-height: 12px;
+    }
+    .dv-pay-success .dv-pay-result-title {
+        color: #41DB56;
+        font-size: 25px;
+        line-height: 12px;
+    }
+    .dv-pay-success .dv-pay-header .dv-pay-icon:before{
+        color: #41DB56 !important;
+        font-size: 125px;
+    }
+
+    .dv-pay-result-content {
+        background: #fff;
+        margin: 10rem 0;
+    }
+
+    .dv-pay-body {
+        padding: 20px;
+        background: transparent;
+    }
+
+    .dv-pay-header {
+        background: transparent !important;
+        padding: 0 !important;
+    }
+
+    .dv-pay-icon {
+        position: relative;
+        top: -65px;
+    }
+
     .dv-pay-info {
         padding-bottom: 0 !important;
     }
 
-    /*.dv-selected-tickets-result {*/
-    /*    top: -25px;*/
-    /*}*/
     .dv-ticket-counter-title {
         font-size: 14px;
         line-height: 44px;
