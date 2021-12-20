@@ -83,12 +83,12 @@ input[type=number] {
 
 .dv_navbar_nav .nav-item {
     padding: 0 25.5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #657384;
 }
 
 .dv_dropdown_title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #657384;
     direction: ltr;
@@ -100,7 +100,7 @@ input[type=number] {
 
 .dv_dropdown_items {
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dv_header_logo {
@@ -118,7 +118,7 @@ input[type=number] {
     height: 44px;
     background: var(--yellow);
     color: var(--darkblue) !important;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,14 +133,14 @@ input[type=number] {
 .dv_search_btn {
     background: transparent;
     border: none !important;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dv_form_hidden {
     background: #fff;
     min-width: 300px;
     color: var(--darkblue);
-    font-size: 20px;
+    font-size: 16px;
     display: none;
     border: none !important;
     outline: none !important;
@@ -154,7 +154,7 @@ input[type=number] {
 
 .dv_logo_title {
     color: var(--darkblue);
-    font-size: 20px;
+    font-size: 16px;
     font-family: shabnam;
     text-align: center;
 }
@@ -186,7 +186,7 @@ input[type=number] {
 }
 
 .dv-tab-content-title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 47px;
     color: var(--purple);
 }
@@ -216,7 +216,7 @@ input[type=number] {
 }
 
 .dv-tab-card-title {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--purple);
     margin-bottom: 1.2rem;
     text-align: center;
@@ -243,7 +243,7 @@ input[type=number] {
 .dv-tab-card-footer {
     height: 48px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 39px;
     color: #fff;
     align-items: center;
@@ -294,7 +294,7 @@ input[type=number] {
 }
 
 .dv-show-more-card {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 47px;
     color: var(--darkblue) !important;
     background: #fff;
@@ -304,7 +304,7 @@ input[type=number] {
 }
 
 .dv-main-card-price {
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 10px;
     color: var(--green);
 }
@@ -342,7 +342,7 @@ input[type=number] {
 }
 
 .f-18 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .l-28 {
@@ -434,7 +434,7 @@ input[type=number] {
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -460,7 +460,7 @@ input[type=number] {
 
 .dv-banners-description h4 {
     color: var(--darkblue);
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .dv-banners-description ul {
@@ -473,7 +473,7 @@ input[type=number] {
 
 .dv-banner-text {
     color: var(--darkblue);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dv-buy-ticket {
@@ -505,7 +505,7 @@ input[type=number] {
     font-family: icomoon;
     content: "\e902";
     color: var(--purple);
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .swiper-pagination-bullet {
@@ -535,13 +535,13 @@ input[type=number] {
 
 .dv-download-app-title {
     color: var(--purple);
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .dv-download-app-text {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
     color: var(--darkblue);
 }
@@ -583,22 +583,27 @@ input[type=number] {
 }
 
 .dv-award-offer-title {
-    font-size: 40px;
+    font-size: 24px;
     color: var(--purple);
 }
 
 .dv-award-offer-question {
-    font-size: 30px;
+    font-size: 24px;
     color: var(--darkblue);
 }
 
 .dv-award-offer-right-title {
-    font-size: 60px;
+    font-size: 50px;
     color: var(--darkblue);
 }
-
+.dv-bg-gray-about-text p{
+    font-size: 18px;
+}
+.dv-footer h4{
+    font-size: 22px;
+}
 .dv-award-offer-p {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--darkblue);
 }
 
@@ -614,7 +619,7 @@ input[type=number] {
 
 .dv-award-offer-button-text {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dv-award-offer-icon {
@@ -652,13 +657,13 @@ input[type=number] {
 }
 
 .dv-advantages-card-text h5 {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--darkblue);
     margin-bottom: 1rem;
 }
 
 .dv-advantages-card-text p {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--darkblue);
     margin-bottom: 0;
 }
@@ -713,7 +718,7 @@ input[type=number] {
 }
 
 .dv-comment-user-name {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--purple);
 }
 
@@ -751,7 +756,7 @@ input[type=number] {
 
 .dv-news-card-title {
     color: var(--purple);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dv-news-card-description {
@@ -793,7 +798,7 @@ input[type=number] {
 }
 
 .colleaguesSwiper .swiper-button-next:after, .colleaguesSwiper.swiper-rtl .swiper-button-prev:after {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .colleaguesSwiper .swiper-slide {
@@ -855,7 +860,7 @@ input[type=number] {
     align-items: center;
     justify-content: center;
     background: var(--f5light);
-    font-size: 35px;
+    font-size: 30px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
 }
 
@@ -885,7 +890,7 @@ input[type=number] {
 }
 
 .dv-singer-name {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 55px;
 }
 
@@ -894,7 +899,7 @@ input[type=number] {
     color: #fff !important;
     border: 1px solid var(--darkblue);
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px 50px;
     transition: all 0.3s linear;
     margin-bottom: 0.75rem;
@@ -905,7 +910,7 @@ input[type=number] {
     color: var(--darkblue) !important;
     border: 1px solid var(--darkblue);
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px 50px;
     transition: all 0.3s linear;
 }
@@ -981,7 +986,7 @@ input[type=number] {
 }
 
 .dv-rules-modal .dv-section-title {
-    font-size: 30px;
+    font-size: 24px;
     top: 120%;
 }
 
@@ -1003,7 +1008,7 @@ input[type=number] {
 }
 
 .dv-section-title {
-    font-size: 30px;
+    font-size: 24px;
     color: var(--purple);
     position: absolute;
     top: 50%;
@@ -1018,7 +1023,7 @@ input[type=number] {
 }
 
 .dv-list-tile {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
 }
 
@@ -1031,16 +1036,16 @@ input[type=number] {
 
 .dv-list-card .icon-clock {
     padding-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dv-list-item-time {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 12px;
 }
 
 .dv-list-item-start-from {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 12px;
 }
 
@@ -1066,7 +1071,7 @@ input[type=number] {
 
 .dv-list-red-button {
     background: #FF0059;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dv-list-red-button:hover {
@@ -1083,7 +1088,7 @@ input[type=number] {
 
 .dv-list-orange-button {
     background: var(--orange);
-    font-size: 18px;
+    font-size: 16px;
     cursor: not-allowed;
 }
 
@@ -1101,7 +1106,7 @@ input[type=number] {
 
 .dv-list-green-button {
     background: var(--green);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dv-list-green-button:hover {
@@ -1247,12 +1252,12 @@ input[type=number] {
 
 .dv-comment-count {
     color: var(--purple);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
 }
 
 .dv-comment-creator {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 31px;
 }
 
@@ -1312,7 +1317,7 @@ input[type=number] {
     font-family: icomoon;
     content: "\e918";
     color: var(--darkblue);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .concertSwiper .swiper-button-next:after,
@@ -1320,7 +1325,7 @@ input[type=number] {
     font-family: icomoon;
     content: "\e919";
     color: var(--darkblue);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dv-pool-type-tabs button {
@@ -1331,7 +1336,7 @@ input[type=number] {
 
 .dv-pool-time-type {
     color: #E2A5BA;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 55px;
 }
 
@@ -1352,7 +1357,7 @@ input[type=number] {
 }
 
 .dv-rules-modal-close-button {
-    font-size: 25px;
+    font-size: 20px;
     background: transparent;
     border: none !important;
 }
@@ -1408,7 +1413,7 @@ input[type=number] {
 }
 
 .dv-stepper-title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
     color: var(--darkblue);
 }
@@ -1431,7 +1436,7 @@ input[type=number] {
 
 .dv-icon-step-icon:before {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dv-icon-step-icon {
@@ -1467,7 +1472,7 @@ input[type=number] {
 }
 
 .dv-concert-title h2 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     padding-right: 1rem;
 }
@@ -1495,7 +1500,7 @@ input[type=number] {
 }
 
 .dv-sons-date, .dv-sons-time {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
     color: var(--darkblue) !important;
 }
@@ -1515,7 +1520,7 @@ input[type=number] {
 
 .dv-concert-chairs-image-title {
     color: var(--purple);
-    font-size: 30px;
+    font-size: 24px;
     line-height: 19px;
 }
 
@@ -1576,14 +1581,14 @@ input[type=number] {
 }
 
 .dv-chair-selected-title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 12px;
     padding-right: 1rem;
 }
 
 .dv-chair-svg:before {
     color: var(--orange);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dv-chair-counter {
@@ -1600,19 +1605,19 @@ input[type=number] {
 }
 
 .dv-ticket-count-title, .dv-ticket-count-value {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
 }
 
 .dv-ticket-count-sum-price-title {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 12px;
     font-weight: bold;
 }
 
 .dv-empty-button {
     background: #8F8F8F;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
     color: #fff !important;
     border: none;
@@ -1663,7 +1668,7 @@ input[type=number] {
 }
 
 .dv-concert-chair-title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
 }
 
@@ -1690,7 +1695,7 @@ input[type=number] {
 }
 
 .f-25 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
 }
 
@@ -1707,7 +1712,7 @@ input[type=number] {
 }
 
 .dv-form-description {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 31px;
     margin-bottom: 4rem;
     padding: 0 2rem;
@@ -1736,7 +1741,7 @@ input[type=number] {
 }
 
 .dv-error-text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
     color: var(--purple);
     background: transparent;
@@ -1756,7 +1761,7 @@ input[type=number] {
 }
 
 .dv-count-chair-row {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
     padding: 6px 0 8px 0;
 }
@@ -1804,13 +1809,13 @@ input[type=number] {
 }
 
 .dv-concert-user-info-icon {
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 1rem;
     padding-left: 0.5rem;
 }
 
 .dv-concert-user-info-main-title {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
 }
 
@@ -1823,7 +1828,7 @@ input[type=number] {
 }
 
 .dv-concert-user-info-title, .dv-concert-user-info-value {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
 }
 
@@ -1839,7 +1844,7 @@ input[type=number] {
 }
 
 .dv-invoice-table-title {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
 }
 
@@ -1865,7 +1870,7 @@ input[type=number] {
 
 .dv-invoice-table thead tr th, .dv-invoice-result-header {
     background: rgba(46, 61, 80, 0.2);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 12px;
     padding: 20px 10px;
     font-weight: normal;
@@ -1878,7 +1883,7 @@ input[type=number] {
 
 .dv-invoice-table tbody tr td {
     background: #F4F5F6;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 12px;
     padding: 20px 10px;
     font-weight: normal;
@@ -1912,7 +1917,7 @@ input[type=number] {
 
 .dv-discount-code-title {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 12px;
 }
 
@@ -1936,7 +1941,7 @@ input[type=number] {
     color: #fff;
     width: 93px;
     height: 36px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 12px;
     text-align: center;
     border: none;
@@ -1946,7 +1951,7 @@ input[type=number] {
 }
 
 .dv-discount-code-price-title {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dv-rules-checkbox {
@@ -2019,7 +2024,7 @@ input[type=number] {
 
 .dv-invoice-pay-button {
     background: var(--green);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 12px;
     color: #fff !important;
     border: none;
@@ -2115,7 +2120,7 @@ input[type=number] {
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
     margin: 0 15px;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .dv-invoice-ticket-count {
@@ -2197,7 +2202,7 @@ input[type=number] {
 }
 
 .dv-pay-result-description {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
 }
 
@@ -2238,7 +2243,7 @@ input[type=number] {
 }
 
 .dv-pay-result-title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 12px;
 }
 
@@ -2248,7 +2253,7 @@ input[type=number] {
 }
 
 .dv-pay-result-description {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     padding-bottom: 3rem;
 }
@@ -2305,7 +2310,7 @@ input[type=number] {
 }
 
 .dv-contact-us-form .icon-mobile.dv-contact-us-icon:before {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dv-contact-us-error {
@@ -2383,7 +2388,7 @@ input[type=number] {
 
 .dv-contact-us-list li .dv-contact-us-icons-back:before {
     color: var(--orange);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dv-contact-us-list li .dv-contact-us-list-title {
@@ -2503,13 +2508,13 @@ input[type=number] {
 
     .dv-pay-failed .dv-pay-result-title {
         color: #FF0059;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 12px;
     }
 
     .dv-pay-success .dv-pay-result-title {
         color: #41DB56;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 12px;
     }
 
@@ -2566,7 +2571,7 @@ input[type=number] {
     }
 
     .dv-footer-pay-icon-left {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .dv-invoice-table-title {
@@ -2717,7 +2722,7 @@ input[type=number] {
     }
 
     .dv-concert-title h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .dv-sons-time, .dv-sons-date {
@@ -2863,7 +2868,7 @@ input[type=number] {
     }
 
     .dv-pool-type-icon {;
-        font-size: 60px;
+        font-size: 50px;
         line-height: 22px;
         padding: 0 25px;
     }
@@ -2900,7 +2905,7 @@ input[type=number] {
     }
 
     .dv-map-content h3 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 15px;
         padding-top: 1.2rem;
         margin-bottom: 0;
@@ -2933,7 +2938,7 @@ input[type=number] {
     }
 
     .dv-list-item-time {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .dv-list-green-button {
@@ -2973,7 +2978,7 @@ input[type=number] {
         top: unset;
         left: unset;
         transform: unset;
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 1rem;
     }
 
@@ -2995,7 +3000,7 @@ input[type=number] {
 
     .dv-footer-title {
         color: var(--purple);
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         line-height: 31px;
     }
@@ -3063,7 +3068,7 @@ input[type=number] {
     }
 
     .dv-banners-description h4 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .dv-download-app-bg {
@@ -3088,7 +3093,7 @@ input[type=number] {
     }
 
     .dv-download-app-title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .dv-tab-card-footer {
@@ -3166,7 +3171,7 @@ input[type=number] {
     }
 
     .dv-award-offer-title, .dv-award-offer-right-title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .dv-award-offer-right-title, .dv-award-offer-p {
@@ -3304,13 +3309,13 @@ input[type=number] {
         align-items: center;
         justify-content: center;
         background: var(--f5light);
-        font-size: 35px;
+        font-size: 30px;
         box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
     }
 
     .dv-video-player-after-image span, .dv-main-price .dv-card-price,
     .dv-main-price, .dv-discount-price {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 12px;
     }
 
@@ -3319,7 +3324,7 @@ input[type=number] {
     }
 
     .dv-plus-counter {
-        font-size: 40px;
+        font-size: 24px;
     }
 
     .dv-counter-ticket-value {
@@ -3332,7 +3337,7 @@ input[type=number] {
     }
 
     .dv-rules-modal .dv-section-title {
-        font-size: 30px;
+        font-size: 24px;
         top: 100%;
         position: absolute;
         width: 250px;
@@ -3389,7 +3394,7 @@ input[type=number] {
 
     .dv-form-description {
         padding: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
