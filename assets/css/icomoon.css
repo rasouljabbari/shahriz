@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?1y8trx');
-  src:  url('../fonts/icomoon/icomoon.eot?1y8trx#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?1y8trx') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?1y8trx') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?1y8trx#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?qmsxw8');
+  src:  url('../fonts/icomoon/icomoon.eot?qmsxw8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?qmsxw8') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?qmsxw8') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?qmsxw8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-plus-alt:before {
-  content: "\e925";
+.icon-bx-at:before {
+  content: "\e92b";
+  color: #ffd045;
 }
-.icon-minus-alt:before {
-  content: "\e928";
+.icon-bxs-share-alt:before {
+  content: "\e92c";
+  color: #ffd045;
+}
+.icon-bxs-pencil:before {
+  content: "\e929";
+  color: #b82055;
+}
+.icon-email1:before {
+  content: "\e92a";
+  color: #b82055;
 }
 .icon-question .path1:before {
   content: "\e921";
@@ -184,4 +194,10 @@
 .icon-telegram:before {
   content: "\e911";
   color: #ffd045;
+}
+.icon-plus-alt:before {
+  content: "\e925";
+}
+.icon-minus-alt:before {
+  content: "\e928";
 }
