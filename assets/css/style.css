@@ -815,8 +815,8 @@ input[type=number] {
 .dv-go-to-top-icon {
     background: rgb(255, 208, 69);
     background: radial-gradient(circle, rgba(255, 208, 69, 1) 0%, rgba(249, 159, 40, 1) 100%);
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(255, 208, 69, 0.5);
     color: var(--darkblue);
