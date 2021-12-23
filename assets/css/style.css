@@ -2511,7 +2511,7 @@ input[type=number] {
     font-weight: 600;
 }
 
-.dv-user-information-when-login{
+.dv-user-information-when-login {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
@@ -2519,6 +2519,7 @@ input[type=number] {
     margin: 1rem auto;
     padding: 1rem;
 }
+
 /************************* responsive ********************/
 /*max*/
 
@@ -3208,6 +3209,7 @@ input[type=number] {
     .dv-tabs-card {
         display: flex;
         width: 100%;
+        margin-bottom: 1rem;
     }
 
     .dv-tab-card-image {
@@ -3389,7 +3391,7 @@ input[type=number] {
     .dv-video-player-after-image {
         display: block;
         position: absolute;
-        top: 84%;
+        top: 95%;
         right: 14px;
         transform: translate(-50%, -50%);
         z-index: 1;
@@ -3613,6 +3615,14 @@ input[type=number] {
         background: #0088CC;
     }
 
+    .dv-banner-image {
+        width: 65%;
+    }
+
+    .dv-buy-ticket {
+        height: 45px;
+        filter: drop-shadow(0 0 10px rgba(53, 186, 71, 0.35));
+    }
 }
 
 @media screen and (max-width: 576px) {
