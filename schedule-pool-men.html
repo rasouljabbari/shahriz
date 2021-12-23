@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body dir="rtl">
+
 <!--Header-->
 <header>
     <div class="dv_bg_menu_overlay">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light dv_navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light dv_navbar">
 
             <!--            show when device size > 992-->
             <div class="container d-none d-lg-flex">
@@ -77,7 +78,7 @@
 
                     <!--                    left buttons-->
                     <div class="d-flex position-relative">
-                        <a href="login" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</a>
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
                         <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         <button class="dv_search_btn" onclick="showSearchBar()" type="button">
@@ -139,6 +140,27 @@
                             <p class="dv_logo_description text-center">اپلیکیشن رزرو بلیت و خدمات آنلاین</p>
                         </div>
 
+                        <!--                        show when user login-->
+                        <div class="dv-user-information-when-login">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex">
+                                    <span class="icon-person ps-2 dv-user-information-when-login-icon"></span>
+                                    <span class="dv-user-information-when-login-title">نام کاربری : </span>
+                                </div>
+                                <span class="dv-text-purple">رسول جباری</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <span class="icon-coin-stack ps-2 dv-user-information-when-login-icon"></span>
+                                    <span class="dv-user-information-when-login-title">اعتبار کیف پول : </span>
+                                </div>
+                                <span class="dv-text-purple">
+                                    <span class="dv-card-price ps-2">12000000</span>
+                                    <span>تومان</span>
+                                </span>
+                            </div>
+                        </div>
+
                         <!--                    nav links-->
                         <ul class="dv_navbar_nav navbar-nav ms-auto position-relative">
                             <li class="nav-item dropdown">
@@ -182,7 +204,7 @@
 
                         <!--                    left buttons-->
                         <div class="d-flex position-relative dv_bg_menu_buttons py-4 px-2">
-                            <a href="login" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</a>
+                            <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
                             <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         </div>
@@ -198,7 +220,8 @@
     <!--    top video-->
     <section class="position-relative d-none d-lg-block">
         <div class="dv-top-video" style="background-image: url(assets/images/SchedulePoolMen.png)"></div>
-        <div class="dv-video-player">
+        <div class="dv-video-player" type="button"
+             data-bs-toggle="modal" data-bs-target="#videoModal">
             <div>
                 <span class="icon-arrow-right"></span>
             </div>
@@ -338,7 +361,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -347,7 +370,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -389,7 +412,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -398,7 +421,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -440,7 +463,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -449,7 +472,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -491,7 +514,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -500,7 +523,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -542,7 +565,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -551,7 +574,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -593,7 +616,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -644,7 +667,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -653,7 +676,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -695,7 +718,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -704,7 +727,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -750,7 +773,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -759,7 +782,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -801,7 +824,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -810,7 +833,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -852,7 +875,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -861,7 +884,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -903,7 +926,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -912,7 +935,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -954,7 +977,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -963,7 +986,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -1005,7 +1028,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -1056,7 +1079,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -1065,7 +1088,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -1107,7 +1130,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">22:30</span>
-                                                    <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
+                                                    <a href="invoice-pool.html" class="dv-list-button dv-list-green-button">انتخاب
                                                         سانس
                                                     </a>
                                                 </div>
@@ -1116,7 +1139,7 @@
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <span class="icon-clock"></span>
                                                     <span class="dv-list-item-time">23:30</span>
-                                                    <a href="booking-concert1.html"
+                                                    <a href="invoice-pool.html"
                                                        class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
                                                         <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
                                                         <span class="dv-list-card-purple-button-bottom">
@@ -1373,6 +1396,27 @@
         </div>
     </section>
 
+    <!-- Video player Modal -->
+    <div class="modal fade dv-video-player-modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="icon-close-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <video class="dv-video-size" id="source_video"  controls poster="assets/images/player.png">
+                            <source src="assets/video/پارک%20آبی.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <!--Footer-->
@@ -1447,19 +1491,19 @@
                 <hr class="dv-hr-25">
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 mb-md-3 mb-xl-0">
+            <div class="col-12 col-md-12 col-lg-4 mb-md-3 mb-xl-0">
                 <h4 class="text-light dv-footer-text pb-5 d-none d-md-block">دریافت اپلیکیشن</h4>
-                <div class="justify-content-between flex-wrap d-none d-lg-flex">
-                    <a href="">
+                <div class="justify-content-between flex-wrap d-none d-md-flex">
+                    <a href="" class="order-md-0 order-xl-0">
                         <img src="./assets/images/bazar.png" class="mb-3 dv_download_links_button" alt="شهریز">
                     </a>
-                    <a href="">
+                    <a href="" class="order-md-2 order-xl-1">
                         <img src="./assets/images/enamadd.png" class="mb-3 dv_enamad_size" alt="شهریز">
                     </a>
-                    <a href="">
+                    <a href="" class="order-md-1 order-xl-2">
                         <img src="./assets/images/anar.png" class="mb-3 dv_download_links_button" alt="شهریز">
                     </a>
-                    <a href="">
+                    <a href="" class="order-md-3 order-xl-3">
                         <img src="./assets/images/enamad.png" class="mb-3 dv_enamad_size" alt="شهریز">
                     </a>
                 </div>
@@ -1494,6 +1538,87 @@
         </p>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="full_name" class="position-relative mb-4 w-100">
+                    <input type="text" name="full_name" id="full_name" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                </label>
+
+                <label for="phone" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="number" name="phone" id="phone" class="dv-login-input w-100" placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#passwordModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="phone" class="position-relative mb-4 w-100">
+                    <input type="number" name="phone" id="mobile" class="dv-login-input w-100"
+                           placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text dv-change-phone-number">تغییر شماره موبایل
+                    </button>
+                </label>
+
+                <label for="full_name" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="password" name="full_name" id="password" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                    <span class="icon-eye dv-show-password-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text me-auto mt-2 ms-0 d-block">ارسال مجدد کلمه عبور
+                    </button>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#loginModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>
 
 
 <!------ END -------->

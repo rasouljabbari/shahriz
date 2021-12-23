@@ -8,6 +8,17 @@ $(document).ready(function () {
   $('.dv-card-price').digits()
 });
 
+$(document).mouseup(function(e)
+{
+  let container = $("#navbarSupportedContentMobile");
+
+  // if the target of the click isn't the container nor a descendant of the container
+  if (!container.is(e.target) && container.has(e.target).length === 0)
+  {
+    container.hide();
+  }
+});
+
 let show_password = false;
 let isHidden = false;
 let open = false;
@@ -19,6 +30,7 @@ $(".dv-go-to-top-icon").each(function () {
     return $("html,body").animate({scrollTop: 0}, "slow"), !1
   })
 });
+
 // handle search bar in header menu
 
 function showSearchBar() {
@@ -66,14 +78,14 @@ $('.icon-arrow-down').on('click', () => {
 
 $('.dv-selected-sons-result , .dv-selected-tickets-result').on('click', () => {
   if (show_orders) {
-    $('.dv-selected-sons-result').css({height: '30px' })
-    $('.dv-selected-tickets-result').css({height: '25px' })
-    $('.dv-selected-sons-result-body').css({height: '0' , display : 'none'})
+    $('.dv-selected-sons-result').css({height: '30px'})
+    $('.dv-selected-tickets-result').css({height: '25px'})
+    $('.dv-selected-sons-result-body').css({height: '0', display: 'none'})
     $('.dv-arrow-top-icon').css({transform: 'rotate(0)'})
   } else {
-    $('.dv-selected-sons-result').css({height: 'auto' })
-    $('.dv-selected-tickets-result').css({height: 'auto' })
-    $('.dv-selected-sons-result-body').css({height: 'auto' , display: 'block'})
+    $('.dv-selected-sons-result').css({height: 'auto'})
+    $('.dv-selected-tickets-result').css({height: 'auto'})
+    $('.dv-selected-sons-result-body').css({height: 'auto', display: 'block'})
     $('.dv-arrow-top-icon').css({transform: 'rotate(180deg)'})
   }
   show_orders = !show_orders;
@@ -88,6 +100,11 @@ $('.dv-show-password-icon').on('click', function () {
   }
   show_password = !show_password
 })
+
+$('#videoModal').on('hidden.bs.modal', function () {
+  $('#source_video')[0].pause();
+});
+
 //Swiper
 let banners = new Swiper(".bannerSwiper", {
   centeredSlides: true,
