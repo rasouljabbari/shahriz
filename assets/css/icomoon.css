@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?qmsxw8');
-  src:  url('../fonts/icomoon/icomoon.eot?qmsxw8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?qmsxw8') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?qmsxw8') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?qmsxw8#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?ms08dd');
+  src:  url('../fonts/icomoon/icomoon.eot?ms08dd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?ms08dd') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?ms08dd') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?ms08dd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e935";
+  color: #4688e1;
+}
+.icon-bx-support:before {
+  content: "\e92d";
+  color: #a6adc6;
+}
+.icon-user-plus:before {
+  content: "\e92e";
+  color: #a6adc6;
+}
+.icon-home:before {
+  content: "\e92f";
+  color: #4688e1;
+}
+.icon-icon:before {
+  content: "\e930";
+  color: #a6adc6;
+}
+.icon-logout:before {
+  content: "\e931";
+  color: #a6adc6;
+}
+.icon-settings-gear-63:before {
+  content: "\e933";
+  color: #a6adc6;
+}
+.icon-wallet-filled-money-tool:before {
+  content: "\e934";
+  color: #a6adc6;
+}
 .icon-bx-at:before {
   content: "\e92b";
   color: #ffd045;

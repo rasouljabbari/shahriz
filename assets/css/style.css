@@ -10,6 +10,13 @@
     --yellow: #FFD045;
     --darkpruple: #65122F;
     --purple: #B82055;
+    --panel-blue: #4688E1;
+    --panel-darkblue: #3B6195;
+    --panel-f5f7: #F5F7FB;
+    --box1016: 0 0 10px rgba(0, 0, 0, 0.16);
+    --box31016: 0 3px 10px rgba(0, 0, 0, 0.16);
+    --box51016: 0 5px 10px rgba(0, 0, 0, 0.16);
+    --lightred: #FF0059;
 }
 
 @font-face {
@@ -196,7 +203,7 @@ input[type=number] {
     background: #fff;
     width: 275px;
     border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     /*margin-left: 4rem;*/
     margin-bottom: 3rem;
 }
@@ -300,7 +307,7 @@ input[type=number] {
     color: var(--darkblue) !important;
     background: #fff;
     padding: 4px 40px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     margin: 10px 0;
 }
 
@@ -644,7 +651,7 @@ input[type=number] {
 }
 
 .dv-advantages-card {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     background: #fff;
     border-radius: 10px;
     padding: 1rem;
@@ -753,7 +760,7 @@ input[type=number] {
 
 .dv-news-card {
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     border-radius: 10px;
     padding: 15px;
     position: relative;
@@ -798,7 +805,7 @@ input[type=number] {
 
 .colleaguesSwiper {
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     background: #fff;
 }
 
@@ -1029,7 +1036,7 @@ input[type=number] {
 
 .dv-list-card {
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     padding: 4px;
     border-radius: 5px;
 }
@@ -1062,15 +1069,15 @@ input[type=number] {
 }
 
 .dv-list-card-red {
-    border-right: 4px solid #FF0059;
+    border-right: 4px solid var(--lightred);;
 }
 
 .dv-list-card-red .icon-clock:before {
-    color: #FF0059;
+    color: var(--lightred);;
 }
 
 .dv-list-red-button {
-    background: #FF0059;
+    background: var(--lightred);;
     font-size: 20px;
 }
 
@@ -1165,7 +1172,7 @@ input[type=number] {
     line-height: 30px;
     text-align: right;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
 }
 
 .dv-bg-gray-about p {
@@ -1217,7 +1224,7 @@ input[type=number] {
 }
 
 .dv-map-content, .dv-comments-content {
-    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(var(--box31016));
     margin: 0 auto 2rem;
     width: 75%;
     border-radius: 10px;
@@ -1280,7 +1287,7 @@ input[type=number] {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 1rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     border: none;
 }
 
@@ -1468,7 +1475,7 @@ input[type=number] {
     border-right: 4px solid var(--purple);
     border-radius: 5px;
     padding: 12px 0 12px 20px !important;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
 }
 
 .dv-concert-title h2 {
@@ -1481,14 +1488,14 @@ input[type=number] {
     background: #fff;
     border-radius: 10px;
     padding: 12px 0 12px 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
 }
 
 
 .dv-link-to-concert {
     background: var(--f5light);
     border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     position: relative;
     padding: 10px;
 }
@@ -1527,7 +1534,7 @@ input[type=number] {
 .dv-concert-chairs {
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     padding: 25px 15px 70px 15px;
 }
 
@@ -1550,14 +1557,14 @@ input[type=number] {
     background: #fff;
     height: 290px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
 }
 
 .dv-show-price-result-tickets {
     background: #fff;
     height: 500px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
 }
 
 .dv-chair-count-image-empty {
@@ -1647,8 +1654,8 @@ input[type=number] {
 }
 
 .dv-concert-chair-purple {
-    background: #FF0059;
-    border: 1px solid #FF0059;
+    background: var(--lightred);;
+    border: 1px solid var(--lightred);;
 }
 
 .dv-concert-chair-dark-blue {
@@ -1839,7 +1846,7 @@ input[type=number] {
 .dv-pay-info {
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     padding: 1rem;
 }
 
@@ -1857,7 +1864,7 @@ input[type=number] {
 .dv-invoice-table {
     width: 100%;
     padding: 2rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box51016);
 }
 
 .dv-invoice-table thead tr th:first-child {
@@ -1900,7 +1907,7 @@ input[type=number] {
 }
 
 .dv-invoice-result {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box51016);
     border-radius: 5px;
 }
 
@@ -1926,7 +1933,7 @@ input[type=number] {
     outline: 1px solid var(--purple) !important;
     padding: 10px 5px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     background: transparent !important;
     padding-left: 98px;
 }
@@ -2070,13 +2077,13 @@ input[type=number] {
     font-size: 16px;
     line-height: 40px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     padding: 0 4rem 0 20px;
     border-radius: 0 10px 10px 0;
 }
 
 .dv-icon-question {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     font-size: 50px;
     margin-left: -10px;
     border-radius: 50%;
@@ -2119,7 +2126,7 @@ input[type=number] {
     width: 90px;
     height: 90px;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box51016);
     margin: 0 15px;
     font-size: 35px;
 }
@@ -2134,7 +2141,7 @@ input[type=number] {
     background: var(--purple);
     color: #fff;
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
 }
 
 .dv-discount-value {
@@ -2181,7 +2188,7 @@ input[type=number] {
     max-width: 985px;
     border-radius: 10px;
     margin: 2rem auto 0 auto;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box51016);
 }
 
 .dv-pay-success .dv-pay-header {
@@ -2192,7 +2199,7 @@ input[type=number] {
 }
 
 .dv-pay-failed .dv-pay-header {
-    background: #FF0059;
+    background: var(--lightred);;
     color: #fff;
     padding: 30px;
     border-radius: 10px 10px 0 0;
@@ -2226,7 +2233,7 @@ input[type=number] {
 }
 
 .dv-pay-failed .dv-pay-result-btn {
-    background: #FF0059;
+    background: var(--lightred);;
     box-shadow: 0 0 15px rgba(255, 0, 89, 0.35);
 }
 
@@ -2327,7 +2334,7 @@ input[type=number] {
     background: var(--f5light);
     border: none !important;
     outline: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box51016);
     padding: 10px;
     font-size: 14px;
     margin-bottom: 1rem;
@@ -2354,7 +2361,7 @@ input[type=number] {
     max-width: 1100px;
     margin: auto 10rem;
     padding: 1rem 2rem 1rem 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
 }
 
 .dv-map-content-contact-us {
@@ -2378,7 +2385,7 @@ input[type=number] {
 .dv-contact-us-list li .dv-contact-us-icons-back {
     width: 40px;
     height: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     border-radius: 50%;
     background: var(--purple);
     margin-left: 1.5rem;
@@ -2403,7 +2410,7 @@ input[type=number] {
 
 .dv-bg-of-guide {
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box31016);
     padding: 15px 30px 5rem 30px;
     border-radius: 5px;
     margin-bottom: 3rem;
@@ -2513,17 +2520,241 @@ input[type=number] {
 
 .dv-user-information-when-login {
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--box1016);
     border-radius: 10px;
     width: 90%;
     margin: 1rem auto;
     padding: 1rem;
 }
 
+/************************   Panel  *********************************/
+
+.dv-panel-body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--panel-f5f7);
+    padding: 5em 7em;
+}
+
+.dv-panel-menu {
+    background: #fff;
+    box-shadow: var(--box1016);
+    border-radius: 5px;
+    padding: 50px 50px 20px 50px;
+}
+
+.dv-user-image {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed var(--panel-blue);
+    border-radius: 50%;
+}
+
+.dv-panel-menu-hr {
+    border-color: #EFF6FF;
+    margin: 40px 0;
+}
+
+.dv-menu-items li {
+    padding-bottom: 2em;
+    list-style-type: none;
+}
+
+.dv-menu-items li .dv-panel-menu-icon:before {
+    color: #A6ADC6;
+    font-size: 20px;
+}
+
+.dv-menu-items li .dv-panel-menu-title {
+    color: #A6ADC6;
+    font-weight: 500;
+}
+
+.dv-menu-items li.active .dv-panel-menu-icon:before, .dv-menu-items li.active .dv-panel-menu-title {
+    color: var(--panel-blue);
+    font-weight: bold;
+}
+
+.dv-welcome-to-user, .dv-home-tabs-parent {
+    box-shadow: var(--box1016);
+    border-radius: 5px;
+    padding: 4em 5em 4em 0;
+    background: #fff;
+    position: relative;
+}
+
+.dv-home-tabs-parent {
+    padding: 4em 3em 2em 3em;
+}
+
+.dv-welcome-to-user h5 {
+    font-size: 1.5em;
+    color: var(--panel-blue);
+}
+
+.dv-welcome-to-user .dv-welcome-description {
+    font-size: 0.85em;
+    color: var(--panel-blue);
+}
+
+.dv-user-welcome-image {
+    width: 26em;
+    position: absolute;
+    top: -2.85em;
+    left: -2em;
+}
+
+.dv-dashboard-home-tabs {
+    position: absolute;
+    top: -1.2em;
+    width: 90% !important;
+    right: 2em;
+}
+
+.dv-dashboard-home-tabs li {
+    width: 39%;
+    margin: 0 2em;
+}
+
+.dv-dashboard-home-tabs li button.nav-link {
+    background: #6373AE;
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.dv-dashboard-home-tabs li button.nav-link.active {
+    background: #FFBB00;
+}
+
+.dv-home-table tr th {
+    background: #EFF6FF;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    color: var(--panel-darkblue);
+    font-weight: 500;
+    text-align: center;
+    min-width: 8em;
+}
+
+.dv-home-table tr th:first-child {
+    border-top-right-radius: 5px;
+}
+
+.dv-home-table tr th:last-child {
+    border-top-left-radius: 5px;
+}
+
+.dv-home-table tr td {
+    padding: 1.5em;
+    font-size: 0.8em;
+    color: var(--panel-darkblue);
+    font-weight: 300;
+    text-align: center;
+}
+
+.dv-home-table tr {
+    background: #fff;
+}
+
+.dv-home-table tr:nth-child(even) {
+    background: #EFF6FF;
+}
+
+.dv-home-table-button {
+    background: var(--panel-blue);
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 2px 5px 15px rgba(59, 97, 149, 0.35);
+   width: 198px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dv-menu-username {
+    font-size: 1.2em;
+    color: var(--panel-blue);
+    padding-top: 1em;
+}
+
+.dv-menu-username-phone {
+    font-size: 0.8em;
+    color: var(--panel-blue);
+    margin-bottom: 0;
+}
+
+.dv-pagination-button {
+    background: transparent;
+    border: none !important;
+}
+
+.dv-pagination-arrows:before {
+    color: var(--panel-blue);
+    font-size: 0.7em;
+}
+
+.dv-pagination-titles {
+    color: var(--panel-blue);
+    font-size: 0.9em;
+}
+
+.dv-financial-department-item {
+    background: #fff;
+    padding: 1.4em 1.5em 1.4em 0.75em;
+}
+
+.dv-financial-department-item:nth-child(even) {
+    background: #F5F9FF;
+}
+
+.dv-financial-department-title {
+    font-size: 0.85em;
+    color: var(--panel-darkblue);
+}
+
+.dv-financial-department-value {
+    font-size: 0.85em;
+}
+
+.dv-financial-department-value-red, .dv-financial-department-value-red:before {
+    color: var(--lightred);
+}
+
+.dv-financial-department-value-green, .dv-financial-department-value-green:before {
+    color: var(--green);
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+.dv-financial-department-icon:before {
+    font-size: 0.4em;
+}
+
+.dv-panel-menu-bar {
+    font-size: 1.3em;
+}
+
+.dv-panel-page-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--panel-blue);
+}
+
 /************************* responsive ********************/
 /*max*/
 
 @media screen and (max-width: 992px) {
+    .dv-panel-body {
+        background: #fff;
+        padding: 1em;
+    }
+
     .dv-empty-button {
         font-size: 17px;
         padding: 12px 32px;
@@ -2632,7 +2863,7 @@ input[type=number] {
 
     .dv-contact-us-form {
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+        box-shadow: var(--box1016);
         padding: 1rem 1rem 3rem 1rem;
     }
 
@@ -2678,11 +2909,11 @@ input[type=number] {
 
     .icon-close-circle1:before {
         font-size: 125px;
-        color: #FF0059;
+        color: var(--lightred);;
     }
 
     .dv-pay-failed .dv-pay-result-title {
-        color: #FF0059;
+        color: var(--lightred);;
         font-size: 20px;
         line-height: 12px;
     }
@@ -2882,7 +3113,7 @@ input[type=number] {
 
     .dv-footer-pay {
         background: var(--f5light);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+        box-shadow: var(--box1016);
         padding: 10px 15px;
     }
 
@@ -3098,7 +3329,7 @@ input[type=number] {
     }
 
     .dv-list-scroll {
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        box-shadow: var(--box31016);
         padding: 2rem;
         border-radius: 15px;
     }
@@ -3291,7 +3522,7 @@ input[type=number] {
         background: #fff;
         padding: 1rem;
         border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        box-shadow: var(--box31016);
     }
 
     body {
@@ -3303,7 +3534,7 @@ input[type=number] {
     }
 
     .commentSwiper .swiper-slide {
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+        box-shadow: var(--box31016);
     }
 
     .dv-star-parent {
@@ -3459,7 +3690,7 @@ input[type=number] {
 
     .dv-selected-chair-info .icon-close-circle1:before {
         font-size: 31px;
-        color: #FF0059;
+        color: var(--lightred);;
     }
 
     .dv-concert-user-info-main-title {
@@ -3482,6 +3713,40 @@ input[type=number] {
 }
 
 @media screen and (max-width: 768px) {
+    .dv-dashboard-home-tabs li {
+        width: 40%;
+        margin: 0 0.5em;
+    }
+
+    .dv-dashboard-home-tabs li button.nav-link {
+        font-size: 0.8em;
+    }
+
+    .dv-dashboard-home-tabs {
+        position: absolute;
+        top: -1em;
+        right: 0;
+        width: 100% !important;
+        padding-bottom: 1em;
+    }
+
+    .dv-home-tabs-parent {
+        padding: 2em 0 0 0;
+    }
+
+    .dv-home-table tr th, .dv-home-table tr td {
+        padding: 0.5em;
+        min-width: unset;
+    }
+
+    .dv-home-table-button {
+        padding: 0.5em 1em;
+        border-radius: 5px !important;
+        background: #FFBB00;
+        width: unset;
+        height: unset;
+    }
+
     #footer {
         background: var(--f5light);
     }
@@ -3626,9 +3891,28 @@ input[type=number] {
 }
 
 @media screen and (max-width: 576px) {
+    .dv-user-welcome-image {
+        width: 13.5em;
+        top: 1.9em;
+        left: -2em;
+        object-fit: cover;
+    }
+
+    .dv-welcome-to-user {
+        padding: 1em 1em 5em 0;
+    }
+
     .dv-chair-list-parent {
         width: 334px;
         height: 255px;
+    }
+
+    .dv-welcome-to-user h5 {
+        font-size: 1em;
+    }
+
+    .dv-welcome-to-user .dv-welcome-description {
+        font-size: 0.7em;
     }
 }
 
@@ -3681,5 +3965,32 @@ input[type=number] {
 
     .dv-banner-image img {
         object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .dv-panel-menu-hr {
+        margin: 3.75em 0;
+    }
+
+    .dv-home-table tr td {
+        padding: 1.8em 1.5em;
+        font-size: 1.2em;
+    }
+
+    .dv-home-table tr th {
+        font-size: 1.5em;
+    }
+
+    .dv-menu-items li {
+        padding-bottom: 3.5em;
+    }
+
+    .dv-financial-department-item {
+        padding: 2em 1.7em 2em 0.75em;
+    }
+
+    .dv-financial-department-value, .dv-financial-department-title {
+        font-size: 1.48em;
     }
 }
