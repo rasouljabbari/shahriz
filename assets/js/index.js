@@ -51,6 +51,8 @@ function openMenu() {
     $('.dv_bg_menu_overlay').removeClass('px-0 px-lg-2')
     $('.dv_navbar').removeClass('py-0')
     $('.dv-show-menu-in-mobile-view').css({display: 'flex'})
+
+    $('.dv-panel-menu-bg').css({width: 0, display: 'none'})
   } else {
     $('#navbarSupportedContentMobile').css({width: '100%', display: 'block'})
     $('.navbarSupportedContentMobile').css({width: '85%', display: 'block'})
@@ -59,6 +61,8 @@ function openMenu() {
     $('.dv_close_menu').css({display: 'block'})
     $('.dv_bg_menu_overlay').addClass('px-0 px-lg-2')
     $('.dv_navbar').addClass('py-0')
+
+    $('.dv-panel-menu-bg').css({width: '100%', display: 'block'})
   }
   open = !open;
 }
