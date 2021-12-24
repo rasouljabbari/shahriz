@@ -3,23 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>شهریز | پیشخوان کاربری</title>
+    <title>شهریز | بلیت های من</title>
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/icomoon.css">
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body dir="rtl">
-<div class="dv-panel-body">
-    <div class="row g-4">
-        <div class="col-12 col-lg-3 mb-3">
+<body dir="rtl" class="dv-panel-body">
+
+
+<div class="row g-2 g-lg-4">
+    <div class="col-12 d-lg-none d-flex align-items-center p-4">
+        <span class="icon-menu dv-panel-menu-bar" onclick="openMenu()"></span>
+        <span class="dv-panel-page-title">بلیت های من</span>
+
+        <!--        show in < 992px-->
+        <div class="dv-panel-menu-bg">
             <div class="dv-panel-menu">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <div class="dv-user-image">
                         <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
                     </div>
-
+                    <h5 class="dv-menu-username">رسول جباری</h5>
+                    <p class="dv-menu-username-phone">09106878810</p>
                     <!--                TODO user info-->
                 </div>
                 <hr class="dv-panel-menu-hr"/>
@@ -69,9 +76,527 @@
                     </li>
                 </ul>
             </div>
+            <span class="icon-close dv_close_menu" onclick="openMenu()"></span>
         </div>
-        <div class="col-12 col-lg-9 mb-3">8</div>
     </div>
+    <div class="col-12 col-lg-3 mb-3 d-none d-lg-block">
+        <div class="dv-panel-menu h-100">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="dv-user-image">
+                    <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
+                </div>
+                <h5 class="dv-menu-username">رسول جباری</h5>
+                <p class="dv-menu-username-phone">09106878810</p>
+                <!--                TODO user info-->
+            </div>
+            <hr class="dv-panel-menu-hr"/>
+
+            <ul class="dv-menu-items">
+                <li>
+                    <a href="home.html" class="d-flex align-items-center ">
+                        <span class="icon-home dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">پیشخوان کاربری</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="my-tickets.html" class="d-flex align-items-center ">
+                        <span class="icon-icon dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">بلیت های من</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-wallet.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">کیف پول</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">تنظیمات کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-friends.html" class="d-flex align-items-center ">
+                        <span class="icon-user-plus dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">دعوت از دوستان</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact-with-support.html" class="d-flex align-items-center ">
+                        <span class="icon-bx-support dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">تماس با پشتیبانی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html" class="d-flex align-items-center ">
+                        <span class="icon-logout dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">خروج از پنل کاربری</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-12 col-lg-9 mb-3 position-relative">
+        <div class="dv-page-title-in-nine d-none d-lg-flex align-items-center justify-content-center">
+            <span>بلیت های من</span>
+        </div>
+        <div class="dv-home-tabs-parent h-100">
+            <div class="overflow-auto">
+                <table class="dv-home-table w-100 mb-4">
+                    <thead>
+                    <tr>
+                        <th>رویداد</th>
+                        <th>سانس</th>
+                        <th>سالن</th>
+                        <th>تعداد بلیط</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
+                        <td>سه شنبه 24 اردیبهشت 1398
+                            21:30
+                        </td>
+                        <td>سالن همایش های بین المللی خاوران</td>
+                        <td>4</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>رویداد</td>
+                        <td>سانس</td>
+                        <td>سالن شماره 3</td>
+                        <td>6</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>رویداد</td>
+                        <td>سانس</td>
+                        <td>سالن شماره 1</td>
+                        <td>2</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>رویداد</td>
+                        <td>سانس</td>
+                        <td>سالن شماره 3</td>
+                        <td>10</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>رویداد</td>
+                        <td>سانس</td>
+                        <td>سالن شماره 1</td>
+                        <td>2</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>رویداد</td>
+                        <td>سانس</td>
+                        <td>سالن شماره 3</td>
+                        <td>10</td>
+                        <td>
+                            <button class="dv-home-table-button rounded-pill" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4">
+                <button type="button" class="dv-pagination-button d-flex align-items-center px-3 ">
+                    <span class="icon-dark-right-arrow ps-3 dv-pagination-arrows"></span>
+                    <span class="ps-1 dv-pagination-titles">صفحه قبلی</span>
+                </button>
+                <button type="button" class="dv-pagination-button d-flex align-items-center pe-3">
+                    <span class="ps-3 dv-pagination-titles">صفحه بعدی</span>
+                    <span class="icon-dark-left-arrow dv-pagination-arrows"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-print-modal" id="printModal" tabindex="-1" aria-labelledby="printModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <h5 class="dv-panel-blue">کنسرت دف نوازان حیران با بستنی</h5>
+                    <span class="dv-print-modal-description">سالن همایش های بین المللی خاوران - <span>28 شهریور 1400</span> - <span>21:30</span></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative dv-print-modal-table-height mb-3" dir="ltr">
+                    <table class="dv-home-table w-100">
+                        <thead class="dv-print-thead">
+                        <tr>
+                            <th></th>
+                            <th>مبلغ</th>
+                            <th>تاریخ خرید</th>
+                            <th class="d-none d-md-table-cell">شماره سفارش</th>
+                            <th class="d-none d-md-table-cell">کد بلیت</th>
+                            <th class="d-block d-md-none">کد بلیط / شماره سفارش</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    <div class="loadingio-spinner-spin-xs9r7lu5cta">
+                                        <div class="ldio-fpepf5ugyfw">
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--                                    چاپ-->
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="dv-print-table-button" onclick="window.print();return false;">
+                                    چاپ
+                                </button>
+                            </td>
+                            <td>
+                                <span class="dv-card-price">150000</span>
+                                <span>ریال</span>
+                            </td>
+                            <td>
+                                <span>12 شهریور 1398 - (10:40:37)</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>45978051</span>
+                            </td>
+                            <td class="d-none d-md-table-cell">
+                                <span>83516208901 </span>
+                            </td>
+                            <td class="d-block d-md-none">
+                                45978051 / 83516208901
+                            </td>
+                            <td>
+                                <label class="dv-print-custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <button class="dv-print-all ms-5" onclick="window.print();return false;">چاپ همه</button>
+                    <button class="dv-print-selected" onclick="window.print();return false;">چاپ انتخاب شده ها</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <!------ END -------->
