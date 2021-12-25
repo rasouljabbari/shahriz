@@ -2739,8 +2739,8 @@ input[type=number] {
 }
 
 .dv-panel-page-title {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 600;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -3082,15 +3082,15 @@ input[type=number] {
     border: 1px solid #6373AE !important;
     outline: none;
     font-size: 1em;
-    padding: 0.3em 3em;
-    text-align: left;
+    padding: 0.45em 3em;
     box-shadow: var(--box31016);
     text-align: center;
+    margin-top: 0.75em;
 }
 
-.dv-bg-light-card-input::placeholder {
-    font-size: 0.75em;
-
+.dv-bg-light-card-input::placeholder, .dv-bg-light-card-input {
+    font-size: 0.8em;
+    color: #A6ADC6;
 }
 
 .dv-bg-light-card-button {
@@ -3126,6 +3126,30 @@ input[type=number] {
     font-size: 0.8em;
 }
 
+.upload-file-input {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0.75em;
+    background: #E4E6EE;
+    color: #A6ADC6;
+    border-radius: 5px;
+    border: 1px solid #6373AE !important;
+    outline: none;
+    padding: 0.8em 3em;
+    box-shadow: var(--box31016);
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.dc-upload-file-plus-icon {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -3154,7 +3178,8 @@ input[type=number] {
     }
 
     .dv-home-tabs-parent {
-        padding: 2em 0 0 0;
+        padding: 0;
+        border-radius: 10px;
     }
 
     .dv-wallet-bg-parent {
@@ -3171,6 +3196,17 @@ input[type=number] {
 
     .dv-light-blue-bg {
         background: #fff;
+        border-radius: 10px;
+        padding: 1.5em 1.5em 0.5em 1.5em;
+    }
+
+    .dv-light-blue-bg input {
+        width: 100%;
+    }
+
+    .dv-transaction-records-table {
+        box-shadow: var(--box31016);
+        border-radius: 10px;
     }
 
     .dv-bg-light-card-button {
@@ -4163,6 +4199,49 @@ input[type=number] {
 }
 
 @media screen and (max-width: 768px) {
+    .dv-light-bg-in-mobile {
+        box-shadow: var(--box31016);
+        padding: 1em;
+        border-radius: 10px;
+        margin-bottom: 2em;
+    }
+
+    .dv-bg-light-card-input {
+        margin-bottom: 0.25em !important;
+    }
+
+    .dv-bg-light-card-input::placeholder {
+        text-align: center !important;
+        font-size: 0.9em;
+    }
+
+    .dv-bg-light-card-button {
+        margin-top: 1em !important;
+    }
+
+    .dv-bg-light-card-button:hover {
+        background: var(--orange);
+    }
+
+    .dv-setting-light-bg {
+        padding-top: 0.35em !important;
+    }
+
+    .dv-panel-menu-bg .dv-panel-menu, .dv-panel-menu-bg {
+        height: auto !important;
+    }
+    .dv-max-width-text-add-friends{
+        margin-bottom: 1em;
+    }
+    .dc-upload-file-plus-icon {
+        left: 3%;
+    }
+    .dv-bg-light-card-input {
+        padding: 0.6em 3em;
+    }
+    .dv-pt-tab-content{
+        padding-top: 2em;
+    }
     .dv-print-modal .modal-body {
         padding-top: 0;
     }
@@ -4320,6 +4399,29 @@ input[type=number] {
         height: 45px;
         filter: drop-shadow(0 0 10px rgba(53, 186, 71, 0.35));
     }
+
+    .dv-home-table tr th:first-child {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .dv-home-table tr th:last-child {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .dv-print-table-button {
+        min-width: 60px;
+        min-height: 40px;
+    }
+
+    .dv-print-modal-table-height {
+        height: 70vh;
+    }
+
+    .dv-rules-modal-close-button {
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -4351,6 +4453,10 @@ input[type=number] {
 
 /*min*/
 @media screen and (min-width: 768.01px) {
+    .w-md-100 {
+        width: 100%;
+    }
+
     .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
         top: 18%;
     }
