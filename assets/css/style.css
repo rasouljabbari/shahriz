@@ -1225,7 +1225,7 @@ input[type=number] {
 }
 
 .dv-map-content, .dv-comments-content {
-    filter: drop-shadow(var(--box31016));
+    box-shadow: var(--box31016);
     margin: 0 auto 2rem;
     width: 75%;
     border-radius: 10px;
@@ -2576,7 +2576,7 @@ input[type=number] {
     font-weight: bold;
 }
 
-.dv-welcome-to-user, .dv-home-tabs-parent {
+.dv-welcome-to-user, .dv-home-tabs-parent , .dv-wallet-bg-parent {
     box-shadow: var(--box1016);
     border-radius: 5px;
     padding: 4em 5em 4em 0;
@@ -2584,7 +2584,7 @@ input[type=number] {
     position: relative;
 }
 
-.dv-home-tabs-parent {
+.dv-home-tabs-parent , .dv-wallet-bg-parent {
     padding: 4em 3em 2em 3em;
 }
 
@@ -3033,16 +3033,82 @@ input[type=number] {
     color: #fff;
     font-size: 1em;
     width: 90%;
-    height: 46px;
+    height: 40px;
     position: absolute;
     top: 0;
     left: 50%;
     z-index: 1;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     border-radius: 5px;
-    filter: drop-shadow(0 2px 5px rgba(102,144,201,0.35));
+    filter: drop-shadow(0 2px 5px rgba(102, 144, 201, 0.35));
+}
 
+.dv-panel-dark-blue-bg {
+    background: #6373AE;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box31016);
+    margin-bottom: 0.75em;
+}
+
+.dv-light-blue-bg {
+    box-shadow: var(--box31016);
+    background: #F5F7FB;
+    border-radius: 5px;
+    padding: 2em 2em 1.5em 2em;
+    margin-bottom: 2em;
+}
+
+.dv-current-validity-title {
+    font-size: 1em;
+    color: #A6ADC6;
+}
+
+.dv-current-validity-value {
+    font-size: 1em;
+    color: var(--panel-darkblue);
+}
+
+.dv-bg-light-card-input {
+    background: #E4E6EE;
+    border-radius: 5px;
+    border: 1px solid #6373AE !important;
+    outline: none;
+    font-size: 1em;
+    padding: 0.3em 3em;
+    text-align: left;
+    box-shadow: var(--box31016);
+}
+
+.dv-bg-light-card-input::placeholder {
+    font-size: 0.75em;
+}
+
+.dv-bg-light-card-button {
+    background: var(--panel-blue);
+    color: #fff;
+    font-size: 1em;
+    width: 130px;
+    height: 34px;
+    margin: auto;
+    border: none !important;
+}
+
+.dv-transaction-records-table {
+    height: 300px;
+    overflow-y: auto;
+    direction: ltr;
+}
+
+.dv-transaction-records-table table {
+    direction: rtl;
 }
 
 /************************* responsive ********************/
@@ -3074,6 +3140,31 @@ input[type=number] {
 
     .dv-home-tabs-parent {
         padding: 2em 0 0 0;
+    }
+
+    .dv-wallet-bg-parent {
+        padding: 0;
+        box-shadow: none;
+    }
+    .dv-panel-dark-blue-bg{
+        background: transparent;
+        box-shadow: none;
+        color: var(--panel-darkblue);
+        margin-bottom: 0;
+    }
+    .dv-light-blue-bg{
+        background: #fff;
+    }
+    .dv-bg-light-card-button{
+        background: var(--panel-orange);
+    }
+
+    .dv-transaction-records-table table{
+        box-shadow: var(--box31016);
+        border-radius: 10px;
+    }
+    .dv-transaction-records-table table td{
+        padding: 1em !important;
     }
 
     .dv-home-table tr th, .dv-home-table tr td {
@@ -4291,6 +4382,28 @@ input[type=number] {
 }
 
 @media screen and (min-width: 1700.01px) {
+    .dv-wallet-bg-parent {
+        padding: 4em 5em 2em 5em;
+    }
+    .dv-transaction-records-table {
+        height: 430px;
+    }
+
+    .dv-panel-dark-blue-bg, .dv-page-title-in-nine {
+        height: 46px;
+    }
+
+    .dv-current-validity-value, .dv-current-validity-title, .dv-panel-dark-blue-bg,
+    .dv-page-title-in-nine, .dv-bg-light-card-input {
+        font-size: 1.4em !important;
+    }
+
+    .dv-bg-light-card-button {
+        width: 146px;
+        height: 39px;
+        font-size: 1.4em;
+    }
+
     .dv-panel-body {
         padding: 5em 7em;
     }
