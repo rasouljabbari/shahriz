@@ -2576,7 +2576,7 @@ input[type=number] {
     font-weight: bold;
 }
 
-.dv-welcome-to-user, .dv-home-tabs-parent , .dv-wallet-bg-parent {
+.dv-welcome-to-user, .dv-home-tabs-parent, .dv-wallet-bg-parent {
     box-shadow: var(--box1016);
     border-radius: 5px;
     padding: 4em 5em 4em 0;
@@ -2584,7 +2584,7 @@ input[type=number] {
     position: relative;
 }
 
-.dv-home-tabs-parent , .dv-wallet-bg-parent {
+.dv-home-tabs-parent, .dv-wallet-bg-parent {
     padding: 4em 3em 2em 3em;
 }
 
@@ -3097,9 +3097,14 @@ input[type=number] {
     background: var(--panel-blue);
     color: #fff;
     font-size: 0.9em;
-   padding: 0.3em 2.5em;
+    padding: 0.3em 2.5em;
     margin: auto;
     border: none !important;
+    transition: all 0.3s linear;
+}
+
+.dv-bg-light-card-button:hover {
+    background: blue;
 }
 
 .dv-transaction-records-table {
@@ -3110,6 +3115,15 @@ input[type=number] {
 
 .dv-transaction-records-table table {
     direction: rtl;
+}
+
+.dv-max-width-text-add-friends {
+    max-width: 480px;
+}
+
+.dv-link-copied {
+    color: var(--panel-darkblue);
+    font-size: 0.8em;
 }
 
 /************************* responsive ********************/
@@ -3147,24 +3161,28 @@ input[type=number] {
         padding: 0;
         box-shadow: none;
     }
-    .dv-panel-dark-blue-bg{
+
+    .dv-panel-dark-blue-bg {
         background: transparent;
         box-shadow: none;
         color: var(--panel-darkblue);
         margin-bottom: 0;
     }
-    .dv-light-blue-bg{
+
+    .dv-light-blue-bg {
         background: #fff;
     }
-    .dv-bg-light-card-button{
+
+    .dv-bg-light-card-button {
         background: var(--panel-orange);
     }
 
-    .dv-transaction-records-table table{
+    .dv-transaction-records-table table {
         box-shadow: var(--box31016);
         border-radius: 10px;
     }
-    .dv-transaction-records-table table td{
+
+    .dv-transaction-records-table table td {
         padding: 1em !important;
     }
 
@@ -4383,9 +4401,14 @@ input[type=number] {
 }
 
 @media screen and (min-width: 1700.01px) {
+    .dv-link-copied {
+        font-size: 1em;
+    }
+
     .dv-wallet-bg-parent {
         padding: 4em 5em 2em 5em;
     }
+
     .dv-transaction-records-table {
         height: 430px;
     }
