@@ -2549,11 +2549,13 @@ input[type=number] {
     height: 100px;
     border: 2px dashed var(--panel-blue);
     border-radius: 50%;
+    background: var(--f5light);
 }
 
 .dv-panel-menu-hr {
-    border-color: #EFF6FF;
-    margin: 40px 0;
+    border-color: rgba(239, 246, 255, 0.35);
+    width: 100%;
+    margin: 40px auto;
 }
 
 .dv-menu-items li {
@@ -3142,7 +3144,7 @@ input[type=number] {
     font-size: 0.8em;
 }
 
-.dc-upload-file-plus-icon {
+.dv-upload-file-plus-icon {
     position: absolute;
     left: 10%;
     top: 55%;
@@ -3150,6 +3152,24 @@ input[type=number] {
     font-size: 1.3em;
 }
 
+.dv-menu-wallet-button{
+    background: #E4E6EE;
+    border-radius: 5px;
+    border: 1px solid #6373AE !important;
+    color: var(--panel-darkblue);
+    outline: none;
+    font-size: 1em;
+    padding: 0.45em 3em;
+    box-shadow: var(--box31016);
+    text-align: center;
+    margin-top: 0.75em;
+    width: 80%;
+    transition: all 0.3s linear;
+}
+.dv-menu-wallet-button:hover{
+    background: var(--panel-blue);
+    color: #fff;
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -4199,6 +4219,9 @@ input[type=number] {
 }
 
 @media screen and (max-width: 768px) {
+    .dv-panel-menu-hr{
+        width: 80%;
+    }
     .dv-light-bg-in-mobile {
         box-shadow: var(--box31016);
         padding: 1em;
@@ -4230,18 +4253,23 @@ input[type=number] {
     .dv-panel-menu-bg .dv-panel-menu, .dv-panel-menu-bg {
         height: auto !important;
     }
-    .dv-max-width-text-add-friends{
+
+    .dv-max-width-text-add-friends {
         margin-bottom: 1em;
     }
-    .dc-upload-file-plus-icon {
+
+    .dv-upload-file-plus-icon {
         left: 3%;
     }
+
     .dv-bg-light-card-input {
         padding: 0.6em 3em;
     }
-    .dv-pt-tab-content{
+
+    .dv-pt-tab-content {
         padding-top: 2em;
     }
+
     .dv-print-modal .modal-body {
         padding-top: 0;
     }
