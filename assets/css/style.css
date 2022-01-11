@@ -112,8 +112,8 @@ input[type=number] {
 }
 
 .dv_header_logo {
-    width: 205px;
-    height: 100px;
+    width: 160px;
+    /*height: 100px;*/
 }
 
 .dv_image_content {
@@ -206,7 +206,7 @@ input[type=number] {
     border-radius: 5px;
     box-shadow: var(--box31016);
     /*margin-left: 4rem;*/
-    margin-bottom: 3rem;
+    margin-bottom: 1.5em;
 }
 
 .dv-tab-card-image {
@@ -493,8 +493,8 @@ input[type=number] {
     border: none !important;
     color: #fff !important;
     transition: all 0.3s linear;
-    width: 223px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     margin: 4rem auto;
     filter: drop-shadow(0 15px 30px rgba(53, 186, 71, 0.35));
 }
@@ -1222,6 +1222,23 @@ input[type=number] {
     margin-left: 1.4rem;
     margin-bottom: 0.5rem;
     font-size: 14px;
+    transition: all 0.3s linear;
+}
+
+.dv-tags a {
+    color: var(--darkblue);
+}
+
+.dv-tags:hover {
+    background: var(--darkblue);
+}
+
+.dv-tags:hover a {
+    color: #fff;
+}
+
+.dv-rate-star{
+    cursor: pointer;
 }
 
 .dv-map-content, .dv-comments-content {
@@ -1229,6 +1246,10 @@ input[type=number] {
     margin: 0 auto 2rem;
     width: 75%;
     border-radius: 10px;
+}
+
+.dv-comments-content {
+    box-shadow: none !important;
 }
 
 .dv-map-content #map {
@@ -1376,19 +1397,30 @@ input[type=number] {
     background-size: 300px;
 }
 
-.dv-rules-content .dv-rule-count {
+.dv-rules-content .dv-rule-count:before{
     width: 16px;
     height: 16px;
     background: var(--purple);
     border-radius: 50%;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 0.4em;
     font-size: 12px;
     margin-top: 3px;
+    text-align: center;
+    display: inline-grid;
 }
-
+ol {
+    counter-reset: myOrderedListItemsCounter;
+}
+ol li {
+    list-style-type: none;
+    position: relative;
+}
+ol li:before {
+    counter-increment: myOrderedListItemsCounter;
+    content: counter(myOrderedListItemsCounter)" ";
+    margin-left: 0.5em;
+}
 .dv-rules-content p {
     width: calc(100% - 22px);
     font-size: 13px;
@@ -1402,14 +1434,14 @@ input[type=number] {
     width: 725px;
     margin: 0 auto;
     border: 1px solid #fff;
-    height: 10px;
+    height: 13px;
     background: #fff;
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
 }
 
 .dv-select-sons-position, .dv-select-chair-position, .dv-select-ticket-position, .dv-select-pay-position {
     position: relative;
-    top: 10px;
+    top: 11px;
 }
 
 .dv-w-181 {
@@ -1536,7 +1568,7 @@ input[type=number] {
     background: #fff;
     border-radius: 5px;
     box-shadow: var(--box31016);
-    padding: 25px 15px 70px 15px;
+    padding: 25px 15px 15px 15px;
 }
 
 .dv-concert-chairs-scroll {
@@ -1647,7 +1679,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0.35rem;
+    margin-left: 0.5rem;
 }
 
 .dv-concert-chair .icon-checkmark {
@@ -2424,7 +2456,7 @@ input[type=number] {
 
 .dv-guide-item-image-parent {
     padding: 0 3rem 0 2rem;
-    width: 25%;
+    width: 23%;
     margin: auto;
 }
 
@@ -2432,14 +2464,14 @@ input[type=number] {
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid var(--purple);
     margin: 0 6rem;
-    padding: 3.5rem 2rem 3rem 2rem;
+    padding: 2.5em;
 }
 
 .dv-guide-items-border-left-bottom {
     border-bottom: 10px solid var(--purple);
     border-left: 10px solid var(--purple);
     margin: 0 6rem;
-    padding: 3.5rem 2rem 3rem 2rem;
+    padding: 2.5em;
 }
 
 .dv-guide-items .dv-w-70 {
@@ -2479,7 +2511,7 @@ input[type=number] {
     border-bottom: 10px solid var(--purple);
     border-right: 10px solid var(--purple);
     margin: 0 6rem;
-    padding: 3.5rem 2rem;
+    padding: 2.5rem;
 }
 
 .dv-purchase-guide-follow-us {
@@ -3106,7 +3138,7 @@ input[type=number] {
 }
 
 .dv-bg-light-card-button:hover {
-    background: blue;
+    background: #6373AE;
 }
 
 .dv-transaction-records-table {
@@ -3152,7 +3184,7 @@ input[type=number] {
     font-size: 1.3em;
 }
 
-.dv-menu-wallet-button{
+.dv-menu-wallet-button {
     background: #E4E6EE;
     border-radius: 5px;
     border: 1px solid #6373AE !important;
@@ -3166,9 +3198,31 @@ input[type=number] {
     width: 80%;
     transition: all 0.3s linear;
 }
-.dv-menu-wallet-button:hover{
+
+.dv-menu-wallet-button:hover {
     background: var(--panel-blue);
     color: #fff;
+}
+
+.dv_course_pointer {
+    cursor: pointer;
+}
+
+.dv-slider-image-preview {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.dv-chair-list-parent {
+    width: 100%;
+    overflow: auto;
+    margin-top: -6em;
+}
+.dv-chair-list-parent .dv-chair-list-2-parent{
+    margin: 0 3em;
+    transform: scale(0.8);
 }
 /************************* responsive ********************/
 /*max*/
@@ -4219,9 +4273,10 @@ input[type=number] {
 }
 
 @media screen and (max-width: 768px) {
-    .dv-panel-menu-hr{
+    .dv-panel-menu-hr {
         width: 80%;
     }
+
     .dv-light-bg-in-mobile {
         box-shadow: var(--box31016);
         padding: 1em;
@@ -4504,7 +4559,7 @@ input[type=number] {
 
 @media screen and (min-width: 992.01px) {
     .dv-video-player-modal .modal-dialog {
-        max-width: 770px;
+        max-width: 600px;
     }
 
     .dv-selected-sons-result-header, .dv-selected-sons-result-body, .dv-selected-tickets-result, .dv-selected-sons-result {
@@ -4525,12 +4580,16 @@ input[type=number] {
     }
 
     .dv-banner-image {
-        width: 519px;
-        height: 519px;
+        width: 350px;
+        height: 350px;
     }
 
     .dv-banner-image img {
         object-fit: contain;
+    }
+
+    .dv-singer-details {
+        height: 230px;
     }
 }
 

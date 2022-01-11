@@ -8,13 +8,11 @@ $(document).ready(function () {
   $('.dv-card-price').digits()
 });
 
-$(document).mouseup(function(e)
-{
+$(document).mouseup(function (e) {
   let container = $("#navbarSupportedContentMobile");
 
   // if the target of the click isn't the container nor a descendant of the container
-  if (!container.is(e.target) && container.has(e.target).length === 0)
-  {
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
     container.hide();
   }
 });
@@ -109,13 +107,43 @@ $('#videoModal').on('hidden.bs.modal', function () {
   $('#source_video')[0].pause();
 });
 
+// rate star
+const ratingStars = [...document.getElementsByClassName("dv-rate-star")];
+
+function executeRating(stars) {
+  const starClassActive = "icon-star dv-rate-star dv-card-gold-start";
+  const starClassInactive = "icon-star dv-rate-star";
+  const starsLength = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      let value = parseInt(stars.indexOf(star)) + 1
+      if(value > 5){
+        $('#rateValue').val(value - 5)
+      }else{
+        $('#rateValue').val(value )
+      }
+      i = stars.indexOf(star);
+
+      if (star.className===starClassInactive) {
+        for (i; i >= 0; --i) stars[i].className = starClassActive;
+      } else {
+        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+      }
+    };
+  });
+  console.log(i)
+}
+executeRating(ratingStars);
+
+
 //Swiper
 let banners = new Swiper(".bannerSwiper", {
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
