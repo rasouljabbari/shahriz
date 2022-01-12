@@ -859,6 +859,10 @@ input[type=number] {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .dv-video-player-after-image {
@@ -866,8 +870,8 @@ input[type=number] {
 }
 
 .dv-video-player div {
-    width: 93px;
-    height: 93px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -875,6 +879,8 @@ input[type=number] {
     background: var(--f5light);
     font-size: 30px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.45);
+    margin-left: 0 !important;
+    margin-bottom: 0.3em;
 }
 
 .concertSwiper {
@@ -1237,7 +1243,7 @@ input[type=number] {
     color: #fff;
 }
 
-.dv-rate-star{
+.dv-rate-star {
     cursor: pointer;
 }
 
@@ -1365,7 +1371,7 @@ input[type=number] {
 
 .dv-pool-time-type {
     color: #E2A5BA;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 55px;
 }
 
@@ -1397,7 +1403,7 @@ input[type=number] {
     background-size: 300px;
 }
 
-.dv-rules-content .dv-rule-count:before{
+.dv-rules-content .dv-rule-count:before {
     width: 16px;
     height: 16px;
     background: var(--purple);
@@ -1409,18 +1415,22 @@ input[type=number] {
     text-align: center;
     display: inline-grid;
 }
+
 ol {
     counter-reset: myOrderedListItemsCounter;
 }
+
 ol li {
     list-style-type: none;
     position: relative;
 }
+
 ol li:before {
     counter-increment: myOrderedListItemsCounter;
-    content: counter(myOrderedListItemsCounter)" ";
+    content: counter(myOrderedListItemsCounter) " ";
     margin-left: 0.5em;
 }
+
 .dv-rules-content p {
     width: calc(100% - 22px);
     font-size: 13px;
@@ -3220,10 +3230,38 @@ ol li:before {
     overflow: auto;
     margin-top: -6em;
 }
-.dv-chair-list-parent .dv-chair-list-2-parent{
+
+.dv-chair-list-parent .dv-chair-list-2-parent {
     margin: 0 3em;
     transform: scale(0.8);
 }
+
+.dv-pool-tab-image{
+    padding: 0 2em;
+    opacity: 0.6;
+}
+.dv-pool-type-tabs button.active .dv-pool-tab-image{
+    opacity: 1;
+}
+.dv-tab-title-image:nth-child(odd) {
+    direction: ltr;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.dv-tab-title-image:nth-child(n + 2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.dv-tab-title-image:last-child{
+    border-left: none;
+}
+.dv-tab-title-image:nth-child(even) {
+    direction: rtl;
+}
+/*.dv-tab-title-image:nth-child(odd){*/
+/*    direction: rtl;*/
+/*}*/
 /************************* responsive ********************/
 /*max*/
 
@@ -3234,6 +3272,9 @@ ol li:before {
 }
 
 @media screen and (max-width: 992px) {
+    .dv-pool-type-tabs button{
+        height: 100% !important;
+    }
     .dv-dashboard-home-tabs li {
         width: 40%;
         margin: 0 0.5em;
