@@ -3072,6 +3072,47 @@ ol li:before {
     box-sizing: content-box;
 }
 
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.dv-loader-icon {
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -ms-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+    font-size: 1.8em;
+}
+.dv-loader-icon:before{
+    color: #fff;
+}
+
+
 .dv-page-title-in-nine {
     background: var(--panel-orange);
     color: #fff;
@@ -3259,9 +3300,12 @@ ol li:before {
 .dv-tab-title-image:nth-child(even) {
     direction: rtl;
 }
-/*.dv-tab-title-image:nth-child(odd){*/
-/*    direction: rtl;*/
-/*}*/
+
+.page-item.active .page-link {
+    background-color: var(--panel-blue) !important;
+    border-color: var(--panel-blue) !important;
+}
+
 /************************* responsive ********************/
 /*max*/
 

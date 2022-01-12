@@ -229,14 +229,31 @@
                 </table>
             </div>
             <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4">
-                <button type="button" class="dv-pagination-button d-flex align-items-center px-3 ">
-                    <span class="icon-dark-right-arrow ps-3 dv-pagination-arrows"></span>
-                    <span class="ps-1 dv-pagination-titles">صفحه قبلی</span>
-                </button>
-                <button type="button" class="dv-pagination-button d-flex align-items-center pe-3">
-                    <span class="ps-3 dv-pagination-titles">صفحه بعدی</span>
-                    <span class="icon-dark-left-arrow dv-pagination-arrows"></span>
-                </button>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link disabled" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+<!--                <button type="button" class="dv-pagination-button d-flex align-items-center px-3 ">-->
+<!--                    <span class="icon-dark-right-arrow ps-3 dv-pagination-arrows"></span>-->
+<!--                    <span class="ps-1 dv-pagination-titles">صفحه قبلی</span>-->
+<!--                </button>-->
+<!--                <button type="button" class="dv-pagination-button d-flex align-items-center pe-3">-->
+<!--                    <span class="ps-3 dv-pagination-titles">صفحه بعدی</span>-->
+<!--                    <span class="icon-dark-left-arrow dv-pagination-arrows"></span>-->
+<!--                </button>-->
             </div>
         </div>
     </div>
@@ -274,34 +291,7 @@
                         <tr>
                             <td>
                                 <button class="dv-print-table-button" onclick="window.print();return false;">
-                                    <div class="loadingio-spinner-spin-xs9r7lu5cta">
-                                        <div class="ldio-fpepf5ugyfw">
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="icon-uniEB54 dv-loader-icon"></span>
                                     <!--                                    چاپ-->
                                 </button>
                             </td>
@@ -599,7 +589,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <!------ END -------->
