@@ -303,13 +303,18 @@ input[type=number] {
 }
 
 .dv-show-more-card {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 47px;
     color: var(--darkblue) !important;
     background: #fff;
-    padding: 4px 40px;
+    padding: 0 30px;
     box-shadow: var(--box31016);
     margin: 10px 0;
+    transition: all 0.3s linear;
+}
+
+.dv-show-more-card:hover{
+    transform: translateY(-0.5em);
 }
 
 .dv-main-card-price {
@@ -2258,9 +2263,9 @@ ol li:before {
 }
 
 .dv-pay-result-btn {
-    font-size: 23px;
+    font-size: 18px;
     line-height: 11px;
-    width: 330px;
+    width: 240px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -2290,11 +2295,11 @@ ol li:before {
 
 .dv-pay-icon:before {
     color: #fff;
-    font-size: 250px;
+    font-size: 120px;
 }
 
 .dv-pay-result-title {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 12px;
 }
 
@@ -2306,7 +2311,7 @@ ol li:before {
 .dv-pay-result-description {
     font-size: 16px;
     line-height: 32px;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .f-21 {
@@ -4652,7 +4657,7 @@ ol li:before {
     }
 
     .dv-video-size {
-        width: 738px;
+        width: 100%;
         height: 415px;
     }
 

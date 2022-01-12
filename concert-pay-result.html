@@ -74,7 +74,9 @@
 
                     <!--                    left buttons-->
                     <div class="d-flex position-relative">
-                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill"
+                                type="button">ورود/عضویت
+                        </button>
                         <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         <button class="dv_search_btn" onclick="showSearchBar()" type="button">
@@ -200,7 +202,9 @@
 
                         <!--                    left buttons-->
                         <div class="d-flex position-relative dv_bg_menu_buttons py-4 px-2">
-                            <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
+                            <button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    class="dv_orange_btn rounded-pill" type="button">ورود/عضویت
+                            </button>
                             <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         </div>
@@ -265,7 +269,7 @@
 
             <!--            top full with content-->
             <div class="col-12 mt-4 mb-2">
-                <div class="dv-concert-title d-flex flex-column flex-xl-row align-items-center justify-content-between pb-0">
+                <div class="dv-concert-title d-none d-lg-flex flex-column flex-xl-row align-items-center justify-content-between pb-0">
                     <h2 class="mb-0">کنسرت گروه دف نوازان حیران و شنگولستان جیران با بستنی</h2>
                     <div class="d-none d-lg-flex align-items-center">
                         <button class="dv-singer-dark-button rounded-pill mb-0 ms-2" type="button"
@@ -274,13 +278,6 @@
                         <button class="dv-singer-light-button rounded-pill">راهنمای خرید</button>
                     </div>
                 </div>
-
-                <div class="d-flex d-lg-none align-items-center justify-content-center">
-                    <span class="ps-3">پنجشنبه 25 شهریور</span>
-                    <span>23:30</span>
-                </div>
-
-                <p class="dv-discount-code-title d-block d-lg-none pt-5 pb-0 mb-0">استفاده از کد تخفیف</p>
 
                 <div class="dv-concert-user-info d-none d-lg-flex  mt-2">
                     <div class="d-flex align-items-center dv-concert-user-info-pl">
@@ -309,27 +306,10 @@
             </div>
 
             <div class="col-12">
-                <div class="dv-pay-result-content dv-pay-success">
-                    <div class="dv-pay-header d-flex flex-column align-items-center justify-content-center">
-                        <span class="icon-checkmark-circle-2 mb-lg-5 dv-pay-icon"></span>
-                        <h5 class="dv-pay-result-title text-center">عملیات موفقیت آمیز بود!</h5>
-                    </div>
-
-                    <div class="dv-pay-body d-flex flex-column align-items-center justify-content-center">
-                        <p class="dv-pay-result-description text-center">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                        </p>
-                        <a href="" class="dv-pay-result-btn rounded-pill d-none d-lg-flex">مشاهده بلیت ها</a>
-                    </div>
-
-                </div>
-
-                <!--                <div class="dv-pay-result-content dv-pay-failed">-->
+                <!--                <div class="dv-pay-result-content dv-pay-success">-->
                 <!--                    <div class="dv-pay-header d-flex flex-column align-items-center justify-content-center">-->
-                <!--                        <span class="icon-close-circle1 mb-lg-5 dv-pay-icon"></span>-->
-                <!--                        <h5 class="dv-pay-result-title text-center">عملیات ناموفق بود!</h5>-->
+                <!--                        <span class="icon-checkmark-circle-2 mb-lg-5 dv-pay-icon"></span>-->
+                <!--                        <h5 class="dv-pay-result-title text-center">عملیات موفقیت آمیز بود!</h5>-->
                 <!--                    </div>-->
 
                 <!--                    <div class="dv-pay-body d-flex flex-column align-items-center justify-content-center">-->
@@ -338,11 +318,28 @@
                 <!--                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی-->
                 <!--                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.-->
                 <!--                        </p>-->
-                <!--                        <a href="index.html" class="dv-pay-result-btn rounded-pill d-none d-lg-flex">بازگشت به صفحه-->
-                <!--                            اصلی</a>-->
+                <!--                        <a href="" class="dv-pay-result-btn rounded-pill d-none d-lg-flex">مشاهده بلیت ها</a>-->
                 <!--                    </div>-->
 
                 <!--                </div>-->
+
+                <div class="dv-pay-result-content dv-pay-failed">
+                    <div class="dv-pay-header d-flex flex-column align-items-center justify-content-center">
+                        <span class="icon-close-circle1 mb-lg-5 dv-pay-icon"></span>
+                        <h5 class="dv-pay-result-title text-center">عملیات ناموفق بود!</h5>
+                    </div>
+
+                    <div class="dv-pay-body d-flex flex-column align-items-center justify-content-center">
+                        <p class="dv-pay-result-description text-center">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </p>
+                        <a href="index.html" class="dv-pay-result-btn rounded-pill d-none d-lg-flex">بازگشت به صفحه
+                            اصلی</a>
+                    </div>
+
+                </div>
             </div>
 
         </div>
