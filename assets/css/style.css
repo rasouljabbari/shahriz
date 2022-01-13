@@ -313,7 +313,7 @@ input[type=number] {
     transition: all 0.3s linear;
 }
 
-.dv-show-more-card:hover{
+.dv-show-more-card:hover {
     transform: translateY(-0.5em);
 }
 
@@ -2117,17 +2117,18 @@ ol li:before {
     margin-left: 1rem;
 }
 
-.dv-mini-purple-circle-active {
+button.active .dv-mini-purple-circle-active {
     opacity: 1;
 }
 
 .dv-question-text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 40px;
     background: #fff;
     box-shadow: var(--box1016);
-    padding: 0 4rem 0 20px;
+    padding: 0 3rem 0 15px;
     border-radius: 0 10px 10px 0;
+    color: var(--darkblue) !important;
 }
 
 .dv-icon-question {
@@ -3077,7 +3078,8 @@ ol li:before {
     box-sizing: content-box;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+@-webkit-keyframes rotating /* Safari and Chrome */
+{
     from {
         -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -3089,6 +3091,7 @@ ol li:before {
         transform: rotate(360deg);
     }
 }
+
 @keyframes rotating {
     from {
         -ms-transform: rotate(0deg);
@@ -3105,6 +3108,7 @@ ol li:before {
         transform: rotate(360deg);
     }
 }
+
 .dv-loader-icon {
     -webkit-animation: rotating 1.2s linear infinite;
     -moz-animation: rotating 1.2s linear infinite;
@@ -3113,7 +3117,8 @@ ol li:before {
     animation: rotating 1.2s linear infinite;
     font-size: 1.8em;
 }
-.dv-loader-icon:before{
+
+.dv-loader-icon:before {
     color: #fff;
 }
 
@@ -3282,13 +3287,15 @@ ol li:before {
     transform: scale(0.8);
 }
 
-.dv-pool-tab-image{
+.dv-pool-tab-image {
     padding: 0 2em;
     opacity: 0.6;
 }
-.dv-pool-type-tabs button.active .dv-pool-tab-image{
+
+.dv-pool-type-tabs button.active .dv-pool-tab-image {
     opacity: 1;
 }
+
 .dv-tab-title-image:nth-child(odd) {
     direction: ltr;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -3299,9 +3306,11 @@ ol li:before {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     height: 100%;
 }
-.dv-tab-title-image:last-child{
+
+.dv-tab-title-image:last-child {
     border-left: none;
 }
+
 .dv-tab-title-image:nth-child(even) {
     direction: rtl;
 }
@@ -3311,6 +3320,9 @@ ol li:before {
     border-color: var(--panel-blue) !important;
 }
 
+.dv-invoice-tabs-items .nav-link.active{
+    background: transparent;
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -3321,9 +3333,10 @@ ol li:before {
 }
 
 @media screen and (max-width: 992px) {
-    .dv-pool-type-tabs button{
+    .dv-pool-type-tabs button {
         height: 100% !important;
     }
+
     .dv-dashboard-home-tabs li {
         width: 40%;
         margin: 0 0.5em;
