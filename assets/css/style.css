@@ -1694,7 +1694,12 @@ ol li:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0.5rem;
+    margin-left: 15px;
+}
+
+.dv-concert-chair-light{
+    background: transparent;
+    width: 15px;
 }
 
 .dv-concert-chair .icon-checkmark {
@@ -3282,9 +3287,13 @@ button.active .dv-mini-purple-circle-active {
     margin-top: -6em;
 }
 
+.chair-loader{
+    font-size: 1em;
+}
+
 .dv-chair-list-parent .dv-chair-list-2-parent {
     margin: 0 3em;
-    transform: scale(0.8);
+    transform: scale(0.5);
 }
 
 .dv-pool-tab-image {
@@ -3322,6 +3331,23 @@ button.active .dv-mini-purple-circle-active {
 
 .dv-invoice-tabs-items .nav-link.active{
     background: transparent;
+}
+
+.dv-large-loader{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+.dv-large-loader .dv-loader-icon{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50% , -50%);
+    font-size: 6em;
 }
 /************************* responsive ********************/
 /*max*/
