@@ -384,13 +384,11 @@ input[type=number] {
 }
 
 .dv_download_links_button {
-    width: 219px;
-    height: 64px;
+   width: 85%;
 }
 
 .dv_enamad_size {
-    width: 90px;
-    height: 90px;
+    width: 85%
 }
 
 .dv_copy_right_bg {
@@ -828,26 +826,6 @@ input[type=number] {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-.dv-go-to-top-icon {
-    background: rgb(255, 208, 69);
-    background: radial-gradient(circle, rgba(255, 208, 69, 1) 0%, rgba(249, 159, 40, 1) 100%);
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px rgba(255, 208, 69, 0.5);
-    color: var(--darkblue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 112px;
-    font-size: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    cursor: pointer;
 }
 
 /****************        Schedule Concert      ********************/
@@ -1697,7 +1675,7 @@ ol li:before {
     margin-left: 15px;
 }
 
-.dv-concert-chair-light{
+.dv-concert-chair-light {
     background: transparent;
     width: 15px;
 }
@@ -3287,7 +3265,7 @@ button.active .dv-mini-purple-circle-active {
     margin-top: -6em;
 }
 
-.chair-loader{
+.chair-loader {
     font-size: 1em;
 }
 
@@ -3329,25 +3307,82 @@ button.active .dv-mini-purple-circle-active {
     border-color: var(--panel-blue) !important;
 }
 
-.dv-invoice-tabs-items .nav-link.active{
+.dv-invoice-tabs-items .nav-link.active {
     background: transparent;
 }
 
-.dv-large-loader{
+.dv-large-loader {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 9;
     top: 0;
     left: 0;
 }
-.dv-large-loader .dv-loader-icon{
+
+.dv-large-loader .dv-loader-icon {
     position: absolute;
     top: 45%;
     left: 45%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     font-size: 6em;
+}
+
+.dv-text-gray{
+    color: #929AA4;
+}
+.dv-blog-info{
+    background: #fff;
+    padding: 4em 4em 2em 4em;
+    border-radius: 20px;
+    box-shadow: var(--box31016);
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+.dv-blog-social-icon{
+    transition: all 0.4s ease-in-out;
+}
+.dv-blog-social-icon:hover{
+    transform: translateY(-0.4em) scale(1.1);
+}
+.dv-blog-social-icon div{
+    font-size: 32px;
+}
+.dv-blog-info-img{
+    width: 75%;
+    height: 390px;
+    margin: 1em auto;
+}
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dv-blog-info-img img{
+    border-radius: 20px;
+}
+
+.dv-go-to-top-icon {
+    background: rgb(255, 208, 69);
+    background: radial-gradient(circle, rgba(255, 208, 69, 1) 0%, rgba(249, 159, 40, 1) 100%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(255, 208, 69, 0.5);
+    color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 112px;
+    font-size: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+    top: 67%;
 }
 /************************* responsive ********************/
 /*max*/
@@ -3359,6 +3394,13 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 992px) {
+    .dv-blog-info{
+        box-shadow: none;
+        padding: 2em 0 0 0;
+    }
+    .dv-blog-info-img{
+        width: 100%;
+    }
     .dv-pool-type-tabs button {
         height: 100% !important;
     }

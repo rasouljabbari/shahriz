@@ -3,19 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>شهریز | تماس با ما</title>
+    <title>شهریز</title>
     <link rel="shortcut icon" href="assets/images/logo.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/icomoon.min.css">
     <link rel="stylesheet" href="assets/css/icomoon_custom.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body dir="rtl">
-
 <!--Header-->
 <header>
     <div class="dv_bg_menu_overlay">
@@ -79,8 +75,10 @@
 
                     <!--                    left buttons-->
                     <div class="d-flex position-relative">
-                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
-                        <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill"
+                                type="button">ورود/عضویت
+                        </button>
+                        <a href="" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         <button class="dv_search_btn" onclick="showSearchBar()" type="button">
                             <span class="icon-search"></span>
@@ -205,8 +203,10 @@
 
                         <!--                    left buttons-->
                         <div class="d-flex position-relative dv_bg_menu_buttons py-4 px-2">
-                            <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill" type="button">ورود/عضویت</button>
-                            <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+                            <button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    class="dv_orange_btn rounded-pill" type="button">ورود/عضویت
+                            </button>
+                            <a href="#" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
 
                         </div>
                     </div>
@@ -217,107 +217,137 @@
 </header>
 <!----- Body Section ------>
 <main class="dv-mt-72">
-
     <div class="container">
-        <div class="dv-contact-us-bg mb-5">
-            <div class="row">
-                <div class="col-12 col-lg-7">
-
-                    <h5 class="dv-contact-us-title mb-2">تماس با ما</h5>
-                    <p class="dv-contact-us-text">یه پیام برامون بفرستین</p>
-
-                    <form class="dv-contact-us-form">
-
-                        <label for="full_name" class="position-relative">
-                            <span class="icon-person dv-contact-us-icon"></span>
-                            <input type="text" name="full_name" id="full_name" placeholder="نام و نام خانوادگی">
-<!--                            <span class="dv-contact-us-error">خطا را جدی بگیرید</span>-->
-                        </label>
-
-                        <label for="title" class="position-relative">
-                            <span class="icon-bxs-pencil dv-contact-us-icon"></span>
-                            <input type="text" name="title" id="title" placeholder="موضوع">
-<!--                            <span class="dv-contact-us-error">خطا را جدی بگیرید</span>-->
-                        </label>
-
-                        <label for="phone" class="position-relative">
-                            <span class="icon-mobile dv-contact-us-icon"></span>
-                            <input type="number" name="phone" id="phone" placeholder="شماره همراه">
-<!--                            <span class="dv-contact-us-error">خطا را جدی بگیرید</span>-->
-                        </label>
-
-                        <label for="email" class="position-relative mb-5">
-                            <span class="icon-email1 dv-contact-us-icon"></span>
-                            <input type="email" name="email" id="email" placeholder="ایمیل">
-<!--                            <span class="dv-contact-us-error">خطا را جدی بگیرید</span>-->
-                        </label>
-
-                        <label for="description" class="position-relative">
-                            <textarea name="description" id="description" rows="5" class="dv-contact-us-description"
-                                      placeholder="توضیحات ..."></textarea>
-<!--                            <span class="dv-contact-us-error">خطا را جدی بگیرید</span>-->
-                        </label>
-
-                        <button type="submit" class="dv-contact-us-button">ارسال پیام</button>
-                    </form>
+        <div class="dv-blog-info">
+            <div class="row g-4">
+                <div class="col-12 col-md-7">
+<!--                    page title-->
+                    <h3 class="dv-blog-title mb-0">عنوان انتخاب رویداد و کلیک بر روی آن انتخاب
+                        رویداد و کلیک بر روی آن</h3>
                 </div>
-            </div>
-        </div>
-        <h5 class="dv-contact-us-title fw-normal mb-4 d-block d-lg-none text-center">شهریز</h5>
-        <div class="dv-contact-us-map mb-5">
-            <div class="row">
-                <div class="col-12 col-lg-6 order-1 order-lg-0">
-
-                    <h5 class="dv-contact-us-title fw-normal mb-4 d-none d-lg-block">شهریز</h5>
-
-                    <ul class="dv-contact-us-list">
-                        <li>
-                            <span class="icon-phone dv-contact-us-icons-back"></span>
-                            <span class="dv-contact-us-list-title">۰۴۱۳۳۳۸۰۹۵۲</span>
-                        </li>
-
-                        <li>
-                            <span class="icon-map dv-contact-us-icons-back"></span>
-                            <span class="dv-contact-us-list-title"> تبریز - بلوار آزادی - نرسیده به سه راهی گلگشت
-8 جنب مجتمع شیخ الرئیس - کوی پارسا - پلاک</span>
-                        </li>
-
-                        <li>
-                            <span class="icon-bx-at dv-contact-us-icons-back"></span>
-                            <span class="dv-contact-us-list-title">info@shahriz.com</span>
-                        </li>
-
-                        <li>
-                            <span class="icon-bxs-share-alt dv-contact-us-icons-back"></span>
-                            <div class="d-flex align-items-center">
-                                <a href="#"><i class="icon-Aparat dv_footer_social_icons dv-footer-aparat-icon"></i></a>
-                                <a href="#" class="px-4"><i
-                                        class="icon-instagram dv_footer_social_icons dv-footer-instagram-icon"></i></a>
-                                <a href="#"><i
-                                        class="icon-telegram dv_footer_social_icons dv-footer-telegram-icon"></i></a>
-                            </div>
-                        </li>
-                    </ul>
-
+                <div class="col-12 col-md-5">
+<!--                    social media  icons-->
+                    <div class="d-flex align-items-center justify-content-md-end">
+                        <a href="#" class="dv-blog-social-icon">
+                            <div class="icon-Group-1437 ps-2"><span class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span></div>
+                        </a>
+                        <a href="#" class="dv-blog-social-icon">
+                            <div class="icon-Group-1393"><span class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span><span class="path4"></span></div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6 order-0 order-lg-1">
-                    <div class="dv-map-content-contact-us">
-                        <div id="map"></div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/mini-logo.png" class="img-fluid ps-3" alt="شهریز">
+                        <a href="#" class="dv-text-purple ps-3">شهریز</a>
+                        <span class="ps-3 dv-text-gray">1400/10/19</span>
+                        <span class="dv-text-gray">8 دقیقه</span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="dv-blog-info-img d-flex align-items-center justify-content-center">
+                        <img src="assets/images/blog-image.png" class="img-cover" alt="شهریز">
+                    </div>
+                </div>
+                <div class="col-12 mb-md-5">
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است .</p>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex flex-wrap">
+                        <div class="dv-tags rounded-pill"><a href="#">برچسب</a></div>
+                        <div class="dv-tags rounded-pill"><a href="#">برچسب</a></div>
+                        <div class="dv-tags rounded-pill"><a href="#">برچسب</a></div>
+                        <div class="dv-tags rounded-pill"><a href="#">برچسب</a></div>
+                        <div class="dv-tags rounded-pill"><a href="#">برچسب</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
 
-<!--show in mobile view-->
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
 
-<div class="dv-contact-with-support d-lg-none">
-    <button class="rounded-pill">
-        <span class="icon-phone ps-3"></span>
-        <span>تماس با پشتیبانی </span>
-    </button>
+                <label for="full_name" class="position-relative mb-4 w-100">
+                    <input type="text" name="full_name" id="full_name" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                </label>
+
+                <label for="phone" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="number" name="phone" id="phone" class="dv-login-input w-100" placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#passwordModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="phone" class="position-relative mb-4 w-100">
+                    <input type="number" name="phone" id="mobile" class="dv-login-input w-100"
+                           placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text dv-change-phone-number">تغییر شماره موبایل
+                    </button>
+                </label>
+
+                <label for="full_name" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="password" name="full_name" id="password" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                    <span class="icon-eye dv-show-password-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text me-auto mt-2 ms-0 d-block">ارسال مجدد کلمه عبور
+                    </button>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#loginModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+
+        </div>
+    </div>
 </div>
 
 <!--Footer-->
@@ -440,97 +470,11 @@
     </div>
 </footer>
 
-<!-- Modal -->
-<div class="modal fade dv-rules-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="icon-close-circle"></i>
-                </button>
-            </div>
-            <form class="dv-login-content w-100">
-                <div class="dv-form-description">
-                    شما پیش از این عضو سایت شده اید
-                    برای ورود کلمه عبور خود را وارد نمایید
-                </div>
-
-                <label for="full_name" class="position-relative mb-4 w-100">
-                    <input type="text" name="full_name" id="full_name" class="dv-login-input w-100"
-                           placeholder="نام و نام خانوادگی">
-                    <span class="icon-person dv-form-icon"></span>
-                </label>
-
-                <label for="phone" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
-                    <input type="number" name="phone" id="phone" class="dv-login-input w-100" placeholder="شماره همراه">
-                    <span class="icon-mobile dv-form-icon"></span>
-                </label>
-
-                <button type="button"
-                        data-bs-toggle="modal" data-bs-target="#passwordModal"
-                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
-                </button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade dv-rules-modal" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="icon-close-circle"></i>
-                </button>
-            </div>
-            <form class="dv-login-content w-100">
-                <div class="dv-form-description">
-                    شما پیش از این عضو سایت شده اید
-                    برای ورود کلمه عبور خود را وارد نمایید
-                </div>
-
-                <label for="phone" class="position-relative mb-4 w-100">
-                    <input type="number" name="phone" id="mobile" class="dv-login-input w-100"
-                           placeholder="شماره همراه">
-                    <span class="icon-mobile dv-form-icon"></span>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
-                            class="dv-error-text dv-change-phone-number">تغییر شماره موبایل
-                    </button>
-                </label>
-
-                <label for="full_name" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
-                    <input type="password" name="full_name" id="password" class="dv-login-input w-100"
-                           placeholder="نام و نام خانوادگی">
-                    <span class="icon-person dv-form-icon"></span>
-                    <span class="icon-eye dv-show-password-icon"></span>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
-                            class="dv-error-text me-auto mt-2 ms-0 d-block">ارسال مجدد کلمه عبور
-                    </button>
-                </label>
-
-                <button type="button"
-                        data-bs-toggle="modal" data-bs-target="#loginModal"
-                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
-                </button>
-            </form>
-
-        </div>
-    </div>
-</div>
-
 <!------ END -------->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-<script src="assets/js/map.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
 </html>
