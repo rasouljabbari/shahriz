@@ -384,7 +384,7 @@ input[type=number] {
 }
 
 .dv_download_links_button {
-   width: 85%;
+    width: 85%;
 }
 
 .dv_enamad_size {
@@ -1937,6 +1937,85 @@ ol li:before {
     border-bottom-left-radius: 5px
 }
 
+
+.dv-custom-invoice-table {
+    width: 100%;
+    box-shadow: var(--box51016);
+    padding-bottom: 2em;
+    background: #F4F5F6;
+}
+
+.dv-custom-table-title {
+    border-radius: 5px 5px 0 0;
+}
+
+.dv-custom-invoice-table .dv-custom-table-title {
+    background: rgba(46, 61, 80, 0.2);
+    font-size: 16px;
+    line-height: 12px;
+    padding: 14px 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.dv-custom-table-body {
+    background: #F4F5F6;
+    font-size: 16px;
+    line-height: 12px;
+    padding: 0 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.dv-bg-light-after-count {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.dv-bg-light-after-count input, .dv-bg-light-after-count select {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 3em 8px 10px;
+    color: #626D7B;
+}
+.dv-bg-light-after-count input::placeholder {
+    color: #626D7B;
+}
+
+.mr-18 {
+    margin-right: 18%;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: none;
+}
+
+.dv-bg-light-after-count span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.dv-bg-light-after-count span:before {
+    color: var(--purple);
+}
+
+.dv-custom-table-child-body {
+    padding: 20px 10px 5px 10px;
+}
+
+.dv-custom-table-child-body:nth-child(even) {
+    background: rgba(46, 61, 80, 0.05);
+    border-top: 1px solid rgba(112, 112, 112, 0.24);
+    border-bottom: 1px solid rgba(112, 112, 112, 0.24);
+}
+
 .dv-invoice-result {
     box-shadow: var(--box51016);
     border-radius: 5px;
@@ -2026,6 +2105,10 @@ ol li:before {
 /* When the checkbox is checked, add a blue background */
 .dv-rules-checkbox input:checked ~ .checkmark {
     background-color: var(--purple);
+}
+
+.dv-gishe-checkbox .dv-rules-checkbox input:checked ~ .checkmark {
+    background-color: #B1B1B1;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -3329,10 +3412,11 @@ button.active .dv-mini-purple-circle-active {
     font-size: 6em;
 }
 
-.dv-text-gray{
+.dv-text-gray {
     color: #929AA4;
 }
-.dv-blog-info{
+
+.dv-blog-info {
     background: #fff;
     padding: 4em 4em 2em 4em;
     border-radius: 20px;
@@ -3341,26 +3425,31 @@ button.active .dv-mini-purple-circle-active {
     margin-top: 2em;
 }
 
-.dv-blog-social-icon{
+.dv-blog-social-icon {
     transition: all 0.4s ease-in-out;
 }
-.dv-blog-social-icon:hover{
+
+.dv-blog-social-icon:hover {
     transform: translateY(-0.4em) scale(1.1);
 }
-.dv-blog-social-icon div{
+
+.dv-blog-social-icon div {
     font-size: 32px;
 }
-.dv-blog-info-img{
+
+.dv-blog-info-img {
     width: 75%;
     height: 390px;
     margin: 1em auto;
 }
-.img-cover{
+
+.img-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.dv-blog-info-img img{
+
+.dv-blog-info-img img {
     border-radius: 20px;
 }
 
@@ -3384,6 +3473,30 @@ button.active .dv-mini-purple-circle-active {
     cursor: pointer;
     top: 67%;
 }
+
+.dv-custom-table-child-body-gishe {
+    border-bottom: 1px solid #e5e5e5;
+    background: #F4F5F6 !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.dv-gishe-pay-type {
+    color: #B1B1B1;
+    transition: all 0.3s linear;
+    font-size: 17px;
+}
+
+.dv-gishe-pay-type:hover, .dv-gishe-pay-type:focus, .dv-gishe-pay-type.active {
+    color: var(--purple);
+}
+
+.dv-gishe-divider {
+    border-left: 2px solid #e5e5e5;
+    height: 40px;
+    width: 2px;
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -3394,13 +3507,15 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 992px) {
-    .dv-blog-info{
+    .dv-blog-info {
         box-shadow: none;
         padding: 2em 0 0 0;
     }
-    .dv-blog-info-img{
+
+    .dv-blog-info-img {
         width: 100%;
     }
+
     .dv-pool-type-tabs button {
         height: 100% !important;
     }
@@ -3757,7 +3872,7 @@ button.active .dv-mini-purple-circle-active {
 
     .dv-invoice-result-body {
         background: #fff;
-        margin-bottom: 3rem;
+        margin-bottom: 8rem;
     }
 
     .dv-invoice-pay-button {
@@ -3843,6 +3958,9 @@ button.active .dv-mini-purple-circle-active {
     }
 
     .dv-footer-pay {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
         background: var(--f5light);
         box-shadow: var(--box1016);
         padding: 10px 15px;
@@ -4444,6 +4562,39 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 768px) {
+    .dv-custom-table-body {
+        padding: 0;
+    }
+
+    .dv-bg-light-after-count input {
+        padding-right: 1.85em;
+        background: #F5F5F5;
+    }
+
+    .dv-custom-invoice-table {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .dv-custom-table-title {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .dv-custom-table-child-body:nth-child(odd) {
+        background: #fff;
+    }
+
+    .dv-custom-table-child-body:nth-child(even) {
+        background: #F4F5F6;
+    }
+
+    .dv-custom-table-child-body:nth-child(even) .dv-bg-light-after-count input {
+        background: #fff;
+    }
+
+    .dv-custom-invoice-table {
+        margin-bottom: 2em;
+    }
+
     .dv-panel-menu-hr {
         width: 80%;
     }
@@ -4676,6 +4827,30 @@ button.active .dv-mini-purple-circle-active {
         top: 0.5em;
         right: 0.5em;
     }
+
+    .dv-bg-light-after-count-gishe input , .dv-bg-light-after-count-gishe select{
+        background: #F5F5F5 !important;
+        padding: 8px 3em 8px 10px !important;
+        margin: auto;
+        width: 90%;
+    }
+
+    .dv-bg-light-after-count-gishe .dv-concert-user-info-icon{
+        right: 1.75em;
+    }
+
+    .dv-custom-invoice-table-gishe , .dv-custom-invoice-table-gishe .dv-custom-table-body{
+        background: #fff !important;
+    }
+    .dv-custom-table-child-body-gishe , .dv-custom-table-child-body:nth-child(even){
+        border: none !important;
+    }
+    .dv-custom-table-child-body:nth-child(odd){
+        background: #fff !important;
+    }
+    .dv-custom-table-child-body:nth-child(even){
+        background: #F5F5F5 !important
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -4740,6 +4915,10 @@ button.active .dv-mini-purple-circle-active {
     .dv-video-size {
         width: 100%;
         height: 415px;
+    }
+
+    .dv-index-video {
+        width: 66%;
     }
 
     .d-lg-none {

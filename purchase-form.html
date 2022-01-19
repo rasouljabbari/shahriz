@@ -1,0 +1,871 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>شهریز</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body dir="rtl">
+
+<!--Header-->
+<header>
+    <div class="dv_bg_menu_overlay">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light dv_navbar">
+
+            <!--            show when device size > 992-->
+            <div class="container d-none d-lg-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                    <!--                    nav links-->
+                    <ul class="dv_navbar_nav navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dv_dropdown_title" href="#" id="navbarDropdown"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                خدمات ما
+                            </a>
+                            <ul class="dropdown-menu dv_dropdown_items" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="schedule-pool-men.html">استخر</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="schedule-concert.html">کنسرت</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="theater.html">تفریح</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="recreation.html">تئاتر</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0" href="purchase-guide.html">راهنمای خرید</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider d-lg-none">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0" href="contact-us.html">تماس با ما</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider d-lg-none">
+                        </li>
+                    </ul>
+
+                    <!--                    logo-->
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <div class="dv_header_logo">
+                            <img src="./assets/images/logo.png" class="dv_image_content" alt="شهریز">
+                        </div>
+                    </a>
+
+                    <!--                    left buttons-->
+                    <div class="d-flex position-relative">
+                        <button data-bs-toggle="modal" data-bs-target="#loginModal" class="dv_orange_btn rounded-pill"
+                                type="button">ورود/عضویت
+                        </button>
+                        <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+
+                        <button class="dv_search_btn" onclick="showSearchBar()" type="button">
+                            <span class="icon-search"></span>
+                        </button>
+
+                        <form action="">
+                            <input class="form-control dv_form_hidden rounded-pill me-2"
+                                   type="search" placeholder="جستجو کنید" name="search">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--            show when device size < 992-->
+            <div class="d-lg-none w-100 position-relative">
+                <div class="dv-show-menu-in-mobile-view justify-content-between align-items-center p-3">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html">
+                            <div class="dv-logo-show-mobile">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="شهریز">
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <h1 class="dv-logo-title-show-mobile mb-0 mr-3">شــهریز</h1>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="dv_search_btn" onclick="showSearchBar()" type="button">
+                            <span class="icon-search"></span>
+                        </button>
+                        <form action="">
+                            <input class="form-control dv_form_hidden rounded-pill me-2"
+                                   type="search" placeholder="جستجو کنید" name="search">
+                        </form>
+
+                        <button onclick="openMenu()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContentMobile"
+                                aria-controls="navbarSupportedContentMobile"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <span class="icon-close dv_close_menu" onclick="openMenu()"></span>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContentMobile">
+                    <div class="dv-menu-bg">
+                        <!--                    logo-->
+                        <div class="dv_logo_background pt-5">
+                            <a class="navbar-brand mx-auto" href="index.html">
+                                <div class="dv_header_logo">
+                                    <img src="./assets/images/logo.png" class="dv_image_content" alt="شهریز">
+                                </div>
+                            </a>
+                            <h5 class="dv_logo_title mb-2 text-center">شهریز</h5>
+                            <p class="dv_logo_description text-center">اپلیکیشن رزرو بلیت و خدمات آنلاین</p>
+                        </div>
+
+                        <!--                        show when user login-->
+                        <div class="dv-user-information-when-login">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex">
+                                    <span class="icon-person ps-2 dv-user-information-when-login-icon"></span>
+                                    <span class="dv-user-information-when-login-title">نام کاربری : </span>
+                                </div>
+                                <span class="dv-text-purple">رسول جباری</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <span class="icon-coin-stack ps-2 dv-user-information-when-login-icon"></span>
+                                    <span class="dv-user-information-when-login-title">اعتبار کیف پول : </span>
+                                </div>
+                                <span class="dv-text-purple">
+                                    <span class="dv-card-price ps-2">12000000</span>
+                                    <span>تومان</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--                    nav links-->
+                        <ul class="dv_navbar_nav navbar-nav ms-auto position-relative">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle dv_dropdown_title" href="#" id="navbarDropdownMobile"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    خدمات ما
+                                </a>
+                                <hr class="dropdown-divider dv_custom_divider">
+                                <ul class="dropdown-menu dv_dropdown_items" aria-labelledby="navbarDropdownMobile">
+                                    <li><a class="dropdown-item" href="schedule-pool-men.html">استخر</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="schedule-concert.html">کنسرت</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="theater.html">تفریح</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="recreation.html">تئاتر</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="purchase-guide.html">راهنمای خرید</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider d-lg-none">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="contact-us.html">تماس با ما</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider d-lg-none">
+                            </li>
+                        </ul>
+
+                        <!--                    left buttons-->
+                        <div class="d-flex position-relative dv_bg_menu_buttons py-4 px-2">
+                            <button data-bs-toggle="modal" data-bs-target="#loginModal"
+                                    class="dv_orange_btn rounded-pill" type="button">ورود/عضویت
+                            </button>
+                            <a href="download-app" class="dv_orange_btn rounded-pill" type="button">دانلود شهریز</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!----- Body Section ------>
+<main>
+
+    <div class="container pt-5 pb-0 pb-lg-5 pt-lg-0">
+
+        <!--        stepper-->
+        <div class="w-100 py-5 d-none d-lg-block">
+            <div class="dv-stepper position-relative">
+
+                <div class="dv-w-181 dv-select-sons-position">
+                    <a href="schedule-concert.html" class="d-flex flex-column align-items-center">
+                        <span class="icon-Group-9461 dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <i class="icon-checkmark-circle-2 ps-2"></i>
+                            <span class="dv-stepper-title">انتخاب سانس</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-chair-position dv-complete-step">
+                    <a href="booking-concert1.html" class="d-flex flex-column align-items-center">
+                        <span class="icon-armchair-silhouette dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <i class="icon-checkmark-circle-2 ps-2"></i>
+                            <span class="dv-stepper-title pt-1">انتخاب صندلی</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-pay-position dv-complete-step dv-current-step">
+                    <a href="#" class="d-flex flex-column align-items-center">
+                        <span class="icon-coin-stack dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <span class="dv-stepper-title pt-1">پرداخت هزینه</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dv-w-181 dv-select-ticket-position">
+                    <a href="concert-pay-result.html" class="d-flex flex-column align-items-center">
+                        <span class="icon-invoice-1 dv-icon-step-icon mb-2"></span>
+                        <div class="d-flex align-items-center">
+                            <span class="dv-stepper-title pt-1">صدور بلیت</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!--            top full with content-->
+            <div class="col-12 mt-4 mb-2">
+                <div class="dv-concert-title d-flex flex-column flex-xl-row align-items-center justify-content-between pb-0">
+                    <h2 class="mb-0">کنسرت گروه دف نوازان حیران و شنگولستان جیران با بستنی</h2>
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="dv-singer-dark-button rounded-pill mb-0 ms-2" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">قوانین رویداد
+                        </button>
+                        <button class="dv-singer-light-button rounded-pill">راهنمای خرید</button>
+                    </div>
+                </div>
+
+                <div class="d-flex d-lg-none align-items-center justify-content-center">
+                    <span class="ps-3">پنجشنبه 25 شهریور</span>
+                    <span>23:30</span>
+                </div>
+
+                <div class="dv-concert-user-info d-none d-lg-flex  mt-2">
+                    <div class="d-flex align-items-center dv-concert-user-info-pl">
+                        <span class="icon-person dv-concert-user-info-icon"></span>
+                        <span class="dv-concert-user-info-main-title">مشخصات شما : </span>
+                    </div>
+
+                    <div class="d-flex align-items-center dv-concert-user-info-pl">
+                        <span class="dv-concert-user-info-title dv-text-purple">نام و نام خانوادگی : </span>
+                        <span class="dv-concert-user-info-value">رسول جباری</span>
+                    </div>
+
+                    <div class="d-flex align-items-center dv-concert-user-info-pl">
+                        <span class="dv-concert-user-info-title dv-text-purple">شماره همراه : </span>
+                        <span class="dv-concert-user-info-value">09106878810</span>
+                    </div>
+
+                    <div class="d-flex align-items-center dv-concert-user-info-pl">
+                        <span class="dv-concert-user-info-title dv-text-purple">میزان اعتبار : </span>
+                        <span class="dv-concert-user-info-value">
+                            <span class="dv-card-price">200000</span>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dv-px-pay-info">
+                <div class="dv-pay-info">
+                    <div class="d-none d-lg-block col-lg-8 offset-lg-4 mb-3">
+                        <div class="d-flex align-items-center justify-content-between px-2">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-invoice-table-title ps-3">برگه خرید</span>
+                                <a href="booking-concert2.html"
+                                   class="rounded-pill dv-invoice-table-edit-link">ویرایش</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="ps-3">پنجشنبه 25 شهریور</span>
+                                <span>23:30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex g-3 row">
+                        <div class="col-12 col-lg-8">
+                            <!--                            new invoice show in mobile-->
+                            <div class="d-flex d-lg-none align-items-center justify-content-between mb-3">
+                                <span class="dv-invoice-table-title ps-3">برگه خرید</span>
+                                <a href="booking-concert2.html"
+                                   class="rounded-pill dv-invoice-table-edit-link">ویرایش</a>
+                            </div>
+                            <div class="dv-custom-invoice-table d-flex flex-column">
+                                <div class="col-12 dv-custom-table-title">
+                                    <div class="row px-0">
+                                        <div class="col-2 d-flex align-items-center">
+                                            <span>#</span>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center">
+                                            <span>جایگاه</span>
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center">
+                                            <span>ردیف</span>
+                                        </div>
+                                        <div class="col-3 d-flex align-items-center">
+                                            <span>شماره صندلی</span>
+                                        </div>
+                                        <div class="col-3 d-flex align-items-center">
+                                            <span>قیمت (تومان)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 dv-custom-table-body">
+                                    <div class="dv-custom-table-child-body w-100">
+                                        <div class="row px-0">
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">1</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">همکف</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">25</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="national-code" placeholder="کد ملی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value">14</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dv-custom-table-child-body w-100">
+                                        <div class="row px-0">
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">1</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">همکف</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">25</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="national-code" placeholder="کد ملی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value">14</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dv-custom-table-child-body w-100">
+                                        <div class="row px-0">
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">1</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">همکف</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">25</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="national-code" placeholder="کد ملی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value">14</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dv-custom-table-child-body w-100">
+                                        <div class="row px-0">
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">1</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">همکف</span>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <span class="dv-custom-table-value">25</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="national-code" placeholder="کد ملی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row px-0">
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value">14</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100">
+                                                    <div class="dv-bg-light-after-count">
+                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
+                                                        <span class="icon-person dv-concert-user-info-icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="col-12 col-lg-4 mb-3">
+                            <p class="dv-discount-code-title pb-1 d-block d-lg-none">استفاده از کد تخفیف</p>
+                            <div class="dv-invoice-result mb-3">
+                                <div class="dv-invoice-result-header">مبلغ قابل پرداخت</div>
+                                <div class="dv-invoice-result-body">
+                                    <p class="dv-discount-code-title d-none d-lg-block pb-1">استفاده از کد تخفیف</p>
+                                    <div class="position-relative mb-5 mb-lg-4 w-100">
+                                        <input type="text" name="discount_code" placeholder="کد تخفیف"
+                                               class="dv-discount-code-input rounded-pill w-100">
+                                        <button type="button" class="dv-discount-code-button rounded-pill">اعمال
+                                        </button>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="dv-discount-code-price-title">قیمت کل : </span>
+                                        <span class="dv-discount-code-price-title dv-card-price">2000000</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="dv-discount-code-price-title dv-text-purple">تخفیف : </span>
+                                        <span class="dv-discount-code-price-title dv-card-price dv-text-purple">100000</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="dv-discount-code-price-title fw-bold">جمع کل : </span>
+                                        <span class="dv-discount-code-price-title fw-bold">
+                                        <span class="dv-card-price">190000</span>
+                                        <span>تومان</span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-lg-flex align-items-center justify-content-center mb-2">
+                                <div class="dv-rules-checkbox d-flex align-items-center">
+                                <span class="pe-4 f-18 l-28">
+                                    <button class="dv-rules-button"
+                                            type="button"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >قوانین</button>
+                                    شهریز را می پذیرم
+                                </span>
+                                    <label class="dv-rules-checkbox-text">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="d-none d-lg-block dv-invoice-pay-button rounded-pill">پرداخت
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--    footer button show in mobile-->
+    <div class="dv-footer-pay d-flex flex-column align-items-center justify-content-center d-lg-none mt-3 mt-md-4">
+        <div class="d-flex d-lg-none align-items-center justify-content-center mb-2">
+            <div class="dv-rules-checkbox d-flex align-items-center">
+                                <span class="pe-4 f-18 l-28">
+                                    <button class="dv-rules-button"
+                                            type="button"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >قوانین</button>
+                                    شهریز را می پذیرم
+                                </span>
+                <label class="dv-rules-checkbox-text">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="d-block d-lg-none dv-invoice-pay-button rounded-pill">
+            <span class="ps-5">پرداخت</span>
+            <span class="icon-arrow-back dv-footer-pay-icon-left"></span>
+        </button>
+    </div>
+
+</main>
+
+<!--Footer-->
+<footer id="footer" class="d-none d-lg-block">
+    <div class="container pb-5 dv-footer">
+        <div class="row gx-5">
+
+            <div class="col-12 mb-3 d-md-none">
+                <h4 class="dv-footer-title">شهریز</h4>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-xl-0">
+                <h4 class="text-light dv-footer-text pb-5 d-none d-md-block">تماس با ما</h4>
+                <ul>
+                    <li class="d-flex align-items-start pb-2 pb-md-3">
+                        <i class="icon-map dv_footer_list_icons f-18 pt-1"></i>
+                        <span class="text-light dv-footer-text mr-3"> تبریز - بلوار آزادی - نرسیده به سه راهی گلگشت
+                            8 جنب مجتمع شیخ الرئیس - کوی پارسا - پلاک</span>
+                    </li>
+
+                    <li class="d-flex align-items-center pb-2 pb-md-3">
+                        <i class="icon-phone dv_footer_list_icons f-18 "></i>
+                        <p class="text-light dv-footer-text mr-3 mb-0">
+                            ۰۴۱۳۳۳۸۰۹۵۲
+                        </p>
+                    </li>
+
+                    <li class="d-flex align-items-center pb-2 pb-md-3">
+                        <i class="icon-email dv_footer_list_icons f-18 "></i>
+                        <p class="text-light dv-footer-text mr-3 mb-0">
+                            info@shahriz.com
+                        </p>
+                    </li>
+
+                    <li class="d-flex align-items-center">
+                        <i class="icon-telegram dv_footer_list_icons dv_footer_list_icons-shahriz f-18 "></i>
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mr-3 w-100">
+                            <span class="text-light dv-footer-text">@Shahriz_sp</span>
+                            <div class="dv-footer-social-group-icons">
+                                <div class="d-flex align-items-center">
+                                    <a href="#"><i class="icon-Aparat dv_footer_social_icons dv-footer-aparat-icon"></i></a>
+                                    <a href="#" class="px-4"><i
+                                            class="icon-instagram dv_footer_social_icons dv-footer-instagram-icon"></i></a>
+                                    <a href="#"><i
+                                            class="icon-telegram dv_footer_social_icons dv-footer-telegram-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-xl-0">
+                <div class="d-flex justify-content-around justify-content-md-between">
+                    <div class="d-flex flex-column">
+                        <h4 class="text-light dv-footer-links-title pb-2 pb-md-5">لینک ها</h4>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h4 class="text-light dv-footer-links-title pb-2 pb-md-5">لینک ها</h4>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                        <a href="#" class="text-light dv-footer-text d-footer-links-center mb-2">لینک</a>
+                    </div>
+                </div>
+                <hr class="dv-hr-25">
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4 mb-md-3 mb-xl-0">
+                <h4 class="text-light dv-footer-text pb-5 d-none d-md-block">دریافت اپلیکیشن</h4>
+                <div class="justify-content-between flex-wrap d-none d-md-flex">
+                    <a href="" class="order-md-0 order-xl-0 my-auto">
+                        <img src="./assets/images/bazar.png" class="mb-3 dv_download_links_button" alt="شهریز">
+                    </a>
+                    <a href="" class="order-md-2 order-xl-1 my-auto">
+                        <img src="./assets/images/enamadd.png" class="mb-3 dv_enamad_size" alt="شهریز">
+                    </a>
+                    <a href="" class="order-md-1 order-xl-2 my-auto">
+                        <img src="./assets/images/anar.png" class="mb-3 dv_download_links_button" alt="شهریز">
+                    </a>
+                    <a href="" class="order-md-3 order-xl-3 my-auto">
+                        <img src="./assets/images/enamad.png" class="mb-3 dv_enamad_size" alt="شهریز">
+                    </a>
+                </div>
+                <div class="dv-mobile-enomad">
+                    <div class="d-flex align-items-center justify-content-around">
+                        <a href="">
+                            <img src="./assets/images/enamadd.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/enamad.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                    </div>
+                    <hr class="dv-hr-25">
+                    <div class="d-flex">
+                        <a href="" class="pl-2">
+                            <img src="./assets/images/bazar-dark.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                        <a href="" class="pr-2">
+                            <img src="./assets/images/anar-dark.png" class="mb-3 img-fluid" alt="شهریز">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="goToTop">
+            <span class="icon-arrow-top dv-go-to-top-icon"></span>
+        </div>
+    </div>
+    <div class="dv_copy_right_bg d-flex justify-content-center align-items-center position-relative">
+        <p class="text-center text-light mb-0">
+            © لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+        </p>
+    </div>
+</footer>
+
+<!--Rules Modal-->
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body position-relative">
+                <!--                            dotted and title-->
+                <div class="dv-border-dotted-modal position-relative pt-3 mb-lg-5">
+                    <div class="dv-section-title">قوانین و مقررات</div>
+                </div>
+            </div>
+            <div class="dv-rules-content">
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">1</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">2</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">3</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <span class="dv-rule-count">4</span>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        .و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="full_name" class="position-relative mb-4 w-100">
+                    <input type="text" name="full_name" id="full_name" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                </label>
+
+                <label for="phone" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="number" name="phone" id="phone" class="dv-login-input w-100" placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#passwordModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade dv-rules-modal" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="dv-rules-modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="icon-close-circle"></i>
+                </button>
+            </div>
+            <form class="dv-login-content w-100">
+                <div class="dv-form-description">
+                    شما پیش از این عضو سایت شده اید
+                    برای ورود کلمه عبور خود را وارد نمایید
+                </div>
+
+                <label for="phone" class="position-relative mb-4 w-100">
+                    <input type="number" name="phone" id="mobile" class="dv-login-input w-100"
+                           placeholder="شماره همراه">
+                    <span class="icon-mobile dv-form-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text dv-change-phone-number">تغییر شماره موبایل
+                    </button>
+                </label>
+
+                <label for="full_name" class="position-relative mb-4 w-100 dv-mobile-input-padding-bottom">
+                    <input type="password" name="full_name" id="password" class="dv-login-input w-100"
+                           placeholder="نام و نام خانوادگی">
+                    <span class="icon-person dv-form-icon"></span>
+                    <span class="icon-eye dv-show-password-icon"></span>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            class="dv-error-text me-auto mt-2 ms-0 d-block">ارسال مجدد کلمه عبور
+                    </button>
+                </label>
+
+                <button type="button"
+                        data-bs-toggle="modal" data-bs-target="#loginModal"
+                        class="dv-continue-shopping py-3 w-100 f-25 rounded-pill">ادامه خرید
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!------ END -------->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/zoom-slider.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
