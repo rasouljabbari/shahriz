@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon_custom/icomoon.eot?noh0lo');
-  src:  url('../fonts/icomoon_custom/icomoon.eot?noh0lo#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon_custom/icomoon.ttf?noh0lo') format('truetype'),
-    url('../fonts/icomoon_custom/icomoon.woff?noh0lo') format('woff'),
-    url('../fonts/icomoon_custom/icomoon.svg?noh0lo#icomoon') format('svg');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?2milxy');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?2milxy#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon_custom/icomoon.ttf?2milxy') format('truetype'),
+    url('../fonts/icomoon_custom/icomoon.woff?2milxy') format('woff'),
+    url('../fonts/icomoon_custom/icomoon.svg?2milxy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-takhfif:before {
+  content: "\e93d";
+}
+.icon-kharid-sari:before {
+  content: "\e93e";
+}
+.icon-print-ticket:before {
+  content: "\e93f";
+}
+.icon-roidad-man:before {
+  content: "\e940";
+}
+.icon-file-ticket:before {
+  content: "\e941";
+}
+.icon-akharin-kharid:before {
+  content: "\e942";
+}
+.icon-omor-mali:before {
+  content: "\e943";
+}
+.icon-active-ticket:before {
+  content: "\e944";
+}
+.icon-modiriat:before {
+  content: "\e945";
+}
+.icon-gishe:before {
+  content: "\e946";
+}
+.icon-phorosh:before {
+  content: "\e947";
+}
 .icon-Group-1393 .path1:before {
   content: "\e936";
   color: rgb(46, 61, 80);
