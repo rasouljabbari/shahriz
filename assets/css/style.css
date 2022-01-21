@@ -1981,6 +1981,7 @@ ol li:before {
     padding: 8px 3em 8px 10px;
     color: #626D7B;
 }
+
 .dv-bg-light-after-count input::placeholder {
     color: #626D7B;
 }
@@ -2747,8 +2748,8 @@ button.active .dv-mini-purple-circle-active {
 
 .dv-home-table tr th {
     background: #EFF6FF;
-    padding: 0.5em 1.5em;
-    font-size: 1em;
+    padding: 0.5em 1.2em;
+    font-size: 0.85em;
     color: var(--panel-darkblue);
     font-weight: 500;
     text-align: center;
@@ -2791,7 +2792,18 @@ button.active .dv-mini-purple-circle-active {
     align-items: center;
     justify-content: center;
 }
-
+.dv-table-button{
+    background: var(--panel-blue);
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 2px 5px 15px rgba(59, 97, 149, 0.35);
+    width: 150px;
+    height: 30px;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .dv-menu-username {
     font-size: 1.2em;
     color: var(--panel-blue);
@@ -3497,6 +3509,69 @@ button.active .dv-mini-purple-circle-active {
     width: 2px;
 }
 
+.dv-main-panel-parent, .dv-main-panel-content-parent {
+    box-shadow: var(--box1016);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.dv-main-panel-content-parent {
+    padding: 1em;
+}
+
+.dv-main-panel-icon:before {
+    color: #A6ADC6;
+    font-size: 1.75em;
+}
+
+.dv-main-panel-icon {
+    margin-bottom: 0.85em;
+}
+
+.dv-main-panel-title {
+    color: #A6ADC6;
+    font-size: 0.85em;
+}
+
+.dv-main-panel-parent .active {
+    background: #FAFAFC;
+    border-radius: 0 8px 8px 0;
+}
+
+.dv-main-panel-parent .active .dv-main-panel-icon:before, .dv-main-panel-parent .active .dv-main-panel-title {
+    color: var(--panel-blue);
+}
+
+.dv-page-title {
+    font-size: 1em;
+    color: #6373AE;
+}
+
+.dv-fast-shopping{
+    padding: 0 1.2em;
+    max-width: 215px;
+    width: 100%;
+}
+.dv-img-parent-fast-shopping{
+    width: 157px;
+    height: 170px;
+    box-shadow: var(--box31016);
+    margin-bottom: 0.8em;
+}
+
+.dv-img-parent-fast-shopping img{
+    border-radius: 10px;
+}
+
+.dv-card-title-fast-shopping{
+    color: #2E3D50;
+    font-size: 1.1em;
+    padding: 0 0.7em;
+}
+
+.dv-card-icon-fast-shopping:before{
+    color: var(--purple);
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -3507,6 +3582,52 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 992px) {
+
+    .dv-img-parent-fast-shopping{
+        width: 115px;
+        height: 125px;
+    }
+
+    .dv-fast-shopping {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: var(--box31016);
+        width: 48%;
+        padding: 0.5em;
+    }
+
+    .dv-fast-shopping:nth-child(odd){
+        margin-left: 0.5em;
+    }
+
+    .dv-card-title-fast-shopping{
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    .dv-fast-shopping span{
+        font-size: 0.8em;
+    }
+
+    .dv-main-panel-icon {
+        margin-bottom: 0;
+        padding: 0.5em;
+    }
+
+    .dv-main-panel-parent {
+        border-radius: 10px;
+        padding: 0 0.75em;
+    }
+
+    .dv-main-panel-content-parent{
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dv-main-panel-parent .active, .dv-main-panel-content-parent {
+        background: transparent;
+    }
+
     .dv-blog-info {
         box-shadow: none;
         padding: 2em 0 0 0;
@@ -3587,7 +3708,7 @@ button.active .dv-mini-purple-circle-active {
         min-width: unset;
     }
 
-    .dv-home-table-button {
+    .dv-home-table-button , .dv-table-button{
         padding: 0.5em 1em;
         border-radius: 5px !important;
         background: var(--panel-orange);
@@ -4828,27 +4949,30 @@ button.active .dv-mini-purple-circle-active {
         right: 0.5em;
     }
 
-    .dv-bg-light-after-count-gishe input , .dv-bg-light-after-count-gishe select{
+    .dv-bg-light-after-count-gishe input, .dv-bg-light-after-count-gishe select {
         background: #F5F5F5 !important;
         padding: 8px 3em 8px 10px !important;
         margin: auto;
         width: 90%;
     }
 
-    .dv-bg-light-after-count-gishe .dv-concert-user-info-icon{
+    .dv-bg-light-after-count-gishe .dv-concert-user-info-icon {
         right: 1.75em;
     }
 
-    .dv-custom-invoice-table-gishe , .dv-custom-invoice-table-gishe .dv-custom-table-body{
+    .dv-custom-invoice-table-gishe, .dv-custom-invoice-table-gishe .dv-custom-table-body {
         background: #fff !important;
     }
-    .dv-custom-table-child-body-gishe , .dv-custom-table-child-body:nth-child(even){
+
+    .dv-custom-table-child-body-gishe, .dv-custom-table-child-body:nth-child(even) {
         border: none !important;
     }
-    .dv-custom-table-child-body:nth-child(odd){
+
+    .dv-custom-table-child-body:nth-child(odd) {
         background: #fff !important;
     }
-    .dv-custom-table-child-body:nth-child(even){
+
+    .dv-custom-table-child-body:nth-child(even) {
         background: #F5F5F5 !important
     }
 }
@@ -4985,7 +5109,12 @@ button.active .dv-mini-purple-circle-active {
     }
 
     .dv-home-table tr th {
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .dv-table-button{
+        height: 35px;
+        width: 165px;
     }
 
     .dv-menu-items li {

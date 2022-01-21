@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>شهریز | کیف پول</title>
+    <title>شهریز | پیشخوان کاربری</title>
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/icomoon.min.css">
@@ -27,7 +27,7 @@
             <hr class="dv-panel-menu-hr"/>
 
             <ul class="dv-menu-items">
-                <li>
+                <li class="active">
                     <a href="home.html" class="d-flex align-items-center ">
                         <span class="icon-home dv-panel-menu-icon ps-4"></span>
                         <span class="dv-panel-menu-title">پیشخوان کاربری</span>
@@ -39,7 +39,7 @@
                         <span class="dv-panel-menu-title">بلیت های من</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="my-wallet.html" class="d-flex align-items-center ">
                         <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
                         <span class="dv-panel-menu-title">کیف پول</span>
@@ -73,7 +73,7 @@
         </div>
         <div class="d-flex align-items-center mb-3 d-block d-lg-none">
             <span class="icon-menu dv-panel-menu-bar" onclick="openMenu()"></span>
-            <span class="dv-panel-page-title">کیف پول</span>
+            <span class="dv-panel-page-title">پیشخوان کاربری</span>
 
             <!--        show in < 992px-->
             <div class="dv-panel-menu-bg">
@@ -93,7 +93,7 @@
                     <hr class="dv-panel-menu-hr"/>
 
                     <ul class="dv-menu-items">
-                        <li>
+                        <li class="active">
                             <a href="home.html" class="d-flex align-items-center ">
                                 <span class="icon-home dv-panel-menu-icon ps-4"></span>
                                 <span class="dv-panel-menu-title">پیشخوان کاربری</span>
@@ -105,8 +105,8 @@
                                 <span class="dv-panel-menu-title">بلیت های من</span>
                             </a>
                         </li>
-                        <li class="active">
-                            <a href="#l" class="d-flex align-items-center ">
+                        <li>
+                            <a href="my-wallet.html" class="d-flex align-items-center ">
                                 <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
                                 <span class="dv-panel-menu-title">کیف پول</span>
                             </a>
@@ -141,138 +141,102 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-lg-9 mb-3 position-relative">
-        <div class="dv-page-title-in-nine d-none d-lg-flex align-items-center justify-content-center">
-            <span>کیف پول</span>
-        </div>
-        <div class="dv-wallet-bg-parent h-100">
-
-            <div class="dv-panel-dark-blue-bg text-center">
-                <span>افزایش اعتبار</span>
-            </div>
-
-            <div class="dv-light-blue-bg">
-                <form class="d-flex flex-column align-items-center justify-content-center">
-                    <div class="d-flex align-items-center mb-3">
-                        <span class="ps-3 dv-current-validity-title">اعتبار فعلی :</span>
-                        <span class="dv-current-validity-value">
-                            <span class="dv-card-price">5000</span>
-                            <span>تومان</span>
-                        </span>
+    <div class="col-12 col-lg-9 mb-3">
+        <div class="dv-main-panel-parent mb-3 mb-lg-5">
+            <div class="row px-0">
+                <a href="home.html" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                        <span class="icon-kharid-sari dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">خرید سریع</span>
                     </div>
-                    <input type="number" name="validity" class="dv-bg-light-card-input mb-4" placeholder="میزان شارژ موردنظر خود را وارد کنید">
-                    <button class="dv-bg-light-card-button rounded-pill mt-2" type="submit">
-                        پرداخت
-<!--                        <div class="loadingio-spinner-spin-xs9r7lu5cta">-->
-<!--                            <div class="ldio-fpepf5ugyfw">-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <div></div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                    </button>
-                </form>
+                </a>
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3 active">
+                        <span class="icon-akharin-kharid dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">آخرین خریدهای گیشه</span>
+                    </div>
+                </a>
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                        <span class="icon-print-ticket dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">پرینت بلیت</span>
+                    </div>
+                </a>
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                        <span class="icon-active-ticket dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">بلیت‌های فعال من</span>
+                    </div>
+                </a>
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                        <span class="icon-roidad-man dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">رویدادهای من</span>
+                    </div>
+                </a>
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                        <span class="icon-omor-mali dv-main-panel-icon"></span>
+                        <span class="dv-main-panel-title d-none d-lg-block">امور مالی</span>
+                    </div>
+                </a>
             </div>
+        </div>
 
-            <div class="dv-panel-dark-blue-bg text-center">
-                <span>سوابق تراکنش</span>
-            </div>
-
-            <div class="overflow-auto dv-transaction-records-table">
+        <h5 class="dv-page-title mb-3">آخرین خریدهای گیشه</h5>
+        <div class="dv-home-tabs-parent p-0">
+            <div class="overflow-auto">
                 <table class="dv-home-table w-100 mb-4">
-                    <thead class="position-sticky top-0">
+                    <thead>
                     <tr>
-                        <th>مبلغ</th>
-                        <th class="d-none d-md-block">نوع تراکنش</th>
-                        <th>شماره تراکنش</th>
-                        <th>تاریخ</th>
-                        <th>توضیحات</th>
+                        <th>شماره سفارش</th>
+                        <th>رویداد/سانس</th>
+                        <th>نام خریدار</th>
+                        <th>تعداد بلیط</th>
+                        <th>تاریخ صدرو بلیط</th>
+                        <th>عملیات</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
+                        <td>94525374</td>
+                        <td>کنسرت رحیم شهریاری_تبریز
+                            1398/11/28 - 21:00
                         </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
-                    </tr>
-                    <tr>
+                        <td>استاد کریم زاده</td>
+                        <td>4</td>
+                        <td>1398/11/25 - 10:47:59</td>
                         <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <button class="dv-table-button rounded-pill" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
+                                </button>
+
+                                <a href="#">فیش</a>
+                            </div>
                         </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
-                        </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
-                        </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
-                        </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="dv-card-price ps-1">15000</span>
-                            <span>تومان</span>
-                        </td>
-                        <td class="d-none d-md-block">???</td>
-                        <td>3468531</td>
-                        <td>1400/10/04</td>
-                        <td>---</td>
                     </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link disabled" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -310,34 +274,7 @@
                         <tr>
                             <td>
                                 <button class="dv-print-table-button" onclick="window.print();return false;">
-                                    <div class="loadingio-spinner-spin-xs9r7lu5cta">
-                                        <div class="ldio-fpepf5ugyfw">
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                            <div>
-                                                <div></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="icon-spinner dv-loader-icon"></span>
                                     <!--                                    چاپ-->
                                 </button>
                             </td>
@@ -635,7 +572,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <!------ END -------->
