@@ -2792,7 +2792,8 @@ button.active .dv-mini-purple-circle-active {
     align-items: center;
     justify-content: center;
 }
-.dv-table-button{
+
+.dv-table-button {
     background: var(--panel-blue);
     color: #fff !important;
     border: none !important;
@@ -2804,6 +2805,7 @@ button.active .dv-mini-purple-circle-active {
     align-items: center;
     justify-content: center;
 }
+
 .dv-menu-username {
     font-size: 1.2em;
     color: var(--panel-blue);
@@ -3547,31 +3549,67 @@ button.active .dv-mini-purple-circle-active {
     color: #6373AE;
 }
 
-.dv-fast-shopping{
+.dv-fast-shopping {
     padding: 0 1.2em;
     max-width: 215px;
     width: 100%;
 }
-.dv-img-parent-fast-shopping{
+
+.dv-img-parent-fast-shopping {
     width: 157px;
     height: 170px;
     box-shadow: var(--box31016);
     margin-bottom: 0.8em;
 }
 
-.dv-img-parent-fast-shopping img{
+.dv-img-parent-fast-shopping img {
     border-radius: 10px;
 }
 
-.dv-card-title-fast-shopping{
+.dv-card-title-fast-shopping {
     color: #2E3D50;
     font-size: 1.1em;
     padding: 0 0.7em;
 }
 
-.dv-card-icon-fast-shopping:before{
+.dv-card-icon-fast-shopping:before {
     color: var(--purple);
 }
+
+.dv-print-type input[type="radio"] {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.dv-print-type input:checked + label span {
+    color: var(--panel-blue);
+    transition: 0.1s;
+}
+
+.dv-print-type div:nth-child(odd) span {
+    padding-left: 1em;
+    border-left: 1px solid var(--panel-blue);
+}
+
+.dv-print-type div:nth-child(even) span {
+    padding-right: 1em;
+}
+
+.dv-print-btn {
+    background-color: var(--panel-blue);
+    font-size: 1em;
+    padding: 0.4em 3.5em;
+    box-shadow: var(--box31016);
+    transition: all 0.3s linear;
+}
+
+.dv-print-btn:hover {
+    background-color: var(--bs-blue);
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -3583,7 +3621,22 @@ button.active .dv-mini-purple-circle-active {
 
 @media screen and (max-width: 992px) {
 
-    .dv-img-parent-fast-shopping{
+    .dv-print-ticket-input {
+        background-color: #fff;
+        box-shadow: none;
+        border: 1px solid #D6D7DB !important;
+        margin-bottom: 2em !important;
+    }
+
+    .dv-print-btn {
+        background-color: var(--panel-orange);
+    }
+
+    .dv-print-btn:hover{
+        background: darkorange;
+    }
+
+    .dv-img-parent-fast-shopping {
         width: 115px;
         height: 125px;
     }
@@ -3596,16 +3649,16 @@ button.active .dv-mini-purple-circle-active {
         padding: 0.5em;
     }
 
-    .dv-fast-shopping:nth-child(odd){
+    .dv-fast-shopping:nth-child(odd) {
         margin-left: 0.5em;
     }
 
-    .dv-card-title-fast-shopping{
+    .dv-card-title-fast-shopping {
         padding: 0;
         font-size: 0.8em;
     }
 
-    .dv-fast-shopping span{
+    .dv-fast-shopping span {
         font-size: 0.8em;
     }
 
@@ -3619,7 +3672,7 @@ button.active .dv-mini-purple-circle-active {
         padding: 0 0.75em;
     }
 
-    .dv-main-panel-content-parent{
+    .dv-main-panel-content-parent {
         box-shadow: none;
         padding: 0;
     }
@@ -3708,7 +3761,7 @@ button.active .dv-mini-purple-circle-active {
         min-width: unset;
     }
 
-    .dv-home-table-button , .dv-table-button{
+    .dv-home-table-button, .dv-table-button {
         padding: 0.5em 1em;
         border-radius: 5px !important;
         background: var(--panel-orange);
@@ -4728,7 +4781,7 @@ button.active .dv-mini-purple-circle-active {
     }
 
     .dv-bg-light-card-input {
-        margin-bottom: 0.25em !important;
+        margin-bottom: 0.25em;
     }
 
     .dv-bg-light-card-input::placeholder {
@@ -4978,6 +5031,11 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 576px) {
+
+    .dv-print-ticket-input {
+        width: 100%;
+    }
+
     .dv-user-welcome-image {
         width: 13.5em;
         top: 1.9em;
@@ -5112,7 +5170,7 @@ button.active .dv-mini-purple-circle-active {
         font-size: 1.2em;
     }
 
-    .dv-table-button{
+    .dv-table-button {
         height: 35px;
         width: 165px;
     }

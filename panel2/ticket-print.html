@@ -156,14 +156,14 @@
                         <span class="dv-main-panel-title d-none d-lg-block">آخرین خریدهای گیشه</span>
                     </div>
                 </a>
-                <a href="ticket-print.html" class="col-2">
-                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3 active">
                         <span class="icon-print-ticket dv-main-panel-icon"></span>
                         <span class="dv-main-panel-title d-none d-lg-block">پرینت بلیت</span>
                     </div>
                 </a>
-                <a href="#" class="col-2">
-                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3 active">
+                <a href="my-active-tickets.html" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
                         <span class="icon-active-ticket dv-main-panel-icon"></span>
                         <span class="dv-main-panel-title d-none d-lg-block">بلیت‌های فعال من</span>
                     </div>
@@ -183,111 +183,27 @@
             </div>
         </div>
 
-        <h5 class="dv-page-title mb-3">بلیت‌های فعال من</h5>
-        <div class="dv-home-tabs-parent p-0">
-            <div class="overflow-auto">
-                <table class="dv-home-table w-100 mb-4">
-                    <thead>
-                    <tr>
-                        <th>رویداد</th>
-                        <th>سانس</th>
-                        <th>سالن</th>
-                        <th>تعداد بلیط</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
-                        <td>سه شنبه 24 اردیبهشت 1398
-                            21:30
-                        </td>
-                        <td>سالن همایش های بین المللی خاوران</td>
-                        <td>4</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>رویداد</td>
-                        <td>سانس</td>
-                        <td>سالن شماره 3</td>
-                        <td>6</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>رویداد</td>
-                        <td>سانس</td>
-                        <td>سالن شماره 1</td>
-                        <td>2</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>رویداد</td>
-                        <td>سانس</td>
-                        <td>سالن شماره 3</td>
-                        <td>10</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>رویداد</td>
-                        <td>سانس</td>
-                        <td>سالن شماره 1</td>
-                        <td>2</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>رویداد</td>
-                        <td>سانس</td>
-                        <td>سالن شماره 3</td>
-                        <td>10</td>
-                        <td>
-                            <button class="dv-home-table-button rounded-pill" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#printModal">مشاهده و پرینت
-                            </button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+        <h5 class="dv-page-title mb-3">پرینت بلیت</h5>
+        <form class="dv-home-tabs-parent d-flex flex-column align-items-center justify-content-center py-5 px-2 py-lg-5 px-lg-5 ">
+            <input type="text" name="validity" class="dv-bg-light-card-input mb-5 dv-print-ticket-input" placeholder="شماره سفارش یا کد بلیط">
+
+            <div class="dv-print-type mb-4 mb-lg-5 d-flex align-items-center">
+                <div>
+                    <input type="radio" name="radio" id="opt1">
+                    <label for="opt1" class="label1">
+                        <span class="cursor-pointer">پرینت معمولی</span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="opt2">
+                    <label for="opt2" class="label2">
+                        <span class="cursor-pointer">فیش پرینت</span>
+                    </label>
+                </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link disabled" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+
+            <button type="submit" class="dv-print-btn rounded-pill text-light border-0">پرینت</button>
+        </form>
     </div>
 </div>
 
