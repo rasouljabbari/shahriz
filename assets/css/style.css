@@ -10,7 +10,7 @@
     --yellow: #FFD045;
     --darkpruple: #65122F;
     --purple: #B82055;
-    --panel-blue: #4688E1;
+    --panel-blue: #4688e1;
     --panel-darkblue: #3B6195;
     --panel-f5f7: #F5F7FB;
     --box1016: 0 0 10px rgba(0, 0, 0, 0.16);
@@ -3647,7 +3647,7 @@ button.active .dv-mini-purple-circle-active {
     border-left: 1px solid rgba(70, 136, 225, 0.34);
 }
 
-.dv-show-chart-btn{
+.dv-show-chart-btn {
     background: #fff;
     border: 1px solid var(--panel-blue);
     padding: 0.3em 1em;
@@ -3659,18 +3659,26 @@ button.active .dv-mini-purple-circle-active {
     left: 2em;
 }
 
-.dv-show-chart-btn:hover{
+.dv-show-chart-btn:hover {
     color: #fff;
     background: var(--panel-blue);
 }
 
-.dv-financial-department-items{
+.dv-financial-department-items {
     padding: 2em 4em;
     color: var(--panel-darkblue);
 }
 
-.dv-financial-department-items:nth-child(even){
+.dv-financial-department-items:nth-child(even) {
     background: #F6FAFF;
+}
+
+.dv-home-tabs-parent h6{
+    color: var(--panel-blue);
+}
+
+.v-align-middle{
+    vertical-align: middle;
 }
 
 /************************* responsive ********************/
@@ -4800,15 +4808,21 @@ button.active .dv-mini-purple-circle-active {
 
 @media screen and (max-width: 768px) {
 
-    .dv-financial-department-parent{
-        box-shadow:var(--box31016);
+    .dv-show-chart-btn {
+        top: 4.5em;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .dv-financial-department-items{
+    .dv-financial-department-parent {
+        box-shadow: var(--box31016);
+    }
+
+    .dv-financial-department-items {
         padding: 2em;
     }
 
-    .dv-page-title{
+    .dv-page-title {
         padding-right: 0.7em;
     }
 
@@ -5055,13 +5069,13 @@ button.active .dv-mini-purple-circle-active {
         filter: drop-shadow(0 0 10px rgba(53, 186, 71, 0.35));
     }
 
-    .dv-home-table tr th:first-child {
-        border-radius: 0 10px 10px 0;
-    }
+    /*.dv-home-table tr th:first-child {*/
+    /*    border-radius: 0 10px 10px 0;*/
+    /*}*/
 
-    .dv-home-table tr th:last-child {
-        border-radius: 10px 0 0 10px;
-    }
+    /*.dv-home-table tr th:last-child {*/
+    /*    border-radius: 10px 0 0 10px;*/
+    /*}*/
 
     .dv-print-table-button {
         min-width: 60px;
@@ -5104,6 +5118,15 @@ button.active .dv-mini-purple-circle-active {
     .dv-custom-table-child-body:nth-child(even) {
         background: #F5F5F5 !important
     }
+
+    .dv-home-tabs-parent{
+        box-shadow: none;
+    }
+    .dv-home-tabs-parent h6{
+        text-align: right !important;
+        color: #97ABC5;
+        padding-right: 0.5em;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -5134,6 +5157,11 @@ button.active .dv-mini-purple-circle-active {
 
     .dv-welcome-to-user .dv-welcome-description {
         font-size: 0.7em;
+    }
+
+    .dv-show-chart-btn {
+        left: 40%;
+        transform: translateX(-34%);
     }
 }
 
