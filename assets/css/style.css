@@ -3619,13 +3619,51 @@ button.active .dv-mini-purple-circle-active {
     font-size: 1.3em;
 }
 
-.dv-action-title{
+.dv-action-title {
     color: #6690C9;
 }
 
 .dv-home-table tr:nth-child(even) {
     background: #FCFDFF;
 }
+
+.dv-action-back-icon:before {
+    color: #6690C9;
+    font-size: 0.75em;
+}
+
+.dv-action-management-tabs .nav-link {
+    color: #A6ADC6;
+    border: none;
+}
+
+.dv-action-management-tabs .nav-link.active, .dv-action-management-tabs .nav-link:hover {
+    color: var(--panel-blue);
+    background-color: transparent;
+    border: none !important;
+}
+
+.dv-action-management-tabs .nav-item:nth-child(odd) {
+    border-left: 1px solid rgba(70, 136, 225, 0.34);
+}
+
+.dv-show-chart-btn{
+    background: #fff;
+    border: 1px solid var(--panel-blue);
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    color: var(--panel-blue);
+    transition: all 0.3s linear;
+    position: absolute;
+    top: 1.5em;
+    left: 2em;
+}
+
+.dv-show-chart-btn:hover{
+    color: #fff;
+    background: var(--panel-blue);
+}
+
 /************************* responsive ********************/
 /*max*/
 

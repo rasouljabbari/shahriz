@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>شهریز | رویداد های من</title>
+    <title>شهریز | مدیریت</title>
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/icomoon.min.css">
@@ -183,70 +183,184 @@
             </div>
         </div>
 
-        <h5 class="dv-page-title mb-3">رویدادهای من</h5>
-        <div class="dv-home-tabs-parent p-0">
-            <div class="overflow-auto">
-                <table class="dv-home-table w-100 mb-4">
-                    <thead>
-                    <tr>
-                        <th>رویداد</th>
-                        <th>تعداد کل فروش</th>
-                        <th>فروش شهریز</th>
-                        <th>فروش کل گیشه‌ها</th>
-                        <th>وضعیت</th>
-                        <th>عملیات</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
-                        <td>4</td>
-                        <td>
-                            <span class="dv-card-price">240000</span> ریال
-                        </td>
-                        <td>
-                            <span class="dv-card-price">240000</span> ریال
-                        </td>
-                        <td>برگزار شده</td>
-
-                        <td class="d-flex align-items-center">
-                            <a href="management.html" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
-                                <span class="icon-modiriat dv-action-icon mb-1"></span>
-                                <span class="dv-action-title">مدیریت</span>
-                            </a>
-
-                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
-                                <span class="icon-phorosh dv-action-icon mb-1"></span>
-                                <span class="dv-action-title">فروش</span>
-                            </a>
-
-                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
-                                <span class="icon-gishe dv-action-icon mb-1"></span>
-                                <span class="dv-action-title">گیشه‌ها</span>
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+        <div class="d-flex align-items-center justify-content-between">
+            <h5 class="dv-page-title mb-3">مدیریت</h5>
+            <div class="d-flex align-items-center">
+                <a href="my-events.html" class="dv-page-title ps-2">بازگشت</a>
+                <span class="icon-dark-left-arrow ps-1 dv-action-back-icon"></span>
             </div>
-            <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link disabled" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+        </div>
+        <div class="dv-home-tabs-parent p-0 position-relative pt-4">
+
+            <ul class="nav nav-tabs border-0 d-flex align-items-center justify-content-center pb-3 pb-lg-4 dv-action-management-tabs w-100"
+                id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="main-hall-tab" data-bs-toggle="tab"
+                            data-bs-target="#main-hall" type="button"
+                            role="tab" aria-controls="main-hall" aria-selected="true">
+                        سالن اصلی
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="balcony-tab" data-bs-toggle="tab"
+                            data-bs-target="#balcony" type="button"
+                            role="tab" aria-controls="balcony" aria-selected="false">
+                        بالکن
+                    </button>
+                </li>
+            </ul>
+
+            <a href="#" class="dv-show-chart-btn">مشاهده نمودار این سالن</a>
+
+
+            <div class="tab-content dv-pt-tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="main-hall" role="tabpanel"
+                     aria-labelledby="main-hall-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>تاریخ</th>
+                                <th>زمان</th>
+                                <th>تعداد فروش</th>
+                                <th>ظرفیت خالی</th>
+                                <th>وضعیت</th>
+                                <th>عملیات</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1398/04/10</td>
+                                <td>20:00</td>
+                                <td>365</td>
+                                <td>450</td>
+                                <td>قابل خرید</td>
+
+                                <td class="d-flex align-items-center">
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-armchair-silhouette dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">صندلی</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-gishe dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">بلیت‌ها</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-takhfif dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">تخفیف</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1398/04/10</td>
+                                <td>20:00</td>
+                                <td>365</td>
+                                <td>450</td>
+                                <td>قابل خرید</td>
+
+                                <td class="d-flex align-items-center">
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-armchair-silhouette dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">صندلی</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-gishe dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">بلیت‌ها</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-takhfif dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">تخفیف</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link disabled" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="balcony" role="tabpanel" aria-labelledby="balcony-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>تاریخ</th>
+                                <th>زمان</th>
+                                <th>تعداد فروش</th>
+                                <th>ظرفیت خالی</th>
+                                <th>وضعیت</th>
+                                <th>عملیات</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1398/04/10</td>
+                                <td>20:00</td>
+                                <td>365</td>
+                                <td>450</td>
+                                <td>قابل خرید</td>
+
+                                <td class="d-flex align-items-center">
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-armchair-silhouette dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">صندلی</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-gishe dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">بلیت‌ها</span>
+                                    </a>
+
+                                    <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                        <span class="icon-takhfif dv-action-icon mb-1"></span>
+                                        <span class="dv-action-title">تخفیف</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link disabled" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
