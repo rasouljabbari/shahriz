@@ -1957,8 +1957,8 @@ ol li:before {
 .dv-custom-invoice-table .dv-custom-table-title {
     background: rgba(46, 61, 80, 0.2);
     font-size: 16px;
-    line-height: 12px;
-    padding: 14px 10px;
+    line-height: 20px;
+    padding: 14px 40px;
     font-weight: normal;
     text-align: center;
 }
