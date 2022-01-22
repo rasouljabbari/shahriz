@@ -3664,6 +3664,15 @@ button.active .dv-mini-purple-circle-active {
     background: var(--panel-blue);
 }
 
+.dv-financial-department-items{
+    padding: 2em 4em;
+    color: var(--panel-darkblue);
+}
+
+.dv-financial-department-items:nth-child(even){
+    background: #F6FAFF;
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -4790,6 +4799,19 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 768px) {
+
+    .dv-financial-department-parent{
+        box-shadow:var(--box31016);
+    }
+
+    .dv-financial-department-items{
+        padding: 2em;
+    }
+
+    .dv-page-title{
+        padding-right: 0.7em;
+    }
+
     .dv-custom-table-body {
         padding: 0;
     }
