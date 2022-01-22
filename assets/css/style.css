@@ -5121,6 +5121,7 @@ button.active .dv-mini-purple-circle-active {
 
     .dv-home-tabs-parent{
         box-shadow: none;
+        margin-top: 0.7em;
     }
     .dv-home-tabs-parent h6{
         text-align: right !important;
@@ -5163,9 +5164,18 @@ button.active .dv-mini-purple-circle-active {
         left: 40%;
         transform: translateX(-34%);
     }
+
+    .dv-action-title{
+        display: none;
+    }
 }
 
-
+@media (max-width: 400px) {
+    .dv-show-chart-btn {
+        left: 30%;
+        transform: translateX(-22%);
+    }
+}
 /*min*/
 @media screen and (min-width: 768.01px) {
     .w-md-100 {
