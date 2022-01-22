@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>شهریز | پیشخوان کاربری</title>
+    <title>شهریز | رویداد های من</title>
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/icomoon.min.css">
@@ -144,8 +144,8 @@
     <div class="col-12 col-lg-9 mb-3">
         <div class="dv-main-panel-parent mb-3 mb-lg-4">
             <div class="row px-0">
-                <a href="#" class="col-2">
-                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3 active">
+                <a href="home.html" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
                         <span class="icon-kharid-sari dv-main-panel-icon"></span>
                         <span class="dv-main-panel-title d-none d-lg-block">خرید سریع</span>
                     </div>
@@ -168,8 +168,8 @@
                         <span class="dv-main-panel-title d-none d-lg-block">بلیت‌های فعال من</span>
                     </div>
                 </a>
-                <a href="my-events.html" class="col-2">
-                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3">
+                <a href="#" class="col-2">
+                    <div class="d-flex flex-column align-items-center justify-content-around h-100 py-1 py-lg-3 active">
                         <span class="icon-roidad-man dv-main-panel-icon"></span>
                         <span class="dv-main-panel-title d-none d-lg-block">رویدادهای من</span>
                     </div>
@@ -183,73 +183,126 @@
             </div>
         </div>
 
-        <h5 class="dv-page-title mb-3">خرید سریع</h5>
-        <div class="dv-main-panel-content-parent d-flex flex-wrap">
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
+        <h5 class="dv-page-title mb-3">رویدادهای من</h5>
+        <div class="dv-home-tabs-parent p-0">
+            <div class="overflow-auto">
+                <table class="dv-home-table w-100 mb-4">
+                    <thead>
+                    <tr>
+                        <th>رویداد</th>
+                        <th>تعداد کل فروش</th>
+                        <th>فروش شهریز</th>
+                        <th>فروش کل گیشه‌ها</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
+                        <td>4</td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>برگزار شده</td>
+
+                        <td class="d-flex align-items-center">
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-modiriat dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">مدیریت</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-phorosh dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">فروش</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-gishe dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">گیشه‌ها</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
+                        <td>4</td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>برگزار شده</td>
+
+                        <td class="d-flex align-items-center">
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-modiriat dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">مدیریت</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-phorosh dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">فروش</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-gishe dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">گیشه‌ها</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>کنسرت گروه هزارپایان رستاخیز با بستنی</td>
+                        <td>4</td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>
+                            <span class="dv-card-price">240000</span> ریال
+                        </td>
+                        <td>برگزار شده</td>
+
+                        <td class="d-flex align-items-center">
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-modiriat dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">مدیریت</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-phorosh dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">فروش</span>
+                            </a>
+
+                            <a href="#" class="dv-event-action-link d-flex flex-column align-items-center justify-content-center">
+                                <span class="icon-gishe dv-action-icon mb-1"></span>
+                                <span class="dv-action-title">گیشه‌ها</span>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
-            </div>
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
-            </div>
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
-            </div>
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
-            </div>
-            <div class="dv-fast-shopping d-flex flex-column align-items-center justify-content-center mb-2 mb-lg-3">
-                <div class="dv-img-parent-fast-shopping">
-                    <img src="../assets/images/Vijeh%204.png" class="img-cover" alt="شهریز">
-                </div>
-                <h5 class="dv-card-title-fast-shopping text-center">کنسرت علیرضا قربانی
-                    به همراه قنبرزاده</h5>
-                <div class="d-flex align-items-center">
-                    <span class="icon-calendar dv-card-icon-fast-shopping pl-2"></span>
-                    <span>28 شهریور</span>
-                </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 pb-4 ps-lg-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link disabled" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

@@ -3610,6 +3610,22 @@ button.active .dv-mini-purple-circle-active {
     background-color: var(--bs-blue);
 }
 
+.dv-event-action-link {
+    padding: 0 1em;
+}
+
+.dv-action-icon:before {
+    color: #6690C9;
+    font-size: 1.3em;
+}
+
+.dv-action-title{
+    color: #6690C9;
+}
+
+.dv-home-table tr:nth-child(even) {
+    background: #FCFDFF;
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -3632,7 +3648,7 @@ button.active .dv-mini-purple-circle-active {
         background-color: var(--panel-orange);
     }
 
-    .dv-print-btn:hover{
+    .dv-print-btn:hover {
         background: darkorange;
     }
 
