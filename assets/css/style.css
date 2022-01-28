@@ -1682,6 +1682,10 @@ ol li:before {
 
 .dv-concert-chair-light {
     background: transparent;
+    width: 30px;
+}
+.dv-concert-chair-half-light {
+    background: transparent;
     width: 15px;
 }
 
@@ -2201,6 +2205,7 @@ button.active .dv-mini-purple-circle-active {
     padding: 0 3rem 0 15px;
     border-radius: 0 10px 10px 0;
     color: var(--darkblue) !important;
+    width: 100%;
 }
 
 .dv-icon-question {
@@ -3200,7 +3205,7 @@ button.active .dv-mini-purple-circle-active {
     -ms-animation: rotating 1.2s linear infinite;
     -o-animation: rotating 1.2s linear infinite;
     animation: rotating 1.2s linear infinite;
-    font-size: 1.8em;
+    font-size: 1em;
 }
 
 .dv-loader-icon:before {
@@ -3721,6 +3726,14 @@ button.active .dv-mini-purple-circle-active {
     border-color: #BFBFBF;
 }
 
+.dv-invoice-tabs-items .nav-link.active .dv-question-text , .dv-active-ticket-link .dv-question-text{
+    background: var(--purple);
+    color: #fff !important;
+}
+.icon-minus-alt:before {
+    background: #fff;
+    border-radius: 50%;
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -4180,7 +4193,7 @@ button.active .dv-mini-purple-circle-active {
 
     .dv-invoice-result-body {
         background: #fff;
-        margin-bottom: 8rem;
+        margin-bottom: 0;
     }
 
     .dv-invoice-pay-button {
