@@ -44,13 +44,13 @@ body {
     color: var(--darkblue);
 }
 
-.apexcharts-theme-light , .apexcharts-tooltip.apexcharts-theme-light , .apexcharts-xaxistooltip,
-.apexcharts-text tspan , .apexcharts-tooltip-title , .apexcharts-tooltip-y-group , .apexcharts-tooltip *,
+.apexcharts-theme-light, .apexcharts-tooltip.apexcharts-theme-light, .apexcharts-xaxistooltip,
+.apexcharts-text tspan, .apexcharts-tooltip-title, .apexcharts-tooltip-y-group, .apexcharts-tooltip *,
 .apexcharts-xaxistooltip-text {
     font-family: IRANSans !important;
 }
 
-.apexcharts-tooltip-marker{
+.apexcharts-tooltip-marker {
     margin-right: 0 !important;
     margin-left: 10px;
 }
@@ -1695,6 +1695,7 @@ ol li:before {
     background: transparent;
     width: 30px;
 }
+
 .dv-concert-chair-half-light {
     background: transparent;
     width: 15px;
@@ -3668,6 +3669,25 @@ button.active .dv-mini-purple-circle-active {
     border-left: 1px solid rgba(70, 136, 225, 0.34);
 }
 
+.dv-total-sales-management-tabs .nav-item{
+    width: 33%;
+    text-align: center;
+    font-size: 13px;
+}
+.dv-total-sales-management-tabs .nav-link {
+    color: #A6ADC6;
+    border: none;
+    margin: auto;
+}
+
+.dv-total-sales-management-tabs .nav-link.active{
+    color: var(--panel-blue);
+    border: none !important;
+    background: #EFF6FF;
+    border-radius: 5px;
+}
+
+
 .dv-show-chart-btn {
     background: #fff;
     border: 1px solid var(--panel-blue);
@@ -3714,42 +3734,64 @@ button.active .dv-mini-purple-circle-active {
     color: #A6ADC6;
 }
 
-.dv-total-chance-statistics-right-border{
+.dv-total-chance-statistics-right-border {
     border-right: 3px solid;
     height: 60px;
 }
-.border-purple{
-    border-color:  var(--purple);
+
+.border-purple {
+    border-color: var(--purple);
 }
-.border-aqua{
+
+.border-aqua {
     border-color: var(--aqua);
 }
 
-.border-light-green{
+.border-light-green {
     border-color: var(--lightgreen);
 }
 
-.border-orange{
+.border-orange {
     border-color: var(--panel-orange);
 }
 
-.border-light-gray{
+.border-light-gray {
     border-color: #BFBFBF;
 }
 
-.dv-invoice-tabs-items .nav-link.active .dv-question-text , .dv-active-ticket-link .dv-question-text{
+.dv-invoice-tabs-items .nav-link.active .dv-question-text, .dv-active-ticket-link .dv-question-text {
     background: var(--purple);
     color: #fff !important;
 }
+
 .icon-minus-alt:before {
     background: #fff;
     border-radius: 50%;
 }
-.dv-fade{
+
+.dv-fade {
     display: none;
 }
-.dv-show{
+
+.dv-show {
     display: block;
+}
+
+.dv-total-sales-bg{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(46,61,80,0.15);
+    padding: 1em 0;
+}
+
+.dv-total-sales-divider{
+    border-bottom: 1px solid #E7ECF3!important;
+    width: 85%;
+    margin: 0 auto 2em;
+}
+
+.dv-table-right-content-bg{
+    background: #FAFCFF;
 }
 /************************* responsive ********************/
 /*max*/
@@ -5223,6 +5265,10 @@ button.active .dv-mini-purple-circle-active {
         text-align: right !important;
         color: #97ABC5;
         padding-right: 0.5em;
+    }
+
+    .dv-total-sales-management-tabs .nav-item , .dv-total-sales-management-tabs .nav-link {
+        width: 100%;
     }
 }
 
