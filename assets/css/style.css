@@ -44,6 +44,17 @@ body {
     color: var(--darkblue);
 }
 
+.apexcharts-theme-light , .apexcharts-tooltip.apexcharts-theme-light , .apexcharts-xaxistooltip,
+.apexcharts-text tspan , .apexcharts-tooltip-title , .apexcharts-tooltip-y-group , .apexcharts-tooltip *,
+.apexcharts-xaxistooltip-text {
+    font-family: IRANSans !important;
+}
+
+.apexcharts-tooltip-marker{
+    margin-right: 0 !important;
+    margin-left: 10px;
+}
+
 ::selection {
     background: var(--purple);
     color: #fff;
@@ -3733,6 +3744,12 @@ button.active .dv-mini-purple-circle-active {
 .icon-minus-alt:before {
     background: #fff;
     border-radius: 50%;
+}
+.dv-fade{
+    display: none;
+}
+.dv-show{
+    display: block;
 }
 /************************* responsive ********************/
 /*max*/

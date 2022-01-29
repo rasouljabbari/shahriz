@@ -210,12 +210,14 @@
                 </li>
             </ul>
 
-            <a href="#" class="dv-show-chart-btn">مشاهده نمودار این سالن</a>
-
 
             <div class="tab-content dv-pt-tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="main-hall" role="tabpanel"
                      aria-labelledby="main-hall-tab">
+                    <button onclick="showChart('chart')" class="dv-show-chart-btn">مشاهده نمودار این سالن</button>
+                    <div class="container">
+                        <div id="chart" class="dv-fade mb-4"></div>
+                    </div>
                     <div class="overflow-auto">
                         <table class="dv-home-table w-100 mb-4">
                             <thead>
@@ -304,6 +306,11 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="balcony" role="tabpanel" aria-labelledby="balcony-tab">
+                    <button onclick="showChart('chart_balcony')" class="dv-show-chart-btn">مشاهده نمودار این سالن
+                    </button>
+                    <div class="container">
+                        <div id="chart_balcony" class="dv-fade mb-4"></div>
+                    </div>
                     <div class="overflow-auto">
                         <table class="dv-home-table w-100 mb-4">
                             <thead>
@@ -401,6 +408,36 @@
 <script src="../assets/js/popper.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/swiper-bundle.min.js"></script>
+<script src="../assets/js/apexcharts.js"></script>
 <script src="../assets/js/index.js"></script>
+
+<script>
+    let options = {
+        chart: {
+            id: 'fb',
+            group: 'social',
+            type: 'line',
+            height: 400
+        },
+        markers: {
+            size: 5,
+        },
+        colors : ['#2DC7EE'],
+        series: [{
+            name: 'فروش',
+            data: [4000, 5350, 5000, 6100, 5800, 7200, 4500, 5000, 5750]
+        }],
+        xaxis: {
+
+            categories: ['7 آذر', '17 آذر', '5 دی', '25 دی', '10 بهمن', '18 بهمن', '29 بهمن', '14 اسفند', '25 اسفند']
+        }
+    }
+
+    let chart = new ApexCharts(document.querySelector("#chart"), options);
+    let chart_balcony = new ApexCharts(document.querySelector("#chart_balcony"), options);
+
+    chart.render();
+    chart_balcony.render();
+</script>
 </body>
 </html>

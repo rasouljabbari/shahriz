@@ -22,6 +22,7 @@ let isHidden = false;
 let open = false;
 let show_about = false;
 let show_orders = false;
+let show_chart = false;
 // goto top:
 $(".dv-go-to-top-icon").each(function () {
   $(this).click(function () {
@@ -63,6 +64,16 @@ function openMenu() {
     $('.dv-panel-menu-bg').css({width: '100%', display: 'block'})
   }
   open = !open;
+}
+
+function showChart(value) {
+  if ($(`#${value}`).hasClass('dv-fade')) {
+    $(`#${value}`).removeClass('dv-fade')
+    $(`#${value}`).addClass('dv-show')
+  } else {
+    $(`#${value}`).removeClass('dv-show')
+    $(`#${value}`).addClass('dv-fade')
+  }
 }
 
 $('.icon-arrow-down').on('click', () => {
@@ -118,14 +129,14 @@ function executeRating(stars) {
   stars.map((star) => {
     star.onclick = () => {
       let value = parseInt(stars.indexOf(star)) + 1
-      if(value > 5){
+      if (value > 5) {
         $('#rateValue').val(value - 5)
-      }else{
-        $('#rateValue').val(value )
+      } else {
+        $('#rateValue').val(value)
       }
       i = stars.indexOf(star);
 
-      if (star.className===starClassInactive) {
+      if (star.className === starClassInactive) {
         for (i; i >= 0; --i) stars[i].className = starClassActive;
       } else {
         for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
@@ -134,6 +145,7 @@ function executeRating(stars) {
   });
   console.log(i)
 }
+
 executeRating(ratingStars);
 
 
