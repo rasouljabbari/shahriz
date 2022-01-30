@@ -2795,6 +2795,10 @@ button.active .dv-mini-purple-circle-active {
     direction: rtl !important;
 }
 
+.dv-home-table tr td a{
+    color: var(--panel-darkblue) !important;
+}
+
 .dv-home-table tr {
     background: #fff;
 }
