@@ -3923,6 +3923,15 @@ button.active .dv-mini-purple-circle-active {
     background: #DF306D;
     color: #fff;
 }
+
+.dv-new-ticket-alarm{
+    width: 15px;
+    height: 15px;
+    background: #F99F28;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+}
 /************************* responsive ********************/
 /*max*/
 
@@ -3930,10 +3939,16 @@ button.active .dv-mini-purple-circle-active {
     .dv-panel-body {
         padding: 1rem;
     }
+    .dv-new-ticket-alarm {
+        right: 15px;
+    }
 }
 
 @media screen and (max-width: 992px) {
 
+    .dv-new-ticket-alarm {
+        right: 8px;
+    }
     .dv-chair-form {
         margin-top: 1em;
     }
@@ -5454,7 +5469,6 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (max-width: 576px) {
-
     .dv-print-ticket-input {
         width: 100%;
     }
