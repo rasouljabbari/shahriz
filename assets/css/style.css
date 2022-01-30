@@ -3669,18 +3669,19 @@ button.active .dv-mini-purple-circle-active {
     border-left: 1px solid rgba(70, 136, 225, 0.34);
 }
 
-.dv-total-sales-management-tabs .nav-item{
+.dv-total-sales-management-tabs .nav-item {
     width: 33%;
     text-align: center;
     font-size: 13px;
 }
+
 .dv-total-sales-management-tabs .nav-link {
     color: #A6ADC6;
     border: none;
     margin: auto;
 }
 
-.dv-total-sales-management-tabs .nav-link.active{
+.dv-total-sales-management-tabs .nav-link.active {
     color: var(--panel-blue);
     border: none !important;
     background: #EFF6FF;
@@ -3777,22 +3778,103 @@ button.active .dv-mini-purple-circle-active {
     display: block;
 }
 
-.dv-total-sales-bg{
+.dv-total-sales-bg {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(46,61,80,0.15);
+    box-shadow: 0 0 15px rgba(46, 61, 80, 0.15);
     padding: 1em 0;
 }
 
-.dv-total-sales-divider{
-    border-bottom: 1px solid #E7ECF3!important;
+.dv-total-sales-divider {
+    border-bottom: 1px solid #E7ECF3 !important;
     width: 85%;
     margin: 0 auto 2em;
 }
 
-.dv-table-right-content-bg{
+.dv-table-right-content-bg {
     background: #FAFCFF;
 }
+
+.dv-manage-ticket-content {
+    margin-top: 3em;
+}
+
+.dv-manage-ticket-content-tabs {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 2.25em;
+}
+
+.dv-manage-ticket-content-tabs .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.dv-manage-ticket-content-tabs .nav-item .nav-link {
+    width: 100%;
+    color: #A6ADC6;
+    padding: 1em;
+}
+
+.dv-manage-ticket-content-tabs .nav-item .nav-link:hover {
+    border: none;
+}
+
+.dv-manage-ticket-content-tabs .nav-item .nav-link.active {
+    background: #FAFAFC;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.dv-manage-ticket-content-tabs .nav-item.dv-open-tab .nav-link.active {
+    background: #67DB77;
+    color: #fff;
+    border-radius: 0;
+}
+
+.dv-manage-ticket-content-tabs .nav-item.dv-pending-tab .nav-link.active {
+    background: #F9BF4A;
+    color: #fff;
+    border-radius: 0;
+}
+
+.dv-manage-ticket-content-tabs .nav-item.dv-closed-tab .nav-link.active {
+    background: var(--purple);
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+.dv-closed-status, .dv-open-status, .dv-pending-status {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.dv-pending-status {
+    color: #DF9F1E;
+}
+
+.dv-open-status {
+    color: #35BA47;
+}
+
+.dv-closed-status {
+    color: var(--purple);
+}
+
+.dv-tickets-content{
+    background: #fff;
+    box-shadow: 0 0 15px rgba(46, 61, 80, 0.15);
+    border-radius: 5px;
+    height: calc( 100% - 126px);
+}
+
+.dv-tickets-content .tab-pane{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -4947,6 +5029,57 @@ button.active .dv-mini-purple-circle-active {
 
 @media screen and (max-width: 768px) {
 
+    .dv-pending-tr{
+        border-right: 4px solid #F9BF4A;
+    }
+    .dv-open-tr{
+        border-right: 4px solid #67DB77;
+    }
+    .dv-closed-tr{
+        border-right: 4px solid var(--purple);
+    }
+    .dv-manage-ticket-content-tabs .nav-item .nav-link{
+        padding: 1em 0.5em;
+        font-size: 14px;
+    }
+
+    .dv-manage-ticket-content-tabs .nav-item .nav-link.active {
+        background: #fff;
+        border-bottom: 3px solid #FAFAFC;
+        border-radius: 0;
+        color: #707070 !important;
+    }
+
+    .dv-manage-ticket-content-tabs .nav-item.dv-open-tab .nav-link.active {
+        background: #fff;
+        border-bottom: 3px solid #67DB77;
+        border-radius: 0;
+    }
+
+    .dv-manage-ticket-content-tabs .nav-item.dv-pending-tab .nav-link.active {
+        background: #fff;
+        border-bottom: 3px solid #F9BF4A;
+        border-radius: 0;
+    }
+
+    .dv-manage-ticket-content-tabs .nav-item.dv-closed-tab .nav-link.active {
+        background: #fff;
+        border-bottom: 3px solid var(--purple);
+        border-radius: 0;
+    }
+
+    .dv-manage-ticket-content-tabs{
+        box-shadow: 0 0 15px rgba(46, 61, 80, 0.15);
+    }
+
+    .dv-tickets-content{
+        box-shadow: none;
+    }
+
+    .dv-tickets-content .dv-home-table tr th, .dv-home-table tr td{
+        min-width: 100px;
+    }
+
     .dv-show-chart-btn {
         top: 4.5em;
         left: 50%;
@@ -5267,7 +5400,7 @@ button.active .dv-mini-purple-circle-active {
         padding-right: 0.5em;
     }
 
-    .dv-total-sales-management-tabs .nav-item , .dv-total-sales-management-tabs .nav-link {
+    .dv-total-sales-management-tabs .nav-item, .dv-total-sales-management-tabs .nav-link {
         width: 100%;
     }
 }

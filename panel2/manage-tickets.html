@@ -1,0 +1,496 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>شهریز | مدیریت تیکت‌ها</title>
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="../assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body dir="rtl" class="dv-panel-body">
+
+
+<div class="row g-2 g-lg-4">
+    <div class="col-12 col-lg-3">
+        <div class="dv-panel-menu d-none d-lg-block">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="dv-user-image">
+                    <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
+                </div>
+                <h5 class="dv-menu-username">رسول جباری</h5>
+                <p class="dv-menu-username-phone">09106878810</p>
+            </div>
+            <hr class="dv-panel-menu-hr"/>
+
+            <ul class="dv-menu-items">
+                <li>
+                    <a href="home.html" class="d-flex align-items-center ">
+                        <span class="icon-home dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">پیشخوان کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-tickets.html" class="d-flex align-items-center ">
+                        <span class="icon-icon dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">بلیت های من</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-wallet.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">کیف پول</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">تنظیمات کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-friends.html" class="d-flex align-items-center ">
+                        <span class="icon-user-plus dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">دعوت از دوستان</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="manage-tickets.html" class="d-flex align-items-center ">
+                        <span class="icon-bx-support dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">مدیریت تیکت‌ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html" class="d-flex align-items-center ">
+                        <span class="icon-logout dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">خروج از پنل کاربری</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center mb-3 d-block d-lg-none">
+            <span class="icon-menu dv-panel-menu-bar" onclick="openMenu()"></span>
+            <span class="dv-panel-page-title">مدیریت تیکت‌ها</span>
+
+            <!--        show in < 992px-->
+            <div class="dv-panel-menu-bg">
+                <div class="dv-panel-menu">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="dv-user-image">
+                            <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
+                        </div>
+                        <h5 class="dv-menu-username">رسول جباری</h5>
+                        <p class="dv-menu-username-phone">09106878810</p>
+                        <a href="my-wallet.html" class="dv-menu-wallet-button position-relative">
+                            <span class="dv-card-price">5000</span>
+                            <span>تومان</span>
+                            <span class="dv-upload-file-plus-icon">+</span>
+                        </a>
+                    </div>
+                    <hr class="dv-panel-menu-hr"/>
+
+                    <ul class="dv-menu-items">
+                        <li>
+                            <a href="home.html" class="d-flex align-items-center ">
+                                <span class="icon-home dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">پیشخوان کاربری</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-tickets.html" class="d-flex align-items-center ">
+                                <span class="icon-icon dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">بلیت های من</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-wallet.html" class="d-flex align-items-center ">
+                                <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">کیف پول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html" class="d-flex align-items-center ">
+                                <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">تنظیمات کاربری</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-friends.html" class="d-flex align-items-center ">
+                                <span class="icon-user-plus dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">دعوت از دوستان</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="manage-tickets.html" class="d-flex align-items-center ">
+                                <span class="icon-bx-support dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">مدیریت تیکت‌ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="d-flex align-items-center ">
+                                <span class="icon-logout dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">خروج از پنل کاربری</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="icon-close dv_close_menu" onclick="openMenu()"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-9 mb-3 position-relative">
+        <div class="dv-page-title-in-nine d-none d-lg-flex align-items-center justify-content-center">
+            <span>مدیریت تیکت‌ها</span>
+        </div>
+
+        <div class="dv-manage-ticket-content">
+            <ul class="nav nav-tabs border-0 d-flex align-items-center justify-content-between w-100 dv-manage-ticket-content-tabs"
+                id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                            data-bs-target="#all" type="button"
+                            role="tab" aria-controls="all" aria-selected="true">
+                        همه
+                    </button>
+                </li>
+                <li class="nav-item dv-open-tab" role="presentation">
+                    <button class="nav-link" id="open-tab" data-bs-toggle="tab"
+                            data-bs-target="#open" type="button"
+                            role="tab" aria-controls="open" aria-selected="false">
+                        باز
+                    </button>
+                </li>
+                <li class="nav-item dv-pending-tab" role="presentation">
+                    <button class="nav-link" id="pending-tab" data-bs-toggle="tab"
+                            data-bs-target="#pending" type="button"
+                            role="tab" aria-controls="pending" aria-selected="false">
+                        در انتظار پاسخ
+                    </button>
+                </li>
+                <li class="nav-item dv-closed-tab" role="presentation">
+                    <button class="nav-link" id="closed-tab" data-bs-toggle="tab"
+                            data-bs-target="#closed" type="button"
+                            role="tab" aria-controls="closed" aria-selected="false">
+                        بسته شده
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content dv-pt-tab-content dv-tickets-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel"
+                     aria-labelledby="all-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table dv-custom-table-box-shadow w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>عنوان</th>
+                                <th>نام ارسال کننده</th>
+                                <th>دپارتمان</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>وضعیت</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="dv-open-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-open-status">باز</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-closed-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-closed-status">بسته شده</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-pending-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-pending-status">در انتظار</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-open-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-open-status">باز</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-closed-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-closed-status">بسته شده</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-pending-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-pending-status">در انتظار</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            <tr class="dv-pending-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-pending-status">در انتظار</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 ps-lg-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link disabled" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="open" role="tabpanel" aria-labelledby="open-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table dv-custom-table-box-shadow w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>عنوان</th>
+                                <th>نام ارسال کننده</th>
+                                <th>دپارتمان</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>وضعیت</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="dv-pending-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-open-status">باز</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+<!--                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 ps-lg-3">-->
+<!--                        <nav aria-label="Page navigation example">-->
+<!--                            <ul class="pagination">-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link disabled" href="#" aria-label="Previous">-->
+<!--                                        <span aria-hidden="true">&laquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                                <li class="page-item active"><a class="page-link" href="#">2</a></li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link" href="#" aria-label="Next">-->
+<!--                                        <span aria-hidden="true">&raquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+                </div>
+                <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table dv-custom-table-box-shadow w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>عنوان</th>
+                                <th>نام ارسال کننده</th>
+                                <th>دپارتمان</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>وضعیت</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="dv-pending-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-pending-status">در انتظار</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+<!--                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 ps-lg-3">-->
+<!--                        <nav aria-label="Page navigation example">-->
+<!--                            <ul class="pagination">-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link disabled" href="#" aria-label="Previous">-->
+<!--                                        <span aria-hidden="true">&laquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                                <li class="page-item active"><a class="page-link" href="#">2</a></li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link" href="#" aria-label="Next">-->
+<!--                                        <span aria-hidden="true">&raquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+                </div>
+                <div class="tab-pane fade" id="closed" role="tabpanel" aria-labelledby="closed-tab">
+                    <div class="overflow-auto">
+                        <table class="dv-home-table dv-custom-table-box-shadow w-100 mb-4">
+                            <thead>
+                            <tr>
+                                <th>عنوان</th>
+                                <th>نام ارسال کننده</th>
+                                <th>دپارتمان</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>وضعیت</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="dv-closed-tr">
+                                <td>عنوان تیکت</td>
+                                <td>رسول جباری</td>
+                                <td>روابط عمومی</td>
+                                <td>1398/04/10</td>
+                                <td>
+                                    <span class="dv-closed-status">بسته شده</span>
+                                </td>
+                                <td>
+                                    <a href="ticket-info.html" class="dv-table-button rounded-pill" type="button">
+                                        مشاهده تیکت
+                                    </a>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+<!--                    <div class="d-flex align-items-center justify-content-center justify-content-lg-end pt-3 ps-lg-3">-->
+<!--                        <nav aria-label="Page navigation example">-->
+<!--                            <ul class="pagination">-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link disabled" href="#" aria-label="Previous">-->
+<!--                                        <span aria-hidden="true">&laquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                                <li class="page-item active"><a class="page-link" href="#">2</a></li>-->
+<!--                                <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                                <li class="page-item">-->
+<!--                                    <a class="page-link" href="#" aria-label="Next">-->
+<!--                                        <span aria-hidden="true">&raquo;</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!------ END -------->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</body>
+</html>
