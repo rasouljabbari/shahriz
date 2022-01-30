@@ -1,0 +1,203 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>شهریز | مدیریت تیکت‌ها</title>
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="../assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body dir="rtl" class="dv-panel-body">
+
+
+<div class="row g-2 g-lg-4">
+    <div class="col-12 col-lg-3">
+        <div class="dv-panel-menu d-none d-lg-block">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="dv-user-image">
+                    <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
+                </div>
+                <h5 class="dv-menu-username">رسول جباری</h5>
+                <p class="dv-menu-username-phone">09106878810</p>
+            </div>
+            <hr class="dv-panel-menu-hr"/>
+
+            <ul class="dv-menu-items">
+                <li>
+                    <a href="home.html" class="d-flex align-items-center ">
+                        <span class="icon-home dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">پیشخوان کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-tickets.html" class="d-flex align-items-center ">
+                        <span class="icon-icon dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">بلیت های من</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="my-wallet.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">کیف پول</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="d-flex align-items-center ">
+                        <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">تنظیمات کاربری</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-friends.html" class="d-flex align-items-center ">
+                        <span class="icon-user-plus dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">دعوت از دوستان</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="manage-tickets.html" class="d-flex align-items-center ">
+                        <span class="icon-bx-support dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">مدیریت تیکت‌ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html" class="d-flex align-items-center ">
+                        <span class="icon-logout dv-panel-menu-icon ps-4"></span>
+                        <span class="dv-panel-menu-title">خروج از پنل کاربری</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center mb-3 d-block d-lg-none">
+            <span class="icon-menu dv-panel-menu-bar" onclick="openMenu()"></span>
+            <span class="dv-panel-page-title">مدیریت تیکت‌ها</span>
+
+            <!--        show in < 992px-->
+            <div class="dv-panel-menu-bg">
+                <div class="dv-panel-menu">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="dv-user-image">
+                            <img src="../assets/images/user.png" class="img-fluid" alt="شهریز">
+                        </div>
+                        <h5 class="dv-menu-username">رسول جباری</h5>
+                        <p class="dv-menu-username-phone">09106878810</p>
+                        <a href="my-wallet.html" class="dv-menu-wallet-button position-relative">
+                            <span class="dv-card-price">5000</span>
+                            <span>تومان</span>
+                            <span class="dv-upload-file-plus-icon">+</span>
+                        </a>
+                    </div>
+                    <hr class="dv-panel-menu-hr"/>
+
+                    <ul class="dv-menu-items">
+                        <li>
+                            <a href="home.html" class="d-flex align-items-center ">
+                                <span class="icon-home dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">پیشخوان کاربری</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-tickets.html" class="d-flex align-items-center ">
+                                <span class="icon-icon dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">بلیت های من</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-wallet.html" class="d-flex align-items-center ">
+                                <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">کیف پول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html" class="d-flex align-items-center ">
+                                <span class="icon-wallet-filled-money-tool dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">تنظیمات کاربری</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-friends.html" class="d-flex align-items-center ">
+                                <span class="icon-user-plus dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">دعوت از دوستان</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="manage-tickets.html" class="d-flex align-items-center ">
+                                <span class="icon-bx-support dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">مدیریت تیکت‌ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="d-flex align-items-center ">
+                                <span class="icon-logout dv-panel-menu-icon ps-4"></span>
+                                <span class="dv-panel-menu-title">خروج از پنل کاربری</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="icon-close dv_close_menu" onclick="openMenu()"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-9 mb-3 position-relative">
+        <div class="dv-page-title-in-nine d-none d-lg-flex align-items-center justify-content-center">
+            <span>مدیریت تیکت‌ها</span>
+        </div>
+        <form class="dv-wallet-bg-parent h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2 px-3">
+                <div class="d-flex align-items-center">
+                    <span class="dv-ticket-page-title ps-3">عنوان تیکت</span>
+                    <span class="dv-open-ticket-status">باز</span>
+                </div>
+                <span class="dv-ticket-page-title">1400/10/15</span>
+            </div>
+            <textarea name="ticket" rows="5" class="dv-ticket-textarea w-100 mb-4" placeholder="متن پیام"></textarea>
+            <div class="d-flex flex-wrap justify-content-end mb-4">
+                <div class="me-5">
+                    <a href="#" class="d-flex flex-column align-items-center justify-content-center" download>
+                        <span class="icon-file-ticket dv-document-icon mb-2"></span>
+                        <span class="dv-document-name">123.JPG</span>
+                    </a>
+                </div>
+                <div class="me-5">
+                    <a href="#" class="d-flex flex-column align-items-center justify-content-center" download>
+                        <span class="icon-file-ticket dv-document-icon mb-2"></span>
+                        <span class="dv-document-name">123.JPG</span>
+                    </a>
+                </div>
+                <div class="me-5">
+                    <a href="#" class="d-flex flex-column align-items-center justify-content-center" download>
+                        <span class="icon-file-ticket dv-document-icon mb-2"></span>
+                        <span class="dv-document-name">123.JPG</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2 px-3">
+                <span class="dv-ticket-page-title">ارسال پاسخ</span>
+            </div>
+            <textarea name="answer" rows="5" class="dv-ticket-textarea w-100 mb-3" placeholder="متن پیام"></textarea>
+
+            <div class="d-flex align-items-center justify-content-center mt-4">
+                <button class="dv-bg-light-card-button rounded-pill mx-4" type="submit">
+                    ارسال پاسخ
+                </button>
+                <button class="dv-bg-light-purple-button rounded-pill mx-4" type="button">
+                    بستن تیکت
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!------ END -------->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</body>
+</html>

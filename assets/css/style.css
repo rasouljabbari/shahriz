@@ -3875,6 +3875,54 @@ button.active .dv-mini-purple-circle-active {
     /*justify-content: space-between;*/
 }
 
+.dv-ticket-page-title{
+    color: var(--panel-darkblue);
+    font-size: 1em;
+    line-height: 31px;
+}
+
+.dv-open-ticket-status{
+    color: #35BA47;
+    font-size: 16px;
+    line-height: 31px;
+}
+
+.dv-ticket-textarea{
+    border: 1px solid var(--panel-darkblue);
+    outline: 1px solid var(--panel-darkblue);
+    border-radius: 5px;
+    background: #E4E6EE;
+    padding: 1em;
+    box-shadow: var(--box31016);
+}
+
+.dv-ticket-textarea::placeholder{
+    color: #A6ADC6;
+}
+.dv-document-name{
+    color: var(--panel-darkblue);
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.dv-document-icon:before{
+    color: #DF306D;
+    font-size: 2.25em;
+}
+
+.dv-bg-light-purple-button {
+    background: #fff;
+    color: #DF306D;
+    border: 1px solid #DF306D;
+    font-size: 0.9em;
+    padding: 0.3em 2.5em;
+    transition: all 0.3s linear;
+}
+
+.dv-bg-light-purple-button:hover {
+    background: #DF306D;
+    color: #fff;
+}
 /************************* responsive ********************/
 /*max*/
 
