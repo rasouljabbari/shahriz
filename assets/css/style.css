@@ -3225,7 +3225,7 @@ button.active .dv-mini-purple-circle-active {
 }
 
 .dv-loader-icon:before {
-    color: #fff;
+    color: #000;
 }
 
 
@@ -3283,10 +3283,11 @@ button.active .dv-mini-purple-circle-active {
     border: 1px solid #6373AE !important;
     outline: none;
     font-size: 1em;
-    padding: 0.45em 3em;
+    padding: 0.3em 1em;
     box-shadow: var(--box31016);
     text-align: center;
     margin-top: 0.75em;
+    width: 100%;
 }
 
 .dv-bg-light-card-input::placeholder, .dv-bg-light-card-input {
@@ -3437,9 +3438,9 @@ button.active .dv-mini-purple-circle-active {
 .dv-large-loader {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(256, 256, 256, 0.6);
     position: absolute;
-    z-index: 9;
+    z-index: 1000;
     top: 0;
     left: 0;
 }
