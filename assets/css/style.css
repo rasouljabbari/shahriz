@@ -132,12 +132,29 @@ input[type=number] {
     /*height: 100px;*/
 }
 
+.dv_header_logo2 {
+    width: 72px;
+}
+
+.dv-site-title {
+    color: #B82055 !important;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.dv-site-description {
+    color: #2E3D50;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
 .dv_image_content {
     object-fit: fill;
     width: 100%;
 }
 
-.dv_orange_btn {
+.dv_orange_btn, .dv_download-app-header-btn {
     width: 175px;
     height: 44px;
     background: var(--yellow);
@@ -153,6 +170,15 @@ input[type=number] {
 
 .dv_orange_btn:hover {
     background: var(--orange);
+}
+
+.dv_download-app-header-btn {
+    background: var(--purple);
+    color: #fff !important;
+}
+
+.dv_download-app-header-btn:hover {
+    opacity: 0.95;
 }
 
 .dv_search_btn {
@@ -195,7 +221,7 @@ input[type=number] {
 }
 
 #concert-section .nav-tabs .nav-link {
-    width: 150px;
+    min-width: 150px;
     height: 50px;
     border-radius: 25px;
     background: #fff;
@@ -242,7 +268,7 @@ input[type=number] {
     padding: 5px;
 }
 
-.dv-tab-card-body ul li{
+.dv-tab-card-body ul li {
     margin-bottom: 7px;
 }
 
@@ -4055,7 +4081,6 @@ button.active .dv-mini-purple-circle-active {
     overflow-y: auto;
 }
 
-
 /************************* responsive ********************/
 
 /*min*/
@@ -4082,6 +4107,14 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (min-width: 992.01px) {
+    header {
+        background: #fff;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
     .dv-video-player-modal .modal-dialog {
         max-width: 600px;
     }
@@ -4826,8 +4859,7 @@ button.active .dv-mini-purple-circle-active {
         display: flex;
     }
 
-    .dv_header_logo {
-        width: 150px;
+    .dv_header_logo, .dv_header_logo2 {
         margin: auto;
         margin-bottom: 1rem;
     }
@@ -5117,7 +5149,7 @@ button.active .dv-mini-purple-circle-active {
     }
 
     #concert-section .nav-tabs .nav-link {
-        width: 90px;
+        min-width: 90px;
         height: 30px;
         margin-bottom: 1rem;
         display: flex;
@@ -5346,7 +5378,7 @@ button.active .dv-mini-purple-circle-active {
         padding-left: 2% !important;
     }
 
-    .dv_orange_btn, .dv_form_hidden {
+    .dv_orange_btn, .dv_form_hidden, .dv_download-app-header-btn {
         width: 100%;
     }
 
