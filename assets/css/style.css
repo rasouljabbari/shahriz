@@ -2795,7 +2795,7 @@ button.active .dv-mini-purple-circle-active {
     direction: rtl !important;
 }
 
-.dv-home-table tr td a{
+.dv-home-table tr td a {
     color: var(--panel-darkblue) !important;
 }
 
@@ -3867,32 +3867,32 @@ button.active .dv-mini-purple-circle-active {
     color: var(--purple);
 }
 
-.dv-tickets-content{
+.dv-tickets-content {
     background: #fff;
     box-shadow: 0 0 15px rgba(46, 61, 80, 0.15);
     border-radius: 5px;
-    height: calc( 100% - 126px);
+    height: calc(100% - 126px);
 }
 
-.dv-tickets-content .tab-pane{
+.dv-tickets-content .tab-pane {
     /*display: flex;*/
     /*flex-direction: column;*/
     /*justify-content: space-between;*/
 }
 
-.dv-ticket-page-title{
+.dv-ticket-page-title {
     color: var(--panel-darkblue);
     font-size: 1em;
     line-height: 31px;
 }
 
-.dv-open-ticket-status{
+.dv-open-ticket-status {
     color: #35BA47;
     font-size: 16px;
     line-height: 31px;
 }
 
-.dv-ticket-textarea{
+.dv-ticket-textarea {
     border: 1px solid var(--panel-darkblue);
     outline: 1px solid var(--panel-darkblue);
     border-radius: 5px;
@@ -3901,16 +3901,17 @@ button.active .dv-mini-purple-circle-active {
     box-shadow: var(--box31016);
 }
 
-.dv-ticket-textarea::placeholder{
+.dv-ticket-textarea::placeholder {
     color: #A6ADC6;
 }
-.dv-document-name{
+
+.dv-document-name {
     color: var(--panel-darkblue);
     font-size: 16px;
     line-height: 25px;
 }
 
-.dv-document-icon:before{
+.dv-document-icon:before {
     color: #DF306D;
     font-size: 2.25em;
 }
@@ -3929,7 +3930,7 @@ button.active .dv-mini-purple-circle-active {
     color: #fff;
 }
 
-.dv-new-ticket-alarm{
+.dv-new-ticket-alarm {
     width: 15px;
     height: 15px;
     background: #F99F28;
@@ -3937,6 +3938,100 @@ button.active .dv-mini-purple-circle-active {
     position: absolute;
     right: 25px;
 }
+
+
+
+.dv-edit-invoice-inputs {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.dv-edit-invoice-inputs thead tr {
+    background: rgba(46, 61, 80, 0.2);
+}
+
+.dv-edit-invoice-inputs thead tr th, .dv-edit-invoice-inputs tbody tr td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 6px;
+    font-weight: normal;
+    text-align: right;
+    min-width: 120px;
+}
+
+.dv-edit-invoice-inputs thead tr th:first-child, .dv-edit-invoice-inputs tbody tr td:first-child {
+    padding-right: 25px;
+    border-radius: 0 5px 0 0;
+}
+
+.dv-edit-invoice-inputs thead tr th:last-child, .dv-edit-invoice-inputs tbody tr td:last-child {
+    border-radius: 5px 0 0 0;
+    padding-left: 15px;
+}
+
+.dv-edit-invoice-inputs tbody tr {
+    background: #F4F5F6;
+}
+
+.dv-edit-invoice-inputs tbody tr:nth-child(even) {
+    background: rgba(46, 61, 80, 0.1);
+    border-top: 1px solid rgba(46, 61, 80, 0.5);
+    border-bottom: 1px solid rgba(46, 61, 80, 0.5);
+}
+
+.dv-edit-invoice-inputs tbody tr td input, .dv-edit-invoice-inputs tbody tr td select {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 10px;
+    color: #626D7B;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+.dv-edit-invoice-inputs tbody tr td select {
+    min-width: 130px;
+}
+
+.dv-show-user-info-error {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #B82055;
+    font-size: 14px;
+    line-height: 8px;
+}
+
+.dv-table-icon-checkmark {
+    background-color: #35BA47;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+}
+
+.dv-table-icon-checkmark:before {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1460px) {
+    .dv-edit-invoice-inputs thead tr th:last-child, .dv-edit-invoice-inputs tbody tr td:last-child {
+        padding-left: 35px;
+    }
+
+    .dv-edit-invoice-inputs thead tr th, .dv-edit-invoice-inputs tbody tr td {
+        padding: 10px 15px;
+    }
+}
+
 /************************* responsive ********************/
 /*max*/
 
@@ -3944,6 +4039,7 @@ button.active .dv-mini-purple-circle-active {
     .dv-panel-body {
         padding: 1rem;
     }
+
     .dv-new-ticket-alarm {
         right: 15px;
     }
@@ -3951,9 +4047,18 @@ button.active .dv-mini-purple-circle-active {
 
 @media screen and (max-width: 992px) {
 
+    .dv-overflow-x-auto {
+        overflow-x: auto;
+    }
+
+    .dv-table-icon-checkmark {
+        right: 2px;
+    }
+
     .dv-new-ticket-alarm {
         right: 8px;
     }
+
     .dv-chair-form {
         margin-top: 1em;
     }
@@ -5097,16 +5202,19 @@ button.active .dv-mini-purple-circle-active {
 
 @media screen and (max-width: 768px) {
 
-    .dv-pending-tr{
+    .dv-pending-tr {
         border-right: 4px solid #F9BF4A;
     }
-    .dv-open-tr{
+
+    .dv-open-tr {
         border-right: 4px solid #67DB77;
     }
-    .dv-closed-tr{
+
+    .dv-closed-tr {
         border-right: 4px solid var(--purple);
     }
-    .dv-manage-ticket-content-tabs .nav-item .nav-link{
+
+    .dv-manage-ticket-content-tabs .nav-item .nav-link {
         padding: 1em 0.5em;
         font-size: 14px;
     }
@@ -5136,15 +5244,15 @@ button.active .dv-mini-purple-circle-active {
         border-radius: 0;
     }
 
-    .dv-manage-ticket-content-tabs{
+    .dv-manage-ticket-content-tabs {
         box-shadow: 0 0 15px rgba(46, 61, 80, 0.15);
     }
 
-    .dv-tickets-content{
+    .dv-tickets-content {
         box-shadow: none;
     }
 
-    .dv-tickets-content .dv-home-table tr th, .dv-home-table tr td{
+    .dv-tickets-content .dv-home-table tr th, .dv-home-table tr td {
         min-width: 100px;
     }
 

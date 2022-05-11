@@ -335,184 +335,146 @@
                                 <a href="booking-concert2.html"
                                    class="rounded-pill dv-invoice-table-edit-link">ویرایش</a>
                             </div>
-                            <div class="dv-custom-invoice-table d-flex flex-column">
-                                <div class="col-12 dv-custom-table-title">
-                                    <div class="row px-0">
-                                        <div class="col-2 d-flex align-items-center justify-content-start">
-                                            <span>#</span>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-start">
-                                            <span>جایگاه</span>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center justify-content-start">
-                                            <span>ردیف</span>
-                                        </div>
-                                        <div class="col-3 d-flex align-items-center justify-content-center">
-                                            <span>شماره صندلی</span>
-                                        </div>
-                                        <div class="col-3 d-flex align-items-center justify-content-center">
-                                            <span>قیمت (تومان)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 dv-custom-table-body">
-                                    <div class="dv-custom-table-child-body w-100">
-                                        <div class="row px-0">
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">1</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">همکف</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value pe-2">25</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="national-code" placeholder="کد ملی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
+                            <div class="dv-overflow-x-auto">
+                                <table class="dv-edit-invoice-inputs w-100">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>جایگاه</th>
+                                        <th>ردیف</th>
+                                        <th>شماره صندلی</th>
+                                        <th>قیمت (تومان)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="position-relative">
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>1</span>
+                                                <input type="text" name="national-code" placeholder="کد ملی">
+                                                <!--                                            if validation is true show this icon-->
+                                                <span class="icon-checkmark dv-table-icon-checkmark"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>همکف</span>
+                                                <input type="text" name="first_name" placeholder="تام">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>12</span>
+                                                <input type="text" name="last_name" placeholder="نام خانوادگی">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>23</span>
+                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="dv-card-price">90000</span>
+                                                <div class="dv-bg-light-after-count">
+                                                    <select name="gender">
+                                                        <option disabled selected>جنسیت</option>
+                                                        <option value="مرد">مرد</option>
+                                                        <option value="زن">زن</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value">14</span>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="position-relative">
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>1</span>
+                                                <input type="text" name="national-code" placeholder="کد ملی">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>همکف</span>
+                                                <input type="text" name="first_name" placeholder="تام">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>12</span>
+                                                <input type="text" name="last_name" placeholder="نام خانوادگی">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>23</span>
+                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+
+                                                <!--                                            show error for not valid -->
+                                                <div class="dv-show-user-info-error">اطلاعات کد ملی با جنسیت با تطابق
+                                                    ندارد
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="dv-custom-table-child-body w-100">
-                                        <div class="row px-0">
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">1</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">همکف</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value pe-2">25</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="national-code" placeholder="کد ملی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="dv-card-price">90000</span>
+                                                <div class="dv-bg-light-after-count">
+                                                    <select name="gender">
+                                                        <option disabled selected>جنسیت</option>
+                                                        <option value="مرد">مرد</option>
+                                                        <option value="زن">زن</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value">14</span>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="position-relative">
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>1</span>
+                                                <input type="text" name="national-code" placeholder="کد ملی">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>همکف</span>
+                                                <input type="text" name="first_name" placeholder="تام">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>12</span>
+                                                <input type="text" name="last_name" placeholder="نام خانوادگی">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>23</span>
+                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+
+                                                <!--                                            show error for not valid -->
+                                                <div class="dv-show-user-info-error">اطلاعات کد ملی با جنسیت با تطابق
+                                                    ندارد
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="dv-custom-table-child-body w-100">
-                                        <div class="row px-0">
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">1</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">همکف</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value pe-2">25</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="national-code" placeholder="کد ملی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="dv-card-price">90000</span>
+                                                <div class="dv-bg-light-after-count">
+                                                    <select name="gender">
+                                                        <option disabled selected>جنسیت</option>
+                                                        <option value="مرد">مرد</option>
+                                                        <option value="زن">زن</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value">14</span>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dv-custom-table-child-body w-100">
-                                        <div class="row px-0">
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">1</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value">همکف</span>
-                                                    </div>
-                                                    <div class="col-4 d-flex justify-content-start">
-                                                        <span class="dv-custom-table-value pe-2">25</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="national-code" placeholder="کد ملی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="row px-0">
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value">14</span>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <span class="dv-custom-table-value dv-card-price">95000</span>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100">
-                                                    <div class="dv-bg-light-after-count">
-                                                        <input type="text" name="full_name" placeholder="نام و نام خانوادگی">
-                                                        <span class="icon-person dv-concert-user-info-icon"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
