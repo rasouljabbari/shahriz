@@ -4096,7 +4096,8 @@ button.active .dv-mini-purple-circle-active {
     }
 
     .dv-index-video {
-        width: 66%;
+        max-width: 730px;
+        width: 100%;
     }
 
     .d-lg-none {
