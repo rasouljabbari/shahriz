@@ -228,16 +228,22 @@ input[type=number] {
 .dv-tab-card-image {
     width: inherit;
     clip-path: ellipse(150% 100% at 50% 0%);
+    height: 300px;
 }
 
 .dv-tab-card-image img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 .dv-tab-card-body {
     background: #fff;
     padding: 5px;
+}
+
+.dv-tab-card-body ul li{
+    margin-bottom: 7px;
 }
 
 .dv-tab-card-title {
@@ -1581,7 +1587,7 @@ ol li:before {
 }
 
 .dv-concert-chairs-scroll {
-    height: 300px;
+    max-height: 275px;
     overflow-y: auto;
     padding-top: 1rem;
 }
@@ -1604,7 +1610,7 @@ ol li:before {
 
 .dv-show-price-result-tickets {
     background: #fff;
-    height: 500px;
+    max-height: 500px;
     border-radius: 10px;
     box-shadow: var(--box31016);
 }
@@ -1620,7 +1626,7 @@ ol li:before {
     position: absolute;
     left: 0;
     width: 100%;
-    top: 75%;
+    bottom: -200px;
 }
 
 .dv-chair-count {
@@ -1675,8 +1681,8 @@ ol li:before {
 
 .dv-content-on-result-image {
     position: absolute;
-    top: 105px;
-    right: 18.5%;
+    right: 21%;
+    bottom: -165px;
 }
 
 .dv-concert-chair {
