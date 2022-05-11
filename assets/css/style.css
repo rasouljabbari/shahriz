@@ -3940,7 +3940,6 @@ button.active .dv-mini-purple-circle-active {
 }
 
 
-
 .dv-edit-invoice-inputs {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
@@ -4022,6 +4021,100 @@ button.active .dv-mini-purple-circle-active {
     font-size: 10px;
 }
 
+.dv-schedule-tab {
+    border-bottom: none;
+    margin-bottom: 65px;
+}
+
+.dv-schedule-tab .nav-item .nav-link {
+    background: #fff;
+    color: #B82055;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.dv-schedule-tab .nav-item .nav-link:hover {
+    border-color: transparent;
+}
+
+.dv-schedule-tab .nav-item.show .nav-link, .dv-schedule-tab .nav-link.active {
+    background: #B82055;
+    color: #fff;
+}
+
+.dv-schedule-tab-list {
+    max-height: 650px;
+    height: auto !important;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+
+/************************* responsive ********************/
+
+/*min*/
+@media screen and (min-width: 768.01px) {
+    .w-md-100 {
+        width: 100%;
+    }
+
+    .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
+        top: 18%;
+    }
+
+    .w-md-100-275 {
+        width: calc(100% - 275px);
+    }
+
+    .dv-mobile-enomad, .dv-hr-25, .dv-footer-social-group-icons, .dv-footer-social-group-icons div {
+        display: none;
+    }
+
+    .dv-selected-sons-result {
+        bottom: -43px;
+    }
+}
+
+@media screen and (min-width: 992.01px) {
+    .dv-video-player-modal .modal-dialog {
+        max-width: 600px;
+    }
+
+    .dv-selected-sons-result-header, .dv-selected-sons-result-body, .dv-selected-tickets-result, .dv-selected-sons-result {
+        display: none;
+    }
+
+    .dv-video-size {
+        width: 100%;
+        height: 415px;
+    }
+
+    .dv-index-video {
+        width: 66%;
+    }
+
+    .d-lg-none {
+        display: none !important;
+    }
+
+    .d-lg-flex {
+        display: flex !important;
+    }
+
+    .dv-banner-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .dv-banner-image img {
+        object-fit: contain;
+    }
+
+    .dv-singer-details {
+        height: 230px;
+    }
+}
+
 @media screen and (min-width: 1460px) {
     .dv-edit-invoice-inputs thead tr th:last-child, .dv-edit-invoice-inputs tbody tr td:last-child {
         padding-left: 35px;
@@ -4032,9 +4125,70 @@ button.active .dv-mini-purple-circle-active {
     }
 }
 
-/************************* responsive ********************/
-/*max*/
+@media screen and (min-width: 1700.01px) {
+    .dv-link-copied {
+        font-size: 1em;
+    }
 
+    .dv-wallet-bg-parent {
+        padding: 4em 5em 2em 5em;
+    }
+
+    .dv-transaction-records-table {
+        height: 430px;
+    }
+
+    .dv-panel-dark-blue-bg, .dv-page-title-in-nine {
+        height: 46px;
+    }
+
+    .dv-current-validity-value, .dv-current-validity-title, .dv-panel-dark-blue-bg,
+    .dv-page-title-in-nine, .dv-bg-light-card-input {
+        font-size: 1.4em !important;
+    }
+
+    .dv-bg-light-card-button {
+        width: 146px;
+        height: 39px;
+        font-size: 1.4em;
+    }
+
+    .dv-panel-body {
+        padding: 5em 7em;
+    }
+
+    .dv-panel-menu-hr {
+        margin: 3.75em 0;
+    }
+
+    .dv-home-table tr td {
+        padding: 1.8em 1.5em;
+        font-size: 1.2em;
+    }
+
+    .dv-home-table tr th {
+        font-size: 1.2em;
+    }
+
+    .dv-table-button {
+        height: 35px;
+        width: 165px;
+    }
+
+    .dv-menu-items li {
+        padding-bottom: 3.5em;
+    }
+
+    .dv-financial-department-item {
+        padding: 2em 1.7em 2em 0.75em;
+    }
+
+    .dv-financial-department-value, .dv-financial-department-title {
+        font-size: 1.48em;
+    }
+}
+
+/*max*/
 @media screen and (max-width: 1200px) {
     .dv-panel-body {
         padding: 1rem;
@@ -5627,128 +5781,4 @@ button.active .dv-mini-purple-circle-active {
     }
 }
 
-/*min*/
-@media screen and (min-width: 768.01px) {
-    .w-md-100 {
-        width: 100%;
-    }
 
-    .dv-border-dotted-modal:before, .dv-border-dotted-modal:after {
-        top: 18%;
-    }
-
-    .w-md-100-275 {
-        width: calc(100% - 275px);
-    }
-
-    .dv-mobile-enomad, .dv-hr-25, .dv-footer-social-group-icons, .dv-footer-social-group-icons div {
-        display: none;
-    }
-
-    .dv-selected-sons-result {
-        bottom: -43px;
-    }
-}
-
-@media screen and (min-width: 992.01px) {
-    .dv-video-player-modal .modal-dialog {
-        max-width: 600px;
-    }
-
-    .dv-selected-sons-result-header, .dv-selected-sons-result-body, .dv-selected-tickets-result, .dv-selected-sons-result {
-        display: none;
-    }
-
-    .dv-video-size {
-        width: 100%;
-        height: 415px;
-    }
-
-    .dv-index-video {
-        width: 66%;
-    }
-
-    .d-lg-none {
-        display: none !important;
-    }
-
-    .d-lg-flex {
-        display: flex !important;
-    }
-
-    .dv-banner-image {
-        width: 350px;
-        height: 350px;
-    }
-
-    .dv-banner-image img {
-        object-fit: contain;
-    }
-
-    .dv-singer-details {
-        height: 230px;
-    }
-}
-
-@media screen and (min-width: 1700.01px) {
-    .dv-link-copied {
-        font-size: 1em;
-    }
-
-    .dv-wallet-bg-parent {
-        padding: 4em 5em 2em 5em;
-    }
-
-    .dv-transaction-records-table {
-        height: 430px;
-    }
-
-    .dv-panel-dark-blue-bg, .dv-page-title-in-nine {
-        height: 46px;
-    }
-
-    .dv-current-validity-value, .dv-current-validity-title, .dv-panel-dark-blue-bg,
-    .dv-page-title-in-nine, .dv-bg-light-card-input {
-        font-size: 1.4em !important;
-    }
-
-    .dv-bg-light-card-button {
-        width: 146px;
-        height: 39px;
-        font-size: 1.4em;
-    }
-
-    .dv-panel-body {
-        padding: 5em 7em;
-    }
-
-    .dv-panel-menu-hr {
-        margin: 3.75em 0;
-    }
-
-    .dv-home-table tr td {
-        padding: 1.8em 1.5em;
-        font-size: 1.2em;
-    }
-
-    .dv-home-table tr th {
-        font-size: 1.2em;
-    }
-
-    .dv-table-button {
-        height: 35px;
-        width: 165px;
-    }
-
-    .dv-menu-items li {
-        padding-bottom: 3.5em;
-    }
-
-    .dv-financial-department-item {
-        padding: 2em 1.7em 2em 0.75em;
-    }
-
-    .dv-financial-department-value, .dv-financial-department-title {
-        font-size: 1.48em;
-    }
-}

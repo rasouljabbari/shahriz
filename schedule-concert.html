@@ -305,7 +305,8 @@
                                         <button class="dv-singer-dark-button rounded-pill ms-2 ms-md-0" type="button"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal">قوانین رویداد
                                         </button>
-                                        <a href="purchase-guide.html" class="dv-singer-light-button rounded-pill">راهنمای خرید</a>
+                                        <a href="purchase-guide.html" class="dv-singer-light-button rounded-pill">راهنمای
+                                            خرید</a>
                                     </div>
                                 </div>
                             </div>
@@ -316,416 +317,639 @@
                             </div>
 
                             <!--                            list-->
-                            <div class="row px-0 dv-list-scroll mb-lg-5 position-relative">
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
-                                                    ظرفیت <span>24 نفر</span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                            <ul class="nav nav-tabs pb-3 dv-schedule-tab d-flex flex-wrap justify-content-center align-items-center"
+                                id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="salon1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#salon1"
+                                            type="button"
+                                            role="tab" aria-controls="salon1" aria-selected="true">سالن استاد شهریار
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="salon2-tab" data-bs-toggle="tab"
+                                            data-bs-target="#salon2"
+                                            type="button"
+                                            role="tab" aria-controls="salon2" aria-selected="false">سالن استاد فردوسی
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="salon3-tab" data-bs-toggle="tab"
+                                            data-bs-target="#salon3"
+                                            type="button"
+                                            role="tab" aria-controls="salon3" aria-selected="false">سالن پروین اعتصامی
+                                    </button>
+                                </li>
+                            </ul>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">جمعه 26 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="salon1" role="tabpanel"
+                                     aria-labelledby="salon1-tab">
+                                    <div class="row px-0 dv-list-scroll dv-schedule-tab-list mb-lg-5 position-relative">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button" class="dv-list-button dv-list-orange-button"
+                                                            disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">جمعه 26 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button" class="dv-list-button dv-list-orange-button"
+                                                            disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
+                                <div class="tab-pane fade" id="salon2" role="tabpanel" aria-labelledby="salon2-tab">
+                                    <div class="row px-0 dv-list-scroll dv-schedule-tab-list mb-lg-5 position-relative">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button" class="dv-list-button dv-list-orange-button"
+                                                            disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
+                                                    ظرفیت <span>24 نفر</span>
+                                                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="tab-pane fade" id="salon3" role="tabpanel" aria-labelledby="salon3-tab">
+                                    <div class="row px-0 dv-list-scroll dv-schedule-tab-list mb-lg-5 position-relative">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
+                                                    ظرفیت <span>24 نفر</span>
+                                                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">جمعه 26 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">جمعه 26 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">جمعه 26 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">جمعه 26 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
 
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <p class="dv-list-tile">جمعه 26 شهریور</p>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-red  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">21:30</span>
-                                            <button type="button" class="dv-list-button dv-list-red-button" disabled>
-                                                تمام شد
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">جمعه 26 شهریور</p>
                                         </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-orange">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-start-from">آغاز فروش از 17</span>
-                                            <button type="button" class="dv-list-button dv-list-orange-button" disabled>
-                                                به زودی
-                                            </button>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-3 mb-lg-0 col-lg-4">
-                                    <div class="dv-list-card dv-list-card-green  mb-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">22:30</span>
-                                            <a href="booking-concert1.html" class="dv-list-button dv-list-green-button">انتخاب
-                                                سانس
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="dv-list-card dv-list-card-purple">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="icon-clock"></span>
-                                            <span class="dv-list-item-time">23:30</span>
-                                            <a href="booking-concert1.html"
-                                               class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
-                                                <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
-                                                <span class="dv-list-card-purple-button-bottom">
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
                                                     ظرفیت <span>24 نفر</span>
                                                 </span>
-                                            </a>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
+
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">پنج شنبه 25 شهریور</p>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
+                                                    ظرفیت <span>24 نفر</span>
+                                                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
+
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <p class="dv-list-tile">جمعه 26 شهریور</p>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-red  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">21:30</span>
+                                                    <button type="button" class="dv-list-button dv-list-red-button"
+                                                            disabled>
+                                                        تمام شد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-orange">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-start-from">آغاز فروش از 17</span>
+                                                    <button type="button"
+                                                            class="dv-list-button dv-list-orange-button" disabled>
+                                                        به زودی
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3 mb-lg-0 col-lg-4">
+                                            <div class="dv-list-card dv-list-card-green  mb-3">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">22:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-green-button">انتخاب
+                                                        سانس
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dv-list-card dv-list-card-purple">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="icon-clock"></span>
+                                                    <span class="dv-list-item-time">23:30</span>
+                                                    <a href="booking-concert1.html"
+                                                       class="dv-list-button dv-list-purple-button d-flex flex-column overflow-hidden px-0">
+                                                        <span class="dv-list-card-purple-button-top">انتخاب سانس</span>
+                                                        <span class="dv-list-card-purple-button-bottom">
+                                                    ظرفیت <span>24 نفر</span>
+                                                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="dv-list-hr">
+                                        </div>
+                                        <div class="dv-show-more-list"></div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <hr class="dv-list-hr">
-                                </div>
-                                <div class="dv-show-more-list"></div>
                             </div>
+
 
                             <!--                            dotted and title-->
                             <div class="dv-border-dotted position-relative pt-3 mb-lg-5">
@@ -736,43 +960,58 @@
                                 <div class="dv-bg-gray-about position-relative">
                                     <div class="dv-bg-gray-about-text">
                                         <p class="mb-0">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                            از
                                             طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                            نیاز و
                                             کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                                            جامعه و
                                             متخصصان را می طلبد تا با نرم افزارها شناخت
                                             بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
                                             زبان فارسی ایجاد کرد. در این صورت می توان امید
-                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                                            رسد
                                             وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی
-                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                            گیرد.
                                         </p>
                                         <p class="mb-0">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                            از
                                             طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                            نیاز و
                                             کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                                            جامعه و
                                             متخصصان را می طلبد تا با نرم افزارها شناخت
                                             بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
                                             زبان فارسی ایجاد کرد. در این صورت می توان امید
-                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                                            رسد
                                             وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی
-                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                            گیرد.
                                         </p>
                                         <p class="mb-0">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                            از
                                             طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                                            نیاز و
                                             کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                                            جامعه و
                                             متخصصان را می طلبد تا با نرم افزارها شناخت
                                             بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
                                             زبان فارسی ایجاد کرد. در این صورت می توان امید
-                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                                            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                                            رسد
                                             وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی
-                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                            گیرد.
                                         </p>
                                     </div>
                                     <div class="dv-show-more-about">
@@ -855,9 +1094,11 @@
                                                 <p class="dv-comment-p mb-0">
                                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                                                     استفاده از طراحان گرافیک
-                                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                                    لازم
                                                     است و برای شرایط فعلی
-                                                    .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                                    .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                    کاربردی
                                                     می باشد
                                                 </p>
                                             </div>
@@ -896,9 +1137,11 @@
                                                 <p class="dv-comment-p mb-0">
                                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                                                     استفاده از طراحان گرافیک
-                                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                                    لازم
                                                     است و برای شرایط فعلی
-                                                    .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                                    .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                    کاربردی
                                                     می باشد
                                                 </p>
                                             </div>
@@ -918,11 +1161,14 @@
                                                     </div>
                                                     <div class="mb-3">
                                                         <p class="dv-comment-p mb-0">
-                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                                            چاپ و
                                                             با استفاده از طراحان گرافیک
-                                                            است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                                                            است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                            سطرآنچنان
                                                             که لازم است و برای شرایط فعلی
-                                                            .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                            .تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                                            ابزارهای
                                                             کاربردی می باشد
                                                         </p>
                                                     </div>
@@ -953,7 +1199,8 @@
                                                 </div>
                                             </div>
                                             <input type="hidden" id="rateValue">
-                                            <button class="dv-comment-button mx-auto mx-md-0 me-md-4" type="submit">ثبت
+                                            <button class="dv-comment-button mx-auto mx-md-0 me-md-4" type="submit">
+                                                ثبت
                                                 نظر
                                             </button>
                                         </div>
