@@ -1347,7 +1347,7 @@ input[type=number] {
 }
 
 .dv-comment-content-scroll {
-    height: 390px;
+    max-height: 390px;
     width: 100%;
     overflow-y: auto;
 }
