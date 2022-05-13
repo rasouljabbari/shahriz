@@ -15,7 +15,7 @@ function ScrollZoom(container,max_scale,factor){
   let zoom_target = {x:0,y:0}
   let zoom_point = {x:0,y:0}
   target.css('transform-origin','0 0')
-  target.on("mousewheel DOMMouseScroll onmousemove",scrolled)
+  target.on("mousewheel DOMMouseScroll onmousemove touchmove",scrolled)
   function scrolled(e){
     let offset = container.offset()
     zoom_point.x = e.pageX - offset.left
