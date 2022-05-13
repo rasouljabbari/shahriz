@@ -936,7 +936,7 @@ input[type=number] {
 }
 
 .dv-singer-image {
-    width: 275px;
+    width: 300px;
     height: 300px;
     filter: drop-shadow(1px 6px 20px rgba(0, 0, 0, 0.3));
     position: relative;
@@ -1661,9 +1661,10 @@ ol li:before {
 
 .dv-chair-count-image {
     position: absolute;
-    left: 0;
+    left: 50%;
     width: 100%;
     bottom: -200px;
+    transform: translateX(-50%);
 }
 
 .dv-chair-count {
@@ -2257,8 +2258,8 @@ button.active .dv-mini-purple-circle-active {
     line-height: 40px;
     background: #fff;
     box-shadow: var(--box1016);
-    padding: 0 3rem 0 15px;
-    border-radius: 0 10px 10px 0;
+    padding: 0 15px;
+    border-radius: 25px;
     color: var(--darkblue) !important;
     width: 100%;
 }
@@ -4136,6 +4137,25 @@ button.active .dv-mini-purple-circle-active {
     transform: scale(0.3) translateY(-50%);
 }
 
+.dv-ticket-cancel-btn{
+    color: var(--purple);
+    background: transparent;
+    border: none;
+    margin-right: 1em;
+}
+
+.dv-home-table-button-yellow{
+    background: #FFC145;
+}
+
+.dv-home-table-button-green{
+    background: #24CD69;
+}
+
+.dv-home-table-button-red{
+    background: #E72F2F;
+}
+
 /************************* responsive ********************/
 
 /*min*/
@@ -4149,7 +4169,7 @@ button.active .dv-mini-purple-circle-active {
     }
 
     .w-md-100-275 {
-        width: calc(100% - 275px);
+        width: calc(100% - 300px);
     }
 
     .dv-mobile-enomad, .dv-hr-25, .dv-footer-social-group-icons, .dv-footer-social-group-icons div {
