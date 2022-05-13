@@ -4177,6 +4177,12 @@ button.active .dv-mini-purple-circle-active {
 .dv-overflow-x::-webkit-scrollbar , .dv-schedule-tab-list::-webkit-scrollbar , .dv-comment-content-scroll::-webkit-scrollbar , .dv-selected-sons-result-body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
+
+.datepicker-plot-area .datepicker-navigator .pwt-btn-switch ,
+.datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row-cell,
+.datepicker-plot-area .datepicker-day-view .table-days td span{
+    font-family: IRANSans;
+}
 /************************* responsive ********************/
 
 /*min*/

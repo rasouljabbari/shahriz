@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/icomoon.min.css">
     <link rel="stylesheet" href="assets/css/icomoon_custom.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/persian-datepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body dir="rtl">
@@ -367,7 +368,7 @@
                                         <td>
                                             <div class="d-flex flex-column">
                                                 <span>23</span>
-                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+                                                <input type="text" class="dv-birthday-input" name="birth-date" placeholder="تاریخ تولد">
                                             </div>
                                         </td>
                                         <td>
@@ -405,7 +406,7 @@
                                         <td>
                                             <div class="d-flex flex-column">
                                                 <span>23</span>
-                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+                                                <input type="text" class="dv-birthday-input" name="birth-date" placeholder="تاریخ تولد">
 
                                                 <!--                                            show error for not valid -->
                                                 <div class="dv-show-user-info-error">اطلاعات کد ملی با جنسیت با تطابق
@@ -448,7 +449,7 @@
                                         <td>
                                             <div class="d-flex flex-column">
                                                 <span>23</span>
-                                                <input type="text" name="birth-date" placeholder="تاریخ تولد">
+                                                <input type="text" class="dv-birthday-input" name="birth-date" placeholder="تاریخ تولد">
 
                                                 <!--                                            show error for not valid -->
                                                 <div class="dv-show-user-info-error">اطلاعات کد ملی با جنسیت با تطابق
@@ -824,6 +825,14 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/zoom-slider.js"></script>
+<script src="assets/js/persian-date.min.js"></script>
+<script src="assets/js/persian-datepicker.min.js"></script>
 <script src="assets/js/index.js"></script>
+
+<script>
+    $('.dv-birthday-input').persianDatepicker({
+        format: 'LLLL'
+    });
+</script>
 </body>
 </html>
