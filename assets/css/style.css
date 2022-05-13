@@ -111,11 +111,11 @@ input[type=number] {
     color: #657384;
 }
 
-.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link.active {
     color: #B82055;
 }
 
-.dv-header-logo{
+.dv-header-logo {
     max-width: 260px;
     display: flex;
 }
@@ -4073,13 +4073,13 @@ button.active .dv-mini-purple-circle-active {
     color: #B82055;
     border-radius: 25px;
     padding: 10px 25px;
-    border: 1px solid rgba(184,32,85,0.24);
+    border: 1px solid rgba(184, 32, 85, 0.24);
     margin-left: 0.75em;
     margin-bottom: 0.75em;
 }
 
 .dv-schedule-tab .nav-item .nav-link:hover {
-    border: 1px solid rgba(184,32,85,0.24);
+    border: 1px solid rgba(184, 32, 85, 0.24);
 }
 
 .dv-schedule-tab .nav-item.show .nav-link, .dv-schedule-tab .nav-link.active {
@@ -4095,20 +4095,21 @@ button.active .dv-mini-purple-circle-active {
     overflow-x: hidden;
 }
 
-.dv-schedule-border{
+.dv-schedule-border {
     border: 1px dashed #c7c7c7;
     padding: 1em;
     margin: 1em;
     border-radius: 15px;
 }
 
-.dv-chair-parent{
+.dv-chair-parent {
     width: 100%;
     height: 400px;
     overflow: hidden;
     margin-top: 150px;
 }
-.dv-sen-img{
+
+.dv-sen-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -4116,45 +4117,22 @@ button.active .dv-mini-purple-circle-active {
     width: 100%;
 }
 
-/*#zoom {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    transform-origin: 0px 0px;*/
-/*    transform: scale(1) translate(0px, 0px);*/
-/*    cursor: grab;*/
-/*    margin-bottom: 1em;*/
-/*}*/
-/*body {*/
-/*    user-select: none;*/
-/*    -moz-user-select: none;*/
-/*}*/
-
-/*.zoom {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    transform-origin: 0px 0px;*/
-/*    transform: scale(1) translate(0px, 0px);*/
-/*    cursor: grab;*/
-/*}*/
-/*div.zoom > img {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
-
-#container{
-    width:100%;
-    height:500px;
-    overflow:hidden;
+#container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
-#slide{
-    width:100%;
-    height:100%;
+
+#slide {
+    width: 100%;
+    height: 100%;
     transition: transform .3s;
 }
-#slide #zoom{
-    width:auto;
-    height:auto;
-    max-width:100%;
+
+#slide #zoom {
+    width: auto;
+    height: auto;
+    max-width: 100%;
     transform: scale(0.3) translateY(-50%);
 }
 
@@ -4924,7 +4902,7 @@ button.active .dv-mini-purple-circle-active {
         margin-right: 10px;
     }
 
-    .dv-logo-show-mobile img{
+    .dv-logo-show-mobile img {
         width: 65%;
     }
 
