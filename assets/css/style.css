@@ -549,8 +549,8 @@ input[type=number] {
 }
 
 .dv-buy-ticket {
-    background: rgb(255,191,0);
-    background: linear-gradient(90deg, rgba(255,191,0,1) 26%, rgba(255,208,69,1) 100%);
+    background: rgb(255, 191, 0);
+    background: linear-gradient(90deg, rgba(255, 191, 0, 1) 26%, rgba(255, 208, 69, 1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -560,7 +560,7 @@ input[type=number] {
     width: 200px;
     height: 50px;
     margin: 4rem auto;
-    filter: drop-shadow(0 15px 30px 0 rgba(0, 0, 0, 0.12));
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.12);
 }
 
 .dv-buy-ticket:hover {
@@ -4143,46 +4143,204 @@ button.active .dv-mini-purple-circle-active {
     transform: scale(0.3) translateY(-50%);
 }
 
-.dv-ticket-cancel-btn{
+.dv-ticket-cancel-btn {
     color: var(--purple);
     background: transparent;
     border: none;
     margin-right: 1em;
 }
 
-.dv-home-table-button-yellow{
+.dv-home-table-button-yellow {
     background: #FFC145;
 }
 
-.dv-home-table-button-green{
+.dv-home-table-button-green {
     background: #24CD69;
 }
 
-.dv-home-table-button-red{
+.dv-home-table-button-red {
     background: #E72F2F;
 }
 
-.bannerSwiper .swiper-slide{
+.bannerSwiper .swiper-slide {
     justify-content: space-around;
     padding: 2em 0;
     background: #fff;
     border-radius: 15px;
 }
 
-.dv-overflow-x{
+.dv-overflow-x {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-x: scroll;
 }
-.dv-overflow-x::-webkit-scrollbar , .dv-schedule-tab-list::-webkit-scrollbar , .dv-comment-content-scroll::-webkit-scrollbar , .dv-selected-sons-result-body::-webkit-scrollbar {
+
+.dv-overflow-x::-webkit-scrollbar, .dv-schedule-tab-list::-webkit-scrollbar, .dv-comment-content-scroll::-webkit-scrollbar, .dv-selected-sons-result-body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-.datepicker-plot-area .datepicker-navigator .pwt-btn-switch ,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-switch,
 .datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row-cell,
-.datepicker-plot-area .datepicker-day-view .table-days td span{
+.datepicker-plot-area .datepicker-day-view .table-days td span {
     font-family: IRANSans;
 }
+
+.dv-custom-dropdown {
+    cursor: pointer;
+}
+
+.dv-custom-dropdown .dv-custom-dropdown
+input[type="checkbox"],
+.dv-custom-dropdown .dropdown-content,
+input[type="radio"] {
+    display: none;
+}
+
+.dv-custom-dropdown .dropdown-wrapper.active .dropdown-content {
+    display: block;
+}
+
+.dv-custom-dropdown input[type="radio"] + label {
+    cursor: pointer;
+    padding-right: 35px;
+    position: relative;
+}
+
+.dv-custom-dropdown input[type="radio"] + label:before {
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dcdbe5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dv-custom-dropdown input[type="radio"]:checked + label:before {
+    left: -3px;
+    background: var(--purple);
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0px 0px 0px 2px var(--purple);
+    box-shadow: 0px 0px 0px 2px var(--purple);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dv-custom-dropdown .dropdown-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background: #EEEEEE;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.dv-custom-dropdown .dropdown-content {
+    position: absolute;
+    left: 0;
+    top: 52px;
+    width: 100%;
+    background: #EEEEEE;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    z-index: 0;
+}
+
+.dv-custom-dropdown .dropdown-content ul,
+.dv-custom-dropdown .dropdown-content li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dv-custom-dropdown .dropdown-content ul {
+    list-style: none;
+}
+
+.dv-custom-dropdown .dropdown-content:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dv-custom-dropdown .dropdown-content li {
+    background: #EEEEEE;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.dv-custom-dropdown .dropdown-content li:nth-child(even) {
+    background: #fcfcfc;
+}
+
+
+.dv-custom-dropdown .icon-wrapper {
+    color: #b3b3bf;
+}
+
+.dv-custom-dropdown .icon-wrapper i {
+    position: relative;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #2f255b;
+}
+
+.dv-custom-dropdown .icon-wrapper i:before {
+    display: block;
+    line-height: 18px;
+    font-size: 7px;
+}
+
+.dv-custom-dropdown .icon-wrapper li {
+    border-bottom: 1px solid #dcdbe5;
+    padding-bottom: 15px;
+    max-height: 32px;
+    margin-top: 15px;
+    color: #2f255b;
+}
+
+.dv-custom-dropdown .icon-wrapper li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dv-custom-dropdown .icon-wrapper li:first-child {
+    margin-top: 0;
+}
+
+.dv-custom-dropdown .icon-wrapper li span {
+    display: block;
+    padding-left: 35px;
+    font-size: 0.9em;
+    color: #b3b3bf;
+}
+
+.dv-custom-dropdown .icon-wrapper {
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dv-custom-dropdown .dropdown-heading {
+    color: #b3b3bf;
+}
+
+
 /************************* responsive ********************/
 
 /*min*/
@@ -4357,18 +4515,19 @@ button.active .dv-mini-purple-circle-active {
         width: 100px;
     }
 
-    .dv-schedule-tab .nav-item{
+    .dv-schedule-tab .nav-item {
         min-width: 210px;
     }
 
-    .dv-booking-mt{
+    .dv-booking-mt {
         margin-top: 20px;
     }
-    .dv-booking-mt2{
+
+    .dv-booking-mt2 {
         margin-top: 80px;
     }
 
-    .dv-show-menu-in-mobile-view{
+    .dv-show-menu-in-mobile-view {
         padding-bottom: 0 !important;
         padding-top: 0 !important;
     }

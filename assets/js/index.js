@@ -234,9 +234,6 @@ let concertSwiper = new Swiper(".concertSwiper", {
   },
 });
 
-
-
-
 $(document).mouseup(function (e) {
   let container = $("#navbarSupportedContentMobile");
 
@@ -246,4 +243,7 @@ $(document).mouseup(function (e) {
   }
 });
 
-
+let toggle = function(){
+  document.querySelectorAll('.dropdown-wrapper')[0].classList.toggle('active');
+}
+document.querySelectorAll('.toggle')[0].addEventListener("click", toggle);
