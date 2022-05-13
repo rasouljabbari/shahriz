@@ -106,9 +106,18 @@ input[type=number] {
 }
 
 .dv_navbar_nav .nav-item {
-    padding: 0 25.5px;
+    padding: 0 15px;
     font-size: 16px;
     color: #657384;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #B82055;
+}
+
+.dv-header-logo{
+    max-width: 260px;
+    display: flex;
 }
 
 .dv_dropdown_title {
@@ -217,17 +226,19 @@ input[type=number] {
 /*concert-section*/
 #concert-section .nav-tabs {
     border-bottom: none !important;
-    justify-content: space-around;
+    /*justify-content: space-between;*/
 }
 
 #concert-section .nav-tabs .nav-link {
-    min-width: 150px;
+    min-width: 185px;
     height: 50px;
     border-radius: 25px;
     background: #fff;
     color: var(--purple);
     filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.16));
     border: none !important;
+    margin-left: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 #concert-section .nav-tabs .nav-link.active {
@@ -4055,7 +4066,6 @@ button.active .dv-mini-purple-circle-active {
 
 .dv-schedule-tab {
     border-bottom: none;
-    margin-bottom: 65px;
 }
 
 .dv-schedule-tab .nav-item .nav-link {
@@ -4063,10 +4073,13 @@ button.active .dv-mini-purple-circle-active {
     color: #B82055;
     border-radius: 25px;
     padding: 10px 25px;
+    border: 1px solid rgba(184,32,85,0.24);
+    margin-left: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 .dv-schedule-tab .nav-item .nav-link:hover {
-    border-color: transparent;
+    border: 1px solid rgba(184,32,85,0.24);
 }
 
 .dv-schedule-tab .nav-item.show .nav-link, .dv-schedule-tab .nav-link.active {
@@ -4079,6 +4092,14 @@ button.active .dv-mini-purple-circle-active {
     height: auto !important;
     padding: 10px;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dv-schedule-border{
+    border: 1px dashed #c7c7c7;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 15px;
 }
 
 .dv-chair-parent{
@@ -4095,14 +4116,31 @@ button.active .dv-mini-purple-circle-active {
     width: 100%;
 }
 
+/*#zoom {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    transform-origin: 0px 0px;*/
+/*    transform: scale(1) translate(0px, 0px);*/
+/*    cursor: grab;*/
+/*    margin-bottom: 1em;*/
+/*}*/
+body {
+    user-select: none;
+    -moz-user-select: none;
+}
+
 #zoom {
     width: 100%;
     height: 100%;
     transform-origin: 0px 0px;
     transform: scale(1) translate(0px, 0px);
     cursor: grab;
-    margin-bottom: 1em;
 }
+div#zoom > .dv-chair-list-2-parent {
+    width: 100%;
+    height: auto;
+}
+
 /************************* responsive ********************/
 
 /*min*/
@@ -4178,6 +4216,11 @@ button.active .dv-mini-purple-circle-active {
 }
 
 @media screen and (min-width: 1460px) {
+
+    #concert-section .nav-tabs .nav-link {
+        min-width: 213px;
+    }
+
     .dv-edit-invoice-inputs thead tr th:last-child, .dv-edit-invoice-inputs tbody tr td:last-child {
         padding-left: 35px;
     }
@@ -4864,9 +4907,8 @@ button.active .dv-mini-purple-circle-active {
         margin-right: 10px;
     }
 
-    .dv-logo-show-mobile {
-        width: 79px;
-        height: 39px;
+    .dv-logo-show-mobile img{
+        width: 65%;
     }
 
     .dv-logo-title-show-mobile {

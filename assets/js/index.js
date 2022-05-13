@@ -8,28 +8,6 @@ $(document).ready(function () {
   $('.dv-card-price').digits()
 });
 
-$(document).mouseup(function (e) {
-  let container = $("#navbarSupportedContentMobile");
-
-  // if the target of the click isn't the container nor a descendant of the container
-  if (!container.is(e.target) && container.has(e.target).length === 0) {
-    container.hide();
-  }
-});
-
-// const zoomElement = document.querySelector(".zoom");
-// let zoom = 1;
-// const ZOOM_SPEED = 0.1;
-// document.addEventListener("wheel", function(e) {
-//
-//   if(e.deltaY > 0){
-//     zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;
-//   }else{
-//     zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
-//
-// });
-
-
 let show_password = false;
 let isHidden = false;
 let open = false;
@@ -257,45 +235,15 @@ let concertSwiper = new Swiper(".concertSwiper", {
 });
 
 
-var scale = 1,
-  panning = false,
-  pointX = 0,
-  pointY = 0,
-  start = { x: 0, y: 0 },
-  zoom = document.getElementById("zoom");
 
-function setTransform() {
-  zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
-}
 
-zoom.onmousedown = function (e) {
-  e.preventDefault();
-  start = { x: e.clientX - pointX, y: e.clientY - pointY };
-  panning = true;
-}
+$(document).mouseup(function (e) {
+  let container = $("#navbarSupportedContentMobile");
 
-zoom.onmouseup = function (e) {
-  panning = false;
-}
-
-zoom.onmousemove = function (e) {
-  e.preventDefault();
-  if (!panning) {
-    return;
+  // if the target of the click isn't the container nor a descendant of the container
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
   }
-  pointX = (e.clientX - start.x);
-  pointY = (e.clientY - start.y);
-  setTransform();
-}
+});
 
-zoom.onwheel = function (e) {
-  e.preventDefault();
-  var xs = (e.clientX - pointX) / scale,
-    ys = (e.clientY - pointY) / scale,
-    delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-  (delta > 0) ? (scale *= 1.02) : (scale /= 1.02);
-  pointX = e.clientX - xs * scale;
-  pointY = e.clientY - ys * scale;
 
-  setTransform();
-}
