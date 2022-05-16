@@ -4140,7 +4140,7 @@ button.active .dv-mini-purple-circle-active {
     width: auto;
     height: auto;
     max-width: 100%;
-    transform: scale(0.3) translateY(-50%);
+    transform: scale(0.45) translateY(-50%);
 }
 
 .dv-ticket-cancel-btn {
@@ -6075,6 +6075,11 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 576px) {
+
+    #slide #zoom {
+        transform: scale(0.4) translateY(-60%);
+    }
+
     .dv-print-ticket-input {
         width: 100%;
     }
